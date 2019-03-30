@@ -59,3 +59,10 @@
     margin-bottom: 2em !important;
     margin-top: 2em !important; 
   }
+
+  .has-mask{
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
