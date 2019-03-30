@@ -1,10 +1,10 @@
-<h1 class="display-1">BIO</h1>
+<h1 class="display-1 sub-title">BIO</h1>
 
 <p>
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat in egestas erat imperdiet sed. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Tempus egestas sed sed risus pretium. Non blandit massa enim nec. Vitae congue mauris rhoncus aenean vel. Consequat nisl vel pretium lectus quam id. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Semper viverra nam libero justo. Id cursus metus aliquam eleifend mi. 
 </p>
 
-<h1 class="display-1">GALERA</h1>
+<h1 class="display-1 sub-title2">TIME</h1>
 
  
 <div class="container">
