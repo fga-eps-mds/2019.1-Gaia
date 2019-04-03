@@ -20,58 +20,60 @@
 |25/03/2019|   2.1  |Revisão dos tópicos 1.2, 6.1 e 6.4.                                   |Eduardo Lima        |
 
 ## Sumário
- [1. Introdução](#intro) <br>
-&emsp; [1.1 Objetivo](#objetivo) <br>
-&emsp; [1.2 Escopo](#escopo) <br>
-&emsp; [1.3 Definições, Acrônimos e Abreviações](#defs) <br>
-&emsp; [1.4 Referências](#refs) <br>
-&emsp; [1.5 Visão Geral](#visaogeral) <br>
-[2. Planejamento](#planej) <br>
-&emsp; [2.1. Oportunidade de Negócios](#oportu) <br>
-&emsp; [2.2. Declaração do Problema](#declprob) <br>
-&emsp; [2.3. Declaração da Posição do Produto](#declpos) <br>
-[3. Descrições da Parte Interessada e do Usuário](#descparti) <br>
-&emsp; [3.1 Resumo da parte interessada](#resparti) <br>
-&emsp; [3.2 Resumo do usuário](#resuser) <br>
-&emsp; [3.3 Ambiente do Usuário](#ambienteuser) <br>
-&emsp; [3.4 Perfis das partes interessadas](#perfisparti) <br>
-&emsp; &emsp; [3.4.1 Equipe de Desenvolvimento](#devteam) <br>
-&emsp; &emsp; [3.4.2 Equipe de Engenharia de Produto](#prodteam) <br>
-&emsp; &emsp; [3.4.3 Professoras](#prof) <br>
-&emsp; [3.5 Perfis de Usuários](#perfisuser) <br>
-&emsp; [3.6 Necessidades Principais do Investidor ou Usuário](#neces) <br>
-[4. Visão geral do Produto](#visaogeralproduto) <br>
-&emsp; [4.1. Perspectiva do Produto](#perspectprod) <br>
-&emsp; [4.2. Resumo de Recursos](#resrecur) <br>
-&emsp; [4.3. Licenciamento](#license) <br>
-[5. Recursos do Produto](#recurprod) <br>
-&emsp; [5.1. Plataforma de comunicação em linguagem natural.](#f1) <br>
-&emsp; [5.2. Permitir o usuário escolher/cadastrar um local e data para obter informações sobre o tempo.](#f2) <br>
-&emsp; [5.3. Enviar notificações com informações do tempo para o usuário nos dias cadastrados.](#f3) <br>
-&emsp; [5.4. Fornecer informações sobre  o tempo e localização.](#f4) <br>
-&emsp; [5.5. Sugerir ao usuário esportes viáveis para se praticar no local desejado levando em consideração sua situação climática.](#f5) <br>
-[6. Restrições do Produto](#restricprod) <br>
-&emsp; [6.1  Restrições de implementação](#restriimp) <br>
-&emsp; [6.2  Restrições externas](#restriext) <br>
-&emsp; [6.3 Restrições de Design](#restridesign) <br>
-&emsp; [6.4  Restrições de Uso](#restriuso) <br>
-&emsp; [6.5  Restrições de Confiabilidade](#restriconf) <br>
-[7. Faixas de Qualidade](#qualidade) <br>
+ [1. Introdução](#_1-introdução) <br>
+&emsp; [1.1 Objetivo](#_11-objetivo) <br>
+&emsp; [1.2 Escopo](#_12-escopo) <br>
+&emsp; [1.3 Definições, Acrônimos e Abreviações](#_13-definições-acrônimos-e-abreviações) <br>
+&emsp; [1.4 Referências](#_14-referências) <br>
+&emsp; [1.5 Visão Geral](#_15-visão-geral) <br>
+[2. Planejamento](#_2-planejamento) <br>
+&emsp; [2.1. Oportunidade de Negócios](#_21-oportunidade-de-negócios) <br>
+&emsp; [2.2. Declaração do Problema](#_22-declaração-do-problema) <br>
+&emsp; [2.3. Declaração da Posição do Produto](#_23-declaração-da-posição-do-produto) <br>
+[3. Descrições da Parte Interessada e do Usuário](#_3-descrições-da-parte-interessada-e-do-usuário) <br>
+&emsp; [3.1 Resumo da parte interessada](#_31-resumo-da-parte-interessada) <br>
+&emsp; [3.2 Resumo do usuário](#_32-resumo-do-usuário) <br>
+&emsp; [3.3 Ambiente do Usuário](#_33-ambiente-do-usuário) <br>
+&emsp; [3.4 Perfis das partes interessadas](#_34-perfis-das-partes-interessadas) <br>
+&emsp; &emsp; [3.4.1 Equipe de Desenvolvimento](#_341-equipe-de-desenvolvimento) <br>
+&emsp; &emsp; [3.4.2 Equipe de Engenharia de Produto](#_342-equipe-de-engenharia-de-produto) <br>
+&emsp; &emsp; [3.4.3 Professoras](#_343-professoras) <br>
+&emsp; [3.5 Perfis de Usuários](#_35-perfis-de-usuário) <br>
+&emsp; [3.6 Necessidades Principais do Investidor ou Usuário](#_36-necessidades-principais-do-investidor-ou-usuário) <br>
+[4. Visão geral do Produto](#_4-visão-geral-do-produto) <br>
+&emsp; [4.1. Perspectiva do Produto](#_41-perspectiva-do-produto) <br>
+&emsp; [4.2. Resumo de Recursos](#_42-resumo-de-recursos) <br>
+&emsp; [4.3. Licenciamento](#_43-licenciamento) <br>
+[5. Recursos do Produto](#_5-recursos-do-produto) <br>
+&emsp; [5.1. Plataforma de comunicação em linguagem natural.](#_51-plataforma-de-comunicação-em-linguagem-natural) <br>
+&emsp; [5.2. Permitir o usuário escolher/cadastrar um local e data para obter informações sobre o tempo.](#_52-permitir-o-usuário-escolhercadastrar-um-local-e-data-para-obter-informações-sobre-o-tempo) <br>
+&emsp; [5.3. Enviar notificações com informações do tempo para o usuário nos dias cadastrados.](#_53-enviar-notificações-com-informações-do-tempo-para-o-usuário-nos-dias-cadastrados) <br>
+&emsp; [5.4. Fornecer informações sobre  o tempo e localização.](#_54-fornecer-informações-sobre-o-tempo-e-localização-tais-como) <br>
+&emsp; [5.5. Sugerir ao usuário esportes viáveis para se praticar no local desejado levando em consideração sua situação climática.](#_55-sugerir-ao-usuário-esportes-viáveis-para-se-praticar-no-local-desejado-levando-em-consideração-sua-situação-climática) <br>
+[6. Restrições do Produto](#_6-restrições-do-produto) <br>
+&emsp; [6.1  Restrições de implementação](#_61-restrições-de-implementação) <br>
+&emsp; [6.2  Restrições externas](#_62-restrições-externas) <br>
+&emsp; [6.3 Restrições de Design](#_63-restrições-de-design) <br>
+&emsp; [6.4  Restrições de Uso](#_64-restrições-de-uso) <br>
+&emsp; [6.5  Restrições de Confiabilidade](#_65-restrições-de-confiabilidade) <br>
+[7. Faixas de Qualidade](#_7-faixas-de-qualidade) <br>
 
 
-## 1. Introdução <a name="intro"></a>
-### 1.1 Objetivo <a name="objetivo"></a>
+## 1. Introdução
+### 1.1 Objetivo
 Esse documento visa especificar de maneira geral as características do desenvolvimento do ChatBot Wendy, deixando claro seu objetivo, razão de sua necessidade, características, utilidade e requisitos do sistema.
-### 1.2 Escopo <a name="escopo"></a>
+
+### 1.2 Escopo
 O Chatbot possuirá duas funcionalidades principais. Essas funcionalidades juntas, formam o escopo do software, que será entregue completo ao final da segunda release. O bot terá como primeira responsabilidade enviar notificações sobre o clima da cidade que o usuário cadastrar. Assim, o usuário poderá definir uma cidade e os dias em que precisa ser notificado e o bot terá que, na quantidade de dias desejados, enviar notificações diariamente.
 
 A segunda responsabilidade do bot será a identificação dos esportes que podem ser melhor praticados de acordo com o clima do dia. Ou seja, o usuário pedirá o clima específico de uma cidade e o bot responderá com um esporte ou uma lista de esportes que podem ser praticados nessas circunstâncias climáticas.
-### 1.3 Definições, Acrônimos e Abreviações <a name="defs"></a>
+### 1.3 Definições, Acrônimos e Abreviações
 | Abreviação | Definição |
 |--|--|
 | MIT | Licença de software livre criada pelo Massachusetts Institute of Technology |
 | API | Interface de Programação de Aplicações |
-### 1.4 Referências <a name="refs"></a>
+
+### 1.4 Referências
 
  - IBM Knowledge Center - Documento de Visão: A estrutura de tópicos do documento de visão. Disponível em: [https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html](https://www.ibm.com/support/knowledgecenter/pt-br/SSWMEQ_4.0.6/com.ibm.rational.rrm.help.doc/topics/r_vision_doc.html). Acesso em: 23 mar. 2019;
  - RODRIGUES, Adrielly; BELEZA, Caio César; AGUIAR, Guilherme; ROSA, João Vitor; COELHO, Victor Hugo. Projeto Gerencia mais: Documento de Visão. Disponível em: [https://github.com/fga-eps-mds/2018.1_Gerencia_mais/blob/master/docs/documentos/Mds/Documento_de_Visao.md#3.3.2](https://github.com/fga-eps-mds/2018.1_Gerencia_mais/blob/master/docs/documentos/Mds/Documento_de_Visao.md#3.3.2). Acesso em: 23 mar. 2019;
@@ -79,13 +81,16 @@ A segunda responsabilidade do bot será a identificação dos esportes que podem
  - FREITAS, Esio; DUTRA, Lucas; FÉO, Pedro; KADER, Saleh; FALANEH, Youssef. Projeto Kalkuli: Documento de Visão. Disponível em: [https://github.com/fga-eps-mds/2018.2-Kalkuli/blob/master/docs/DocumentoDeVisao.md](https://github.com/fga-eps-mds/2018.2-Kalkuli/blob/master/docs/DocumentoDeVisao.md). Acesso em: 23 mar. 2019;
  - Open Source Initiative: The MIT License. Disponivel em: [https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT). Acesso em: 24 mar. 2019;
  - ADIDA, Ben. Understanding Open-Source Licensing. Disponível em: [https://openacs.org/about/licensing/open-source-licensing](https://openacs.org/about/licensing/open-source-licensing). Acesso em: 24 mar. 2019.
-### 1.5 Visão Geral <a name="visaogeral"></a>
+ 
+### 1.5 Visão Geral
 Este documento descreve de forma detalhada o embasamento, o planejamento e a construção do ChatBot Wendy. Para isso, serão apresentados tópicos referentes a declaração do problema que iremos solucionar, posicionamento do produto em relação ao mercado, as partes interessadas e usuários, perspectiva geral do produto: recursos e restrições, e requisitos para a aplicação do produto e documentação necessária para o bom andamento da aplicação.
-## 2. Planejamento <a name="planej"></a>
-### 2.1 Oportunidade de Negócios <a name="oportu"></a>
+
+## 2. Planejamento
+### 2.1 Oportunidade de Negócios
 No contexto atual, a obtenção de informações acerca do clima são comumente feitas através de jornais ou páginas da web, sendo que a primeira opção não pode ser consultada a qualquer momento e não oferece uma informação em tempo real, mas sim uma previsão, enquanto a última opção, embora de melhor acesso, falte com a automatização do processo para tornar as consultas mais eficazes e bem planejadas.
 Dessa forma, o Chatbot Wendy busca solucionar o problema de uma forma tecnológica e inteligente, disponibilizando aos usuários dados em tempo real a respeito do clima e recomendações de atividades esportivas referente aos dados recebidos, tal como a possibilidade de consultas automáticas agendadas pelo próprio usuário através de notificações.
-### 2.2 Declaração do Problema <a name="declprob"></a>
+
+### 2.2 Declaração do Problema
 <table>
 	<tr>
 		<td><b>O problema da</b></th>
@@ -105,7 +110,7 @@ Dessa forma, o Chatbot Wendy busca solucionar o problema de uma forma tecnológi
 	</tr>
 </table>
 
-### 2.3 Declaração da Posição do Produto <a name="declpos"></a>
+### 2.3 Declaração da Posição do Produto
 <table>
 	<tr>
 		<td><b>Para</b></td>
@@ -133,8 +138,8 @@ Dessa forma, o Chatbot Wendy busca solucionar o problema de uma forma tecnológi
 	</tr>
 </table>
 
-## 3. Descrições da Parte Interessada e do Usuário <a name="descparti"></a>
-### 3.1 Resumo da parte interessada <a name="resparti"></a>
+## 3. Descrições da Parte Interessada e do Usuário
+### 3.1 Resumo da parte interessada
 | Nome | Descrição | Responsabilidade |
 |--|--|--|
 | Equipe de desenvolvimento | Graduandos em Engenharia de Software, cursando a disciplina Métodos de desenvolvimento de Software, pela Universidade de Brasília. | Desenvolver o software no período estipulado, bem como testá-lo e implementá-lo. |
@@ -142,16 +147,17 @@ Dessa forma, o Chatbot Wendy busca solucionar o problema de uma forma tecnológi
 | Cliente | Requisitor do projeto. | Informar suas preferências e exigências acerca do projeto. |
 | Professora | Professoras da Universidade de Brasília, do curso de Engenharia de Software. | Orientar, acompanhar e avaliar o projeto. |
 
-### 3.2 Resumo do Usuário <a name="resuser"></a>
+### 3.2 Resumo do Usuário
 | Nome | Descrição | Responsabilidades |
 |--|--|--|
 | Praticantes de modalidades ao ar livre | Pessoas interessadas em receber informações sobre o clima. | Utilizar o ChatBot nas plataformas disponíveis. |
 | Atleta | Pessoas interessadas em receber informações sobre atividades físicas de acordo com o clima atual. | Utilizar o ChatBot nas plataformas disponíveis. |
 
-### 3.3 Ambiente do Usuário <a name="ambienteuser"></a>
+### 3.3 Ambiente do Usuário
 O Chatbot Wendy poderá ser acessado através do Facebook e Telegram. Sendo necessário um browser ou aplicativo do Facebook ou aplicativo do Telegram, conexão com a internet e uma conta na plataforma Facebook ou Telegram.
-### 3.4 Perfis das partes interessadas <a name="perfisparti"></a>
-#### 3.4.1 Equipe de Desenvolvimento <a name="devteam"></a>
+
+### 3.4 Perfis das partes interessadas
+#### 3.4.1 Equipe de Desenvolvimento
 <table>
 	<tr>
 		<td>Representantes</td>
@@ -179,7 +185,7 @@ O Chatbot Wendy poderá ser acessado através do Facebook e Telegram. Sendo nece
 	</tr>
 </table>
 
-#### 3.4.2 Equipe de Engenharia de Produto <a name="prodteam"></a>
+#### 3.4.2 Equipe de Engenharia de Produto
 <table>
 	<tr>
 		<td>Representantes</td>
@@ -207,7 +213,7 @@ O Chatbot Wendy poderá ser acessado através do Facebook e Telegram. Sendo nece
 	</tr>
 </table>
 
-#### 3.4.3 Professoras <a name="prof"></a>
+#### 3.4.3 Professoras
 <table>
 	<tr>
 		<td>Representantes</td>
@@ -235,7 +241,7 @@ O Chatbot Wendy poderá ser acessado através do Facebook e Telegram. Sendo nece
 	</tr>
 </table>
 
-### 3.5 Perfis de Usuário <a name="perfisuser"></a>
+### 3.5 Perfis de Usuário
 <table>
 	<tr>
 		<td>Representantes</td>
@@ -290,17 +296,17 @@ O Chatbot Wendy poderá ser acessado através do Facebook e Telegram. Sendo nece
 	</tr>
 </table>
 
-### 3.6 Necessidades Principais do Investidor ou Usuário <a name="neces"></a>
+### 3.6 Necessidades Principais do Investidor ou Usuário
 | Necessidade | Prioridade | Interesse | Solução Atual | Solução Proposta |
 |--|--|--|--|--|
 | Receber informações sobre o clima e vento. | Alta. | Facilitar o acesso à informação de forma natural e conveniente. | Procurar em jornais físicos e virtuais. | Receber a informação desejada por meio de um ChatBot no Facebook. |
 | Receber sugestões de atividades físicas para o clima atual. | Alta. | Facilitar o acesso à informação de forma natural e conveniente. | Pesquisar manualmente sobre a atividade física desejada em várias fontes. | Receber a informação desejada em um único lugar. |
 
-## 4. Visão Geral do Produto <a name="visaogeralproduto"></a>
-### 4.1 Perspectiva do Produto <a name="perspectprod"></a>
+## 4. Visão Geral do Produto
+### 4.1 Perspectiva do Produto
 O software será um chatbot com o qual o usuário pode conversar em linguagem natural, podendo pedir informações sobre o tempo em tempo real.
 O chatbot será capaz de fornecer informações nos dias desejados pelo usuário assim como sugerir os melhores esportes para se praticar com base no tempo.
-### 4.2. Resumo de Recursos <a name="resrecur"></a>
+### 4.2. Resumo de Recursos
 | Benefício para o cliente | Recursos de suporte |
 |--|--|
 | Comunicar-se com o ChatBot em linguagem natural | A troca de informações entre o usuário e o ChatBot ocorre no formato de uma conversa natural |
@@ -308,14 +314,15 @@ O chatbot será capaz de fornecer informações nos dias desejados pelo usuário
 | Pode escolher o local do qual quer receber informações | São mandadas informações do tempo de um lugar previamente especificado |
 | Pode escolher a frequência de notificações sobre o tempo desejada. | O ChatBot pode mandar mensagens para o usuário em dias especificados. |
 | Receber uma lista de esportes com base no tempo | Montar uma lista de esportes que podem ser melhor praticados nas condições do tempo de cada dia |
-### 4.3 Licenciamento <a name="license"></a>
+
+### 4.3 Licenciamento
 O ChatBot será distribuído sob a licença MIT para softwares livres, que dá liberdade para todos que o adquirirem de modificar, distribuir, sublicenciar, vender e contribuir para o software.
 
-## 5. Recursos do Produto <a name="recurprod"></a>
-### 5.1 Plataforma de comunicação em linguagem natural. <a name="f1"></a>
-### 5.2 Permitir o usuário escolher/cadastrar um local e data para obter informações sobre o tempo. <a name="f2"></a>
-### 5.3 Enviar notificações com informações do tempo para o usuário nos dias cadastrados. <a name="f3"></a>
-### 5.4 Fornecer informações sobre o tempo e localização, tais como: <a name="f4"></a>
+## 5. Recursos do Produto
+### 5.1 Plataforma de comunicação em linguagem natural.
+### 5.2 Permitir o usuário escolher/cadastrar um local e data para obter informações sobre o tempo.
+### 5.3 Enviar notificações com informações do tempo para o usuário nos dias cadastrados.
+### 5.4 Fornecer informações sobre o tempo e localização, tais como:
 -   Velocidade e direção dos ventos;
 -   Temperatura;
 -   Nebulosidade;
@@ -323,20 +330,21 @@ O ChatBot será distribuído sob a licença MIT para softwares livres, que dá l
 -   Umidade;
 -   Nascer e pôr do sol;
 -   Coordenadas geográficas.
-### 5.5 Sugerir ao usuário esportes viáveis para se praticar no local desejado levando em consideração sua situação climática. <a name="f5"></a>
 
-## 6. Restrições do Produto<a name="restricprod"></a>
-### 6.1 Restrições de implementação<a name="restriimp"></a>
+### 5.5 Sugerir ao usuário esportes viáveis para se praticar no local desejado levando em consideração sua situação climática.
+
+## 6. Restrições do Produto
+### 6.1 Restrições de implementação
 O sistema será implementado utilizando as tecnologias NodeJs(Javascript) e MongoDB para o banco de dados , o chatbot será construído com o uso do framework Rasa, que utiliza a linguagem Python.
-### 6.2 Restrições externas <a name="restriext"></a>
+### 6.2 Restrições externas
 A inexperiência e o período de tempo curto podem se tornar empecilhos para a produção do projeto.
-### 6.3 Restrições de Design <a name="restridesign"></a>
+### 6.3 Restrições de Design
 O sistema deve ser feito em uma interface de fácil usabilidade, tornando-o intuitivo para o usuário.
-### 6.4  Restrições de Uso <a name="restriuso"></a>
+### 6.4  Restrições de Uso
 Para  utilizar o ChatBot Wendy, o usuário deve ter uma conexão com a internet, possuir uma conta no Facebook com acesso ao Messenger ou conta no Telegram.
-### 6.5  Restrições de Confiabilidade <a name="restriconf"></a>
+### 6.5  Restrições de Confiabilidade
 O sistema terá uma cobertura de testes, de no mínimo 90% do sistema.
 
-## 7. Faixas de Qualidade <a name="qualidade"></a>
+## 7. Faixas de Qualidade
 Toda da interação com o software deve ocorrer na forma de uma conversa natural. Deve ser fácil entender como se usar todos os recursos do ChatBot apenas conversando com ele.
 O software buscará oferecer um serviço consistente e confiável, considerando que problemas na API OpenWeather ou na rede social escolhida (Facebook messenger) podem afetar o funcionamento desse serviço.
