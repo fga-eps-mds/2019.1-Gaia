@@ -66,3 +66,12 @@
     background-repeat: no-repeat !important;
     background-size: cover !important;
   }
+
+
+body h1{
+  font-size: 2.5em !important;
+}  
+
+span {
+  color:#14A9BA
+}
