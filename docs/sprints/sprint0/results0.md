@@ -1,11 +1,60 @@
-   
- #Retrospectiva   
-   - Eduardo: Ficou perdido sobre o que tinha que estudar e saiu estudando muito. Interessante aprender sobre toda a burocracia de abrir um projeto open source. Doc de Arquitetura com prazo apertado. 
-   - Luis: Tentou aprender Raza. Não gostou do prazo do Doc de Arquitetura. Boa comunicação do time. Todos fazem as coisas bem feito, e não precisa ficar pegando no pé. 
-   - Sofia: Ainda um pouco confusa sobre o back. Procurou o Blanco para explicar sobre a estrutura do chatbot e como sincronizar com Facebook e Telegram. Preocupada com o prazo de entrega.
-   - Micaella: Focou em Raza mas nao conseguiu fazer muita coisa. Está animada com a API e apreensiva com o projeto por causa das provas. Não conseguiu estudar JavaScript e se organizar direito nos estudos, focou mais em Rasa.
-   - Samuel: Estudou Python mas não aprendeu tanto quando gostaria. Prazo do Doc de Arquitetura curto.   
-   - Amanda: Curva de aprendizagem em arquitetura surreal. Conversou com a professora Milene sobre a arquitetura do projeto. Sentiu que aprendeu muito. 
-   - Indiara: Gostou da sprint mas estava muito perdida.  Já sabe o que tem que fazer na primeira parte do projeto. O tempo é apertado mas conseguiu entregar o que tinha para entregar, gosta da forma como o time trabalha. 
-   - Calebe: A sprint foi corrida, estava perdido no início da semana mas conseguiu entregar o principal. O Docker foi legal de mexer. Preocupado com a prox Sprint pq tem integração continua. 
-   - Luciana: Estava perdida no começo da Sprint, pediu ajuda para muitas pessoas e teve êxito, complicado ser Tec Lider, tem que guiar todos. Mas conseguiu se direcionar bem, gostou da sprint e teve uma curva de aprendizagem alta, acha que o está caminhando bem, todos unidos. 
+# RESULTADOS da Sprint 0
+
+O objetivo da Sprint 0 foi contextualizar o time MDS sobre a matéria, escolher o tema, e realizar treinamentos. Além disso, foi na Sprint 0 em que EPS teve que preparar o básico para que tenha alguma base para iniciar os documentos.
+
+
+### Presentes na reunião 16/3/19
+
+| Nome | Status |
+| --------- | -------- |
+| Amanda | sim |
+| Calebe | sim |
+| Eduardo | sim |
+| Indiara | sim |
+| Luciana | sim |
+| Luís | sim |
+| Micaella | sim |
+| Samuel | sim |
+| Sofia | sim |
+
+
+## Review
+
+### Issues entregues
+
+| Issues | Pontos |
+| --------- | -------- |
+| Código de conduta | 3 |
+| Guia de Contribuição  | 3 |
+| Pull Request Template | 3 |
+| Issue Template | 5 |
+| Treinamento sobre Documento de Visão | 3 |
+| Configuração do Bot do GitHub no Telegram | 3 |
+| Treinamento sobre os papeis de EPS | 1 |
+| Treinamento sobre o Manifesto Ágil e práticas | 3 |
+| Treinamento de Git | 5 |
+
+
+### Total de pontos planejados: 29
+
+### Pontos entregues: 29
+
+
+
+## Burndown
+
+
+![Burndown Sprint 1](../../assets/imgs/burndown/Burndown-Sprint0.png)
+
+
+## Velocity
+
+
+![Velocity Sprint 1](../../assets/imgs/velocity/Velocity-Sprint0.png)
+
+
+## Avaliação Tech Lead
+
+
+<p>A primeira Sprint não possui muita análise por não haver com o que comparar. Olhando um pouco o Burndown é possível ver uma estagnação no início da sprint e consequentemente uma queda no meio da sprint para o final. É um ponto de atenção para que a equipe entregue de forma constante. O velocity a princípio nao remete a alguma informação importante. </p>
+<p>O time de EPS e MDS ainda estão se adaptando e entendendo um pouco mais sobre seus papéis, porém o time está bem unido e animado para o projeto.</p>

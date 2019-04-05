@@ -8,35 +8,35 @@ O objetivo da Sprint 2 é orientar o time de MDS na construção da primeira His
 
 #### MDS
 
-   * Prótotipo de baixa fidelidade [5]
-   * Identidade visual [3]
-   * Chatbot individual para estudo [5]
-   * US01: Eu como usuário desejo que o sistema obtenha o clima de uma cidade para que eu possa saber as condições climáticas do dia [8]
-   * US02: Eu como usuário desejo que o sistema obtenha a latitute e a logitude de qualquer lugar do mundo a partir da API do Google Maps [13]
+   * Prótotipo de baixa fidelidade <span>[5]</span>
+   * Identidade visual <span>[3]</span>
+   * Chatbot individual para estudo <span>[5]</span>
+   * US01: Eu como usuário desejo que o sistema obtenha o clima de uma cidade para que eu possa saber as condições climáticas do dia <span>[8]</span>
+   * US02: Eu como usuário desejo que o sistema obtenha a latitute e a logitude de qualquer lugar do mundo a partir da API do Google Maps <span>[13]</span></span>
 
 #### EPS
-   * Integração contínua do repositório Local [8]
-   * Integração contínua do repositório Clima [8]
-   * Readme [1]
-   * Documentação dos Resultados da Sprint 1 [1]
-   * Documentação do Planejamento da Sprint 2 [1]
-   * Plano de metodologia [3]
-   * Processo de implementação [3]
-   * Evolução da EAP [1]
-   * Critérios de aceitação de todas as issues [3]
-   * Elicitação de requisitos [13]
-   * Configuração da folha de estilo do NodeJS [3]
+   * Integração contínua do repositório Local <span>[8]</span>
+   * Integração contínua do repositório Clima <span>[8]</span>
+   * Readme <span>[1]</span>
+   * Documentação dos Resultados da Sprint 1 <span>[1]</span>
+   * Documentação do Planejamento da Sprint 2 <span>[1]</span>
+   * Plano de metodologia <span>[3]</span>
+   * Processo de implementação <span>[3]</span>
+   * Evolução da EAP <span>[1]</span>
+   * Critérios de aceitação de todas as issues <span>[3]</span>
+   * Elicitação de requisitos <span>[13]</span>
+   * Configuração da folha de estilo do NodeJS <span>[3]</span>
 
 #### Dívidas da Sprint 1
 
-   * Documento de Arquitetura [13]
-   * Pipeline DevOps [3]
-   * Docker Rasa [13]
-   * Roadmap de cada frente [3]
+   * Documento de Arquitetura <span>[13]</span>
+   * Pipeline DevOps <span>[3]</span>
+   * Docker Rasa <span>[13]</span>
+   * Roadmap de cada frente <span>[3]</span>
 
 
 #### Total de pontos planejados: 79
 #### Total de pontos de dívidas da Sprint 1: 32
 
-### Total de pontos da Sprint X: 111
+### Total de pontos da Sprint 2: 111
   
