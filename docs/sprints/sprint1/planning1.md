@@ -1,54 +1,27 @@
-## [PLANEJAMENTO - 30/03/2019] - *Sprint 2* 
+# PLANEJAMENTO - Sprint 1
+### Período: 23/3/19 a 30/3/19
 
-#### Todos estavam presentes
+O objetivo da Sprint 1 é instruir o time de MDS para que o Documento de Visão e o Documento de Arquitetura sejam concluídos. EPS deve preparar o ambiente para que MDS possa começar a codar na próxima semana e que possam subir os documentos criados.
 
-### Review: O que foi feito durante a *Sprint 1* - 1h35 min
-#### MDS
-- [x] Documento de Visão - 10 min
-- [ ] Documento de Arquitetura - 10 min
-#### EPS
-- [x] Guia de Contribuição - 10 min
-- [x] Docker dos microserviços - 40
-- [x] TAP - 5 min
-- [x] EAP - 5 min
-- [x] Licença - 5 min
 
-### *Retrospective*: Aprendizados obtidos na *Sprint 1* - 30 min
-   
-
-### *Planning*: Planejamento da *Sprint 2* - 1h 
-
+### Planejamento: Planejamento da Sprint 1
 
 #### MDS
-* US01: Eu como usuário desejo que o sistema obtenha  o clima de uma cidade para que eu possa saber as condições climáticas do dia - Eduardo e Samuel [8]
-* US02: Eu como usuário desejo que o sistema obtenha a latitute e a logitude de qualquer lugar do mundo a partir da API do Google Maps. - Luís, Micaella e Sofia [13]
-* Construir um chatbot individual para estudo - Todos [5]
-* Identidade Visual - personalidade + logo - Luís, Micaella e Sofia [3]
-* Protótipo de baixa fidelidade - Eduardo e Samuel [5]
+
+   * Documento de Visão <span>[5]</span>
+   * Documento de Arquitetura <span>[13]</span>
 
 #### EPS
-* Configurar a folha de estilo nodeJS - Calebe [3]
-* Integração contínua de cada repo (2 issues) - Calebe [8]
-* Pipeline de implementação - Amanda[3]
-* Elicitar requisitos - Todos [13]
-* Criar readme - Luciana [1]
-* Plano de métricas / Produtividade (horas) / Conhecimento - Luciana [5]
-* Plano de metodologia - Luciana [3]
-* Documentação da Sprint  - Luciana [1]
-* Adicionar critérios de aceitação das issues - Indiara [3]
-* Canvas - Indiara [5]
+   * Licença <span>[1]</span>
+   * Wiki do Projeto no GitHub Pages <span>[8]</span>
+   * Arquitetura do Projeto <span>[13]</span>
+   * EAP <span>[5]</span>
+   * TAP <span>[3]</span>
+   * Docker de Buscar Clima <span>[13]</span>
+   * Docker Buscar Local <span>[13]</span>
+   * Roadmap de cada frente <span>[3]</span>
+   * Pipeline de DevOps <span>[3]</span>
+   * Docker Rasa <span><span>[13]</span>
 
-
-
- 
-
-## Observações levantadas ao longo da reunião:
-
-- Todos os membros de MDS participaram da construção direta de pelo menos um item. 
-- O documento de arquitetura não foi finalizado 
-- Amanda apresentou para MDS como funcionará a arquitetura do projeto
-- Calebe tem que passar as versões das tecnologias
-- O guia de identidade visual será dividida entre MDS e Tech Lead. MDS serão responsáveis pela personalidade do bot. Tech Lead pelos outros tópicos. 
-   
-
-
+### Total de pontos da Sprint X: 93
+  
