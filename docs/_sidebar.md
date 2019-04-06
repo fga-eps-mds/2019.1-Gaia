@@ -6,6 +6,7 @@
 
 - [**Projeto**](/projeto/)
   - [Roadmap dos Papéis](/projeto/RoadmapPapeis.md)
+  - [Plano de Metodologia](/projeto/planoMetodologia.md)
   - [Documento de Visão](projeto/DocVisao.md)
 
 - [**Sprints**](/sprints/)
