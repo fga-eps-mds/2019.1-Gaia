@@ -5,6 +5,7 @@
   - [Requisitos](produto/requisitos.md)
 
 - [**Projeto**](/projeto/)
+  - [Processo de Implementação](/projeto/processo.md)
   - [Roadmap dos Papéis](/projeto/RoadmapPapeis.md)
   - [Documento de Visão](projeto/DocVisao.md)
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
