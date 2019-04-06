@@ -36,14 +36,14 @@ merges para *development*</a> .
 
 #### Nome das Branches
 
-As branchs de desenvolvimento de features serão criadas a partir da branch *development* com a nomenclatura padrão `x_nome_da_issue`, onde o `x` representa o código de rastreio da issue.
+As branchs de desenvolvimento de features serão criadas a partir da branch *development* com a nomenclatura padrão `#x_nome_da_issue`, onde o `x` representa o código de rastreio da issue.
 
 ### Política de Commits
 
 A issue em questão deve ser citada no commit, para isso, basta adicionar `<numero_da_issue>#`.
 
 ```
- #5 Fazendo guia de contribuição
+ Fazendo_guia_de_contribuição_#5
 ```
 
 ** \*\*Por padrão, o caracter `#` define uma linha de comentário no arquivo da mensagem do commit. Para resolver este problema, use o commando:**
