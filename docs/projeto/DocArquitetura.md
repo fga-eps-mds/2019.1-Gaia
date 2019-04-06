@@ -2,6 +2,7 @@
 ### Arquitetura
 #### Versão 1.5
 
+
 ## Histórico de Revisão
 
 | Data     | Versão |                         Descrição                                    |  Autor             |
@@ -11,7 +12,7 @@
 |29/03/2019|   1.2  |Criação dos tópicos 3.1 e 3.2                                         |Micaella Gouveia    |
 |29/03/2019|   1.3  |Criação do tópico 1                                                   |Samuel Pereira      |
 |29/03/2019|   1.4  |Criação dos tópicos 2.4.1, 2.4.2,  2.4.3 e 2.4.4.                     |Luis Henrique Taira |
-|29/03/2019|   1.5  |Adição dos tópicos 4.1,4.2,4.3  e revisão do document                 |Micaella Gouveia    |
+|05/04/2019|   1.5  |Adição dos tópicos 4.2.1,4.2.2,4.2.3, revisão e formatação do documento          |Micaella Gouveia    |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -21,12 +22,30 @@
 &emsp; [1.4 Referências](#_14-referências) <br>
 &emsp; [1.5 Visão Geral](#_15-visão-geral) <br>
 [2. Representação Arquitetural](#_2-representação-arquitetural) <br>
+&emsp; [2.1 Diagrama de Relações](#_21-diagrama-de-relações) <br>
+&emsp; [2.2 Representação dos Microsserviços](#_22-representação-dos-microsserviços) <br>
+&emsp; &emsp; [2.2.1 Cronjob Notifica](#_221-cronjob-notifica) <br>
+&emsp; &emsp; [2.2.2 Busca Clima](#_222-busca-clima) <br>
+&emsp; &emsp; [2.2.3 Escolhe Esporte](#_223-escolher-esporte) <br>
+&emsp; &emsp; [2.2.4 Busca Local](#_224-busca-local) <br>
+&emsp; &emsp; [2.2.5 API Gateway](#_225-api-gateway) <br>
+&emsp; [2.3 Padrões](#_23-padrões) <br>
+&emsp; [2.4 Tecnologias](#_24-tecnologias) <br>
+&emsp; &emsp; [2.4.1 API de bot do Telegram](#_241-api-de-bot-do-telegram) <br>
+&emsp; &emsp; [2.4.2 API de mensagens do Facebook Messenger](#_242-api-de-mensagens-do-facebook-messenger) <br>
+&emsp; &emsp; [2.4.3 API OpenWeatherMap](#_243-api-de-openweathermap) <br>
+&emsp; &emsp; [2.4.4 Google Maps Geocoding API](#_244-google-maps-geocoding-api) <br>
+&emsp; &emsp; [2.4.5 Python](#_245-python) <br>
+&emsp; &emsp; [2.4.6 JavaScript](#_246-javascript) <br>
 [3. Metas e Restrições da Arquiteura](#_3-metas-e-restrições-da-arquitetura) <br>
+&emsp; [3.1 Metas](#_31-metas) <br>
+&emsp; [3.2 Restrições](#_31-restrições) <br>
 [4. Visão Lógica](#_4-visão-lógica) <br>
 &emsp; [4.1. Visão Geral](#_41-visão-geral) <br>
-&emsp; [4.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#_41-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura) <br>
-&emsp; [4.1. Diagrama de Pacotes](#_41-diagrama-de-pacotes) <br>
-&emsp; [4.1. Diagrama de Classes](#_41-diagrama-de-classes) <br>
+&emsp; [4.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#_42-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura) <br>
+&emsp; &emsp; [4.2.1 Diagrama de Pacotes](#_421-diagrama-de-pacotes) <br>
+&emsp; &emsp; [4.2.2 Diagrama de Classes](#_422-diagrama-de-classes) <br>
+&emsp; &emsp; [4.2.3 Diagrama de Classes](#_423-diagrama-de-classes) <br>
 
 ## 1. Introdução
 ### 1.1 Finalidade
@@ -71,7 +90,7 @@ processos pesados;</li>
 </ul>
 
 ## 2. Representação Arquitetural 
-### 2.1 Diagrama de relações 
+### 2.1 Diagrama de Relações 
 
 ![alt text](https://i.imgur.com/cceUiwD.png)
 
@@ -92,7 +111,7 @@ processos pesados;</li>
 <li>API GoogleMaps.</li></ul>
 <p align="justify">&emsp;&emsp;Além do comportamento interno da Wendy, outro fator importante a ser considerado é a criação do chatbot em si. Para isso, vários fatores precisam ser considerados, como o uso de linguagem natural. Por isso, será utilizado a tecnologia Rasa, que se divide em Rasa Core e Rasa NLU. Rasa Core é de extrema importância para criar um bot baseado em Machine Learning. Já o Rasa NLU é responsável pelo processamento da linguagem natural. Essa combinação vai garantir que a Wendy tenha uma comunicação acessível com o usuário.</p> 
 
-### 2.2 Representação dos microsserviço
+### 2.2 Representação dos Microsserviços
 
 #### 2.2.1 Cronjob Notifica 
 <p align="justify">&emsp;&emsp;O termo Cronjob ou Cron Job refere-se a tarefas que são executadas de forma automática dado um intervalo de tempo. Por isso, um microsserviço essencial para a Wendy é um cronjob de notificação. Ele será responsável por registrar as preferências de um usuário, sendo elas, uma cidade e um tempo determinado para a notificação; além de mandar o alerta para o chat com as condições climáticas da localização desejada no período esperado pelo usuário.</p>
@@ -109,43 +128,44 @@ processos pesados;</li>
 #### 2.2.5 API Gateway
 <p align="justify">&emsp;&emsp;Dentro de uma arquitetura de microsserviços ter um API Gateway é importante para gerenciar o acesso às API’s de um determinado sistema. Ou seja, ele funciona com uma fachada sendo o único ponto de acesso, - que controla as entradas e saídas de dados, o tráfego de tarefas e monitora, - para as API’s internas. Sua existência reduz problemas causados pela interação entre cliente e microsserviços, além de conservar o ambiente dos serviços. </p>
 
-### 2.3 Padrões
+## 2.3 Padrões
 <p align="justify">&emsp;&emsp;Os padrões vão ser definidos durante a sprint 2.</p>
 
 ## 2.4 Tecnologias 
 
-### 2.4.1 API de bot do Telegram
+#### 2.4.1 API do Bot de Telegram
 <p align="justify">&emsp;&emsp;A API de bot do Telegram permite que bots interajam diretamente com usuários por meio de mensagens e comandos.</p>
 <p align="justify">&emsp;&emsp;O telegram exige uma conexão HTTPS para interagir com a API e pede que todos os desenvolvedores suportem os comandos ‘/start’, ‘/help’, e ‘/settings’ em seus bots para facilitar a interação de usuários com a multitude de bots existentes. </p>
 
-### 2.4.2 API de mensagens do Facebook Messenger
+#### 2.4.2 API de Mensagens do Facebook Messenger
 <p align="justify">&emsp;&emsp;O Messenger permite que bots mandem e recebam mensagens por meio de sua API.</p>
 <p align="justify">&emsp;&emsp;Diferentemente de outras APIs para bots, a do Messenger possui a política chamada de ‘24+1’, que impõe um limite de 24 horas para que bots mandem mensagens para usuários após o usuário contatar o bot, sendo permitido que o bot mande uma mensagem depois de o limite de 24 horas ter expirado.</p>
 <p align="justify">&emsp;&emsp;A API do Messenger disponibiliza também um modo, que está em beta, de mensagens por inscrição, que permite que bots mandem mensagens periódicas para usuários, sem que exista um limite de 24 horas. </p>
 
-### 2.4.3 API OpenWeatherMap
+#### 2.4.3 API do OpenWeather
 <p align="justify">&emsp;&emsp;A API do openweathermap.org é capaz de fornecer um grande número de informações relacionadas a previsão do tempo e principalmente de condições climáticas atuais com base em localização.</p>
 <p align="justify">&emsp;&emsp;Podem ser fornecidos nomes de capitais ou coordenadas de localização para se obter dados da API.</p>
 
-### 2.4.4 Google Maps Geocoding API
+
+#### 2.4.4 Google Maps Geocoding API
 <p align="justify">&emsp;&emsp;A Geocoding API do Google Maps fornece coordenadas geográficas quando a ela é fornecido o nome de um lugar como: lago Paranoá, Águas Claras, DF, Brasil.</p>
 <p align="justify">&emsp;&emsp;As coordenadas fornecidas pela API serão fornecidas a API do OpenWeatherMap.</p>
 <p align="justify">&emsp;&emsp;A Geocoding API também pode fornecer informações sobre o lugar fornecido como endereço legível por humanos, CEP e tipo de localização.</p>
 
-### 2.4.5 Python
+#### 2.4.5 Python
 <p align="justify">&emsp;&emsp;Python é uma moderna linguagem interpretada de alto nível é será utilizada no front end da aplicação em conjunto com os frameworks Rasa NLU e Rasa Core.</p>
 
-### 2.4.6 JavaScript
+#### 2.4.6 JavaScript
 <p align="justify">&emsp;&emsp;JavaScript é uma linguagem interpretada de alto nível é será utilizada no back end da aplicação em conjunto com o framework Node.js</p>
 
 
 ## 3. Metas e Restrições de Arquitetura 
-#### 3.1 Metas
+### 3.1 Metas
 <p align="justify">&emsp;&emsp;Possuímos as seguintes metas:</p>
 Funcionar nos serviços de mensagens instantâneas Telegram e Messenger.
 Consumir as API’s do Telegram, Facebook, OpenWeatherMaps, GoogleMaps. 
 
-#### 3.2 Restrições
+### 3.2 Restrições
 <p align="justify">&emsp;&emsp;Possuímos as seguintes restrições:</p>
 Rasa: Framework para o desenvolvimento do chatbot
 Python : Linguagem base das aplicações do front-end
@@ -160,13 +180,18 @@ MongoDB : Software utilizado para o banco de dados
 
 ### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
-### 4.2.1 Diagrama de pacotes
+#### 4.2.1 Diagrama de pacotes
 ![alt text](https://i.imgur.com/HuuLyBC.png)
 
-### 4.2.2 Diagrama de classe
+#### 4.2.2 Diagrama de classe
 ![alt text](https://i.imgur.com/GpuBj8p.png)
 
-### 4.2.3 Diagramas de fluxo
+#### 4.2.3 Diagramas de fluxo
+<p align="justify">&emsp;&emsp;Fluxo do Rasa:</p>
+
 ![alt text](https://i.imgur.com/ik3vWjQ.jpg)
+
+<p align="justify">&emsp;&emsp;Fluxo do Node.js:</p>
+
 ![alt text](https://i.imgur.com/TtAzsd6.png)
 
