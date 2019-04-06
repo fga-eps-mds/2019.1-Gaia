@@ -11,7 +11,14 @@ A Wendy é um chatbot desenvolvido em RASA e NODEJS com o objetivo auxiliar a vi
 
 ## TIME
 
-| Amanda | Calebe | Indiara | Luciana | Eduardo | Luís | Micaella | Samuel | Sofia |
-| --------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
-| Arquiteta | DevOps | Project Owner | Tech Lead | Dev | Dev | Dev | Dev | Dev |
-| [@AmandaMuniz](https://github.com/AmandaMuniz) | [@caleberios](https://github.com/caleberios) | [@inddiara](https://github.com/inddiara) | [@lucianaribeiro](https://github.com/lucianaribeiro) | [@Ed_Lv](https://github.com/Ed_Lv) | [@LhTaira](https://github.com/LhTaira) | [@micaellagouveia](https://github.com/micaellagouveia) | [@SamButers](https://github.com/SamButers) | [@sofiapatrocinio](https://github.com/sofiapatrocinio) |
+| Nome | Papel | GitHub |
+| --------- | -------- | -------- |
+| Amanda | Arquiteta | [@AmandaMuniz](https://github.com/AmandaMuniz) |
+| Calebe | DevOps | [@caleberios](https://github.com/caleberios) |
+| Indiara | Produt Owner | [@inddiara](https://github.com/inddiara) |
+| Luciana | Tech Lead | [@lucianaribeiro](https://github.com/lucianaribeiro) |
+| Eduardo | Dev | [@Ed_Lv](https://github.com/Ed_Lv) |
+| Luís | Dev | [@LhTaira](https://github.com/LhTaira) |
+| Micaella | Dev | [@micaellagouveia](https://github.com/micaellagouveia) |
+| Samuel | Dev | [@SamButers](https://github.com/SamButers) |
+| Sofia | Dev | [@sofiapatrocinio](https://github.com/sofiapatrocinio) |
