@@ -1,8 +1,9 @@
 - [Home](/)
 
 - [**Produto**](/produto/)
-  - [TAP](produto/TAP.md)
-  - [EAP](produto/EAP.md)
+  - [Termo de Abertura do Projeto](produto/TAP.md)
+  - [Estrutura Analítica do Projeto](produto/EAP.md)
+  - [Canvas](produto/canvas.md)
   - [Requisitos](produto/requisitos.md)
   - [Protótipo de Baixa Fidelidade](/produto/prototipo.md)
 
@@ -12,5 +13,6 @@
   - [Plano de Metodologia](/projeto/planoMetodologia.md)
   - [Documento de Visão](projeto/DocVisao.md)
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
+  - [Plano de Métricas](projeto/planoMetricas.md)
 
 - [**Sprints**](/sprints/)
