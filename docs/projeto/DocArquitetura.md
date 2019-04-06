@@ -45,7 +45,7 @@
 &emsp; [4.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#_42-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura) <br>
 &emsp; &emsp; [4.2.1 Diagrama de Pacotes](#_421-diagrama-de-pacotes) <br>
 &emsp; &emsp; [4.2.2 Diagrama de Classes](#_422-diagrama-de-classes) <br>
-&emsp; &emsp; [4.2.3 Diagrama de Classes](#_423-diagrama-de-classes) <br>
+&emsp; &emsp; [4.2.3 Diagramas de Fluxo](#_423-diagramas-de-fluxo) <br>
 
 ## 1. Introdução
 ### 1.1 Finalidade
