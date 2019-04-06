@@ -2,6 +2,7 @@
 
 - [**Produto**](/produto/)
   - [TAP](produto/TAP.md)
+  - [EAP](produto/EAP.md)
   - [Requisitos](produto/requisitos.md)
 
 - [**Projeto**](/projeto/)
