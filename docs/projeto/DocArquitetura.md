@@ -1,6 +1,6 @@
 # Chatbot Wendy
 ### Arquitetura
-#### Versão 1.4
+#### Versão 1.5
 
 ## Histórico de Revisão
 
@@ -11,6 +11,7 @@
 |29/03/2019|   1.2  |Criação dos tópicos 3.1 e 3.2                                         |Micaella Gouveia    |
 |29/03/2019|   1.3  |Criação do tópico 1                                                   |Samuel Pereira      |
 |29/03/2019|   1.4  |Criação dos tópicos 2.4.1, 2.4.2,  2.4.3 e 2.4.4.                     |Luis Henrique Taira |
+|29/03/2019|   1.5  |Adição dos tópicos 4.1,4.2,4.3  e revisão do document                 |Micaella Gouveia    |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
