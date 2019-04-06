@@ -17,7 +17,7 @@ A Wendy é um chatbot desenvolvido em RASA e NODEJS com o objetivo auxiliar a vi
 | Calebe | DevOps | [@caleberios](https://github.com/caleberios) |
 | Indiara | Produt Owner | [@inddiara](https://github.com/inddiara) |
 | Luciana | Tech Lead | [@lucianaribeiro](https://github.com/lucianaribeiro) |
-| Eduardo | Dev | [@Ed_Lv](https://github.com/Ed_Lv) |
+| Eduardo | Dev | [@Ed-Lv](https://github.com/Ed-Lv) |
 | Luís | Dev | [@LhTaira](https://github.com/LhTaira) |
 | Micaella | Dev | [@micaellagouveia](https://github.com/micaellagouveia) |
 | Samuel | Dev | [@SamButers](https://github.com/SamButers) |
