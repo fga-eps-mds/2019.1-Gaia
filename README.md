@@ -4,8 +4,14 @@ A Wendy é um chatbot desenvolvido em RASA e NODEJS com o objetivo auxiliar a vi
 
 # Quer contribuir para o projeto? 
 
-É bem simples saber como contribuir para o projeto, acesso o nosso [Guia de Contribuição](https://github.com/fga-eps-mds/2019.1-Wendy/blob/master/CONTRIBUTING.md), caso tenha alguma dúvida, não se desespere, abra uma issue!
+É bem simples saber como contribuir para o projeto, acesso o nosso [Guia de Contribuição](https://github.com/fga-eps-mds/2019.1-Wendy/blob/master/CONTRIBUTING.md). Caso tenha alguma dúvida, não se desespere, abra uma issue!
 
-## Está com dúvida sobre o código de conduta para contribuir? 
+## Está com dúvida sobre o código de conduta para contribuir? Acesse [aqui](https://github.com/fga-eps-mds/2019.1-Wendy/blob/master/CODE_OF_CONDUCT.md)
 
-Acesse [aqui](https://github.com/fga-eps-mds/2019.1-Wendy/blob/master/CODE_OF_CONDUCT.md)
+
+## TIME
+
+| Amanda | Calebe | Indiara | Luciana | Eduardo | Luís | Micaella | Samuel | Sofia |
+| --------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- | -------- |
+| Arquiteta | DevOps | Project Owner | Tech Lead | Dev | Dev | Dev | Dev | Dev |
+| [@AmandaMuniz](https://github.com/AmandaMuniz) | [@caleberios](https://github.com/caleberios) | [@inddiara](https://github.com/inddiara) | [@lucianaribeiro](https://github.com/lucianaribeiro) | [@Ed_Lv](https://github.com/Ed_Lv) | [@LhTaira](https://github.com/LhTaira) | [@micaellagouveia](https://github.com/micaellagouveia) | [@SamButers](https://github.com/SamButers) | [@sofiapatrocinio](https://github.com/sofiapatrocinio) |
