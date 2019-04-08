@@ -13,5 +13,6 @@
   - [Plano de Metodologia](/projeto/planoMetodologia.md)
   - [Documento de Visão](projeto/DocVisao.md)
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
+  - [Plano de Métricas](projeto/planoMetricas.md)
 
 - [**Sprints**](/sprints/)
