@@ -3,11 +3,8 @@
   
 
 | Data |Versão|Modificação|Autor|
-
 |:-----|:-----|:----------|:----|
-
 |04/04/2019|1.0|Criação do documento|Sofia Patocinio|
-
 |05/04/2019|1.1|Revisão dos tópicos|Sofia Patrocinio, Luis Taira e Micaella Gouveia|
 
   
