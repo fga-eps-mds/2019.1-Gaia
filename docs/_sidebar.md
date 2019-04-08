@@ -5,6 +5,7 @@
   - [Estrutura Analítica do Projeto](produto/EAP.md)
   - [Canvas](produto/canvas.md)
   - [Requisitos](produto/requisitos.md)
+  - [Manual de Identidade Visual](produto/manualDeIdentidadeVisual.md)
   - [Protótipo de Baixa Fidelidade](/produto/prototipo.md)
 
 - [**Projeto**](/projeto/)
