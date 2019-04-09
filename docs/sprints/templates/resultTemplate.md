@@ -39,22 +39,26 @@
 
 << Textinho sobre o Burndown >>
 
-<< Imagem do Burndown >>
+![Burndown Sprint X](../../assets/imgs/burndown/)
 
 
 ## Velocity
 
 << Textinho sobre o Velocity >>
 
-<< Imagem do Velocity >>
+![Velocity Sprint X](../../assets/imgs/velocity/)
 
 
 ## Retrospectiva: Aprendizados obtidos na *Sprint X* 
 
-<< Quadro com pontos positivos, negativos e a melhorar >>
+![Retrospectiva Sprint X](../../assets/imgs/retrospectiva/)
 
 
 ## Quadro de Conhecimento 
+
+
+
+# Health Check 
 
 
 ### Observações levantadas ao longo da reunião

@@ -1,7 +1,7 @@
 # PLANEJAMENTO - Sprint 2
 ### Período: 30/3/19 a 6/4/19
 
-O objetivo da Sprint 2 é orientar o time de MDS na construção da primeira História de Usuário que eles vão criar. É decisão de EPS que o time de MDS construa um chatbot qualquer para treinar, visando iniciar o código em Rasa na próxima Sprint. EPS deve continuar configurante ambiente e integração contínua, criar os documentos de análise e monitoramento do projeto. 
+O objetivo da Sprint 2 é orientar o time de MDS na construção da primeira História de Usuário que eles vão criar. É decisão de EPS que o time de MDS construa um chatbot qualquer para treinar, visando iniciar o código em Rasa na próxima Sprint. EPS deve continuar configurando ambiente e integração contínua, criar os documentos de análise e monitoramento do projeto. 
 
 
 ### Planejamento: Planejamento da Sprint 2
