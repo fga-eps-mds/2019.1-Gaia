@@ -57,7 +57,7 @@ O objetivo da Sprint 1 foi instruir o time de MDS para que o Documento de Visão
 ## Velocity
 
 
-![Burndown Sprint 1](../../assets/imgs/velocity/Velocity-Sprint1.png)
+![Velocty Sprint 1](../../assets/imgs/velocity/Velocity-Sprint1.png)
 
 
 
