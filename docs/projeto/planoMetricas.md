@@ -1,7 +1,7 @@
 # Plano de Métricas do Projeto
 
 <p>O Plano de Métricas tem como objetivo descrever todas as ferramentas e métodos utilizados para coletar as métricas e indicadores do projeto. As métricas e indicadores levantados serão levados para todo o time e as decisões serão tomadas em conjunto, levando para a equipe, a importância e o valor de coletar métricas.</p>
-<p>É muito importante lembrar que os indicadores permitem  um aspecto muito importante do <b>Manifesto de Desenvolvimento Ágil</b>:<b> Melhoria Contínua</b>, ou seja, a partir do momento em que a equipe perceber algum problema por meio da coleta de dados, será possível então procurar sempre melhorar</p>
+<p>É muito importante lembrar que os indicadores permitem  um aspecto muito importante do <b>Manifesto de Desenvolvimento Ágil</b>:<b> Melhoria Contínua</b>, ou seja, avaliando a produtividade do time e percebendo algum problema por meio da coleta de dados, será possível então procurar melhorar</p>
 
 ### "Não se gerencia o que não se mede" - William Deming
 
@@ -21,4 +21,11 @@ O objtivo do Health Check é uma ferramenta para analisar o panorama geral da si
 ## Quadro de conhecimento
 
 O quadro de conhecimento tem como objetivo servir de monitoramento do conhecimento da equipe e ele deve ser modificado toda sprint para que seja possível ver o progresso do time.
+
+
+## Cumulative Flow
+
+O Cumulative Flow é um gráfico que mostra como está o andamento das issues ao longo dos dias. Por exemplo, é possível avaliar em qual época da sprint mais issues estão em progresso, ou quando em que época o time costuma finalizar mais issues. A partir disso é possível tomar decisões para que a entrega contínua melhore.
+
+
 

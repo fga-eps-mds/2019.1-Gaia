@@ -1,4 +1,4 @@
-# Gaia
+# GAIA
 
 A Gaia é um chatbot desenvolvido em RASA e NODEJS com o objetivo auxiliar a vida de praticantes de atividas ao ar livre. Por meio de interpretação de linguagem natural, o usuário poderá receber informações a respeito das condições climáticas em tempo real. A Gaia fornecerá informações por meio de notificação e também sugestões de melhores esportes de acordo com o clima. 
 
