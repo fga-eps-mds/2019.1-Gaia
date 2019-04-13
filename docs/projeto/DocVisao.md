@@ -1,4 +1,4 @@
-# Chatbot Wendy
+# Chatbot Gaia
 ### Visão
 #### Versão 2.1
 
@@ -61,7 +61,7 @@
 
 ## 1. Introdução
 ### 1.1 Objetivo
-Esse documento visa especificar de maneira geral as características do desenvolvimento do ChatBot Wendy, deixando claro seu objetivo, razão de sua necessidade, características, utilidade e requisitos do sistema.
+Esse documento visa especificar de maneira geral as características do desenvolvimento do ChatBot Gaia, deixando claro seu objetivo, razão de sua necessidade, características, utilidade e requisitos do sistema.
 
 ### 1.2 Escopo
 O Chatbot possuirá duas funcionalidades principais. Essas funcionalidades juntas, formam o escopo do software, que será entregue completo ao final da segunda release. O bot terá como primeira responsabilidade enviar notificações sobre o clima da cidade que o usuário cadastrar. Assim, o usuário poderá definir uma cidade e os dias em que precisa ser notificado e o bot terá que, na quantidade de dias desejados, enviar notificações diariamente.
@@ -83,12 +83,12 @@ A segunda responsabilidade do bot será a identificação dos esportes que podem
  - ADIDA, Ben. Understanding Open-Source Licensing. Disponível em: [https://openacs.org/about/licensing/open-source-licensing](https://openacs.org/about/licensing/open-source-licensing). Acesso em: 24 mar. 2019.
  
 ### 1.5 Visão Geral
-Este documento descreve de forma detalhada o embasamento, o planejamento e a construção do ChatBot Wendy. Para isso, serão apresentados tópicos referentes a declaração do problema que iremos solucionar, posicionamento do produto em relação ao mercado, as partes interessadas e usuários, perspectiva geral do produto: recursos e restrições, e requisitos para a aplicação do produto e documentação necessária para o bom andamento da aplicação.
+Este documento descreve de forma detalhada o embasamento, o planejamento e a construção do ChatBot Gaia. Para isso, serão apresentados tópicos referentes a declaração do problema que iremos solucionar, posicionamento do produto em relação ao mercado, as partes interessadas e usuários, perspectiva geral do produto: recursos e restrições, e requisitos para a aplicação do produto e documentação necessária para o bom andamento da aplicação.
 
 ## 2. Planejamento
 ### 2.1 Oportunidade de Negócios
 No contexto atual, a obtenção de informações acerca do clima são comumente feitas através de jornais ou páginas da web, sendo que a primeira opção não pode ser consultada a qualquer momento e não oferece uma informação em tempo real, mas sim uma previsão, enquanto a última opção, embora de melhor acesso, falte com a automatização do processo para tornar as consultas mais eficazes e bem planejadas.
-Dessa forma, o Chatbot Wendy busca solucionar o problema de uma forma tecnológica e inteligente, disponibilizando aos usuários dados em tempo real a respeito do clima e recomendações de atividades esportivas referente aos dados recebidos, tal como a possibilidade de consultas automáticas agendadas pelo próprio usuário através de notificações.
+Dessa forma, o Chatbot Gaia busca solucionar o problema de uma forma tecnológica e inteligente, disponibilizando aos usuários dados em tempo real a respeito do clima e recomendações de atividades esportivas referente aos dados recebidos, tal como a possibilidade de consultas automáticas agendadas pelo próprio usuário através de notificações.
 
 ### 2.2 Declaração do Problema
 <table>
@@ -121,7 +121,7 @@ Dessa forma, o Chatbot Wendy busca solucionar o problema de uma forma tecnológi
 		<td>Desejam um melhor planejamento diário em relação ao clima</td>
 	</tr>
 	<tr>
-		<td><b>O Wendy</b></td>
+		<td><b>O Gaia</b></td>
 		<td>É um Chatbot</td>
 	</tr>
 	<tr>
@@ -154,7 +154,7 @@ Dessa forma, o Chatbot Wendy busca solucionar o problema de uma forma tecnológi
 | Atleta | Pessoas interessadas em receber informações sobre atividades físicas de acordo com o clima atual. | Utilizar o ChatBot nas plataformas disponíveis. |
 
 ### 3.3 Ambiente do Usuário
-O Chatbot Wendy poderá ser acessado através do Facebook e Telegram. Sendo necessário um browser ou aplicativo do Facebook ou aplicativo do Telegram, conexão com a internet e uma conta na plataforma Facebook ou Telegram.
+O Chatbot Gaia poderá ser acessado através do Facebook e Telegram. Sendo necessário um browser ou aplicativo do Facebook ou aplicativo do Telegram, conexão com a internet e uma conta na plataforma Facebook ou Telegram.
 
 ### 3.4 Perfis das partes interessadas
 #### 3.4.1 Equipe de Desenvolvimento
@@ -341,7 +341,7 @@ A inexperiência e o período de tempo curto podem se tornar empecilhos para a p
 ### 6.3 Restrições de Design
 O sistema deve ser feito em uma interface de fácil usabilidade, tornando-o intuitivo para o usuário.
 ### 6.4  Restrições de Uso
-Para  utilizar o ChatBot Wendy, o usuário deve ter uma conexão com a internet, possuir uma conta no Facebook com acesso ao Messenger ou conta no Telegram.
+Para  utilizar o ChatBot Gaia, o usuário deve ter uma conexão com a internet, possuir uma conta no Facebook com acesso ao Messenger ou conta no Telegram.
 ### 6.5  Restrições de Confiabilidade
 O sistema terá uma cobertura de testes, de no mínimo 90% do sistema.
 

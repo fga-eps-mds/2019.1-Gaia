@@ -4,7 +4,7 @@
 O TAP é um documento, cujo objetivo é autorizar formalmente a existência de um projeto. Ele concede ao(s) gerente(s) de projeto a autoridade para aplicar recursos organizacionais nas atividades do projeto. Além disso, o TAP documenta informações de alto nível sobre o produto que o projeto deve satisfazer, como: descrição do projeto; justificativa; objetivo; requisitos de alto nível; riscos; recursos financeiros e stakeholders.
 
 ## 2. Descrição
-A Wendy é um chatbot disponível nos serviços de mensagens instantâneas Telegram e Facebook Messenger. Esse chatbot fornece informações e notifica à respeito das condições climáticas de qualquer local do mundo, e também recomenda os melhores esportes a serem praticados conforme o clima de uma localidade específica escolhida pelo usuário.
+A Gaia é um chatbot disponível nos serviços de mensagens instantâneas Telegram e Facebook Messenger. Esse chatbot fornece informações e notifica à respeito das condições climáticas de qualquer local do mundo, e também recomenda os melhores esportes a serem praticados conforme o clima de uma localidade específica escolhida pelo usuário.
 
 
 ## 3. Justificativa
@@ -17,10 +17,10 @@ Em algumas cidades, como Recife, a intensidade média dos ventos varia entre 21 
 Nesse sentido, surge a necessidade de uma solução simples e intuitiva para que informações meteorológicas atualizadas referentes à qualquer lugar do mundo possam ser mais facilmente visualizadas por praticantes de modalidades ao ar livre.
 
 ## 4. Objetivo
-O objetivo da Wendy é notificar o praticante de modalidades ao ar livre exibindo informações acerca das condições climáticas de quaisquer localidades no mundo e que eles saibam qual esporte mais se adequa àquela condição em específico. Algumas das informações que estarão disponíveis ao usuário são: rajadas de vento, temperatura, umidade, pressão, precipitação, etc.
+O objetivo da Gaia é notificar o praticante de modalidades ao ar livre exibindo informações acerca das condições climáticas de quaisquer localidades no mundo e que eles saibam qual esporte mais se adequa àquela condição em específico. Algumas das informações que estarão disponíveis ao usuário são: rajadas de vento, temperatura, umidade, pressão, precipitação, etc.
 
 ## 5. Requisitos de alto-nível
-A Wendy será um chatbot e seus requisitos de alto nível são:
+A Gaia será um chatbot e seus requisitos de alto nível são:
 - Enviar notificação sobre o clima do local que o usuário desejar;
 - Personalizar os dias de envio das notificações;
 - Exibir os melhores esportes a serem praticados conforme a condição meteorológica do dia;
@@ -38,7 +38,7 @@ O gerenciamento dos riscos do projeto inclui os processos de condução do plane
 - Atraso nas entregas.
 
 ## 7. Estimativa de Custos
-O processo de Planejar o Gerenciamento de Custos envolve a definição e o destino dos recursos disponíveis para o projeto. Em projetos de TI, normalmente esses recursos são destinados a pessoal e infraestrutura, contando algumas vezes com elementos de treinamento e implantação do produto ou serviço. Dessa forma, segue abaixo uma estimativa de custo do chatbot Wendy.
+O processo de Planejar o Gerenciamento de Custos envolve a definição e o destino dos recursos disponíveis para o projeto. Em projetos de TI, normalmente esses recursos são destinados a pessoal e infraestrutura, contando algumas vezes com elementos de treinamento e implantação do produto ou serviço. Dessa forma, segue abaixo uma estimativa de custo do chatbot Gaia.
 
 ### 7.1 Aquisição
 | Produto | Finalidade | Valor | Quantidade | Total | Fornecedor |
