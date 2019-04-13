@@ -18,23 +18,23 @@
 <div class="comunications-imgs">
     <div class="images-info">
         <h3>Telegram</h3>
-        <img src="../assets/imgs/comunication/telegram.png">
+        <img src="../assets/imgs/comunication/telegram.png" alt="..." class="img-thumbnail image">
     </div>
     <div class="images-info">
         <h3>GitHub</h3>
-        <img src="../assets/imgs/comunication/github.png">
+        <img src="../assets/imgs/comunication/github.png" alt="..." class="img-thumbnail image">
     </div>
     <div class="images-info">
         <h3>ZenHub</h3>
-        <img src="../assets/imgs/comunication/zenhub.png">
+        <img src="../assets/imgs/comunication/zenhub.png" alt="..." class="img-thumbnail image">
     </div>
     <div class="images-info">
         <h3>Google Hangouts</h3>
-        <img src="../assets/imgs/comunication/hangouts.png">
+        <img src="../assets/imgs/comunication/hangouts.png" alt="..." class="img-thumbnail image">
     </div>
     <div class="images-info">
         <h3>Google Drive</h3>
-        <img src="../assets/imgs/comunication/drive.png">
+        <img src="../assets/imgs/comunication/drive.png" alt="..." class="img-thumbnail image">
     </div>
 </div>
 
