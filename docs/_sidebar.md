@@ -9,6 +9,7 @@
   - [Protótipo de Baixa Fidelidade](/produto/prototipo.md)
 
 - [**Projeto**](/projeto/)
+  - [Plano de Comunicação](/projeto/planoComunicacao.md)
   - [Processo de Implementação](/projeto/processo.md)
   - [Roadmap dos Papéis](/projeto/RoadmapPapeis.md)
   - [Plano de Metodologia](/projeto/planoMetodologia.md)
