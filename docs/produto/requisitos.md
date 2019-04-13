@@ -47,6 +47,7 @@ EP 04 - Acompanhamento de furacões
 | 03 | Eu, como usuário, desejo interagir com a Gaia para que ela me responda | 01 | 01, 02 | | Alta |
 | 04 | Eu, como usuário, desejo que o sistema salve os locais com suas latitudes e longitudes para que o sistema não precise fazer diversas requisições | 02 | 01 |  | Média |
 | 05 | Eu, como usuário, desejo que a API Clima chame a API Local para que o sistema possa receber o clima do local | 01 | 01 | | Média |
+| 06 | Eu, como usuário, desejo que a Gaia me informe as condições metereológicas de um determinado local para que eu consiga visualizá-las | 01 | 01 | | Alta |
 
 
 
