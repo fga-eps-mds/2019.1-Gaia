@@ -1,6 +1,7 @@
 - [Home](/)
 
 - [**Produto**](/produto/)
+  - [Documento de Visão](produto/DocVisao.md)
   - [Termo de Abertura do Projeto](produto/TAP.md)
   - [Estrutura Analítica do Projeto](produto/EAP.md)
   - [Canvas](produto/canvas.md)
@@ -13,7 +14,6 @@
   - [Processo de Implementação](/projeto/processo.md)
   - [Roadmap dos Papéis](/projeto/RoadmapPapeis.md)
   - [Plano de Metodologia](/projeto/planoMetodologia.md)
-  - [Documento de Visão](projeto/DocVisao.md)
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
   - [Plano de Métricas](projeto/planoMetricas.md)
 
