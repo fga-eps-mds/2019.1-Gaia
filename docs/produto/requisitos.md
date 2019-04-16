@@ -8,7 +8,51 @@
 
 <p align="justify">&emsp;&emsp;A introspecção é uma técnica muito utilizada na etapa de elicitação. Ela consiste em entender as funcionalidades importantes de um sistema. Apesar de muito usada nem sempre a introspecção traz uma visão próxima da realidade, para evitar isso a Product Owner esteve presente na elicitação levando em conta a sua visão do produto.</p>
 
-# Resultados
+
+# Backlog do Produto
+
+O Backlog do Produto é uma lista contendo todas as funcionalidades desejadas para o chatbot Gaia. O conteúdo desta lista é definido pelo Product Owner. O Product Backlog não precisa estar completo no início de um projeto. Pode-se começar com tudo aquilo que é mais óbvio em um primeiro momento. Com o passar das sprints, o Product Backlog cresce e muda à medida que se aprende mais sobre o produto e seus usuários. 
+
+Os requisitos do chatbot estão subdivididos em **Épicos**, **Features**, **Histórias de usuário** e **Tasks**. 
+
+## Épicos
+EP 01 - Consulta à meteorologia
+
+EP 02 - Sugestão de modalidades
+
+EP 03 - Gerenciamento de notificações
+
+EP 04 - Acompanhamento de furacões
+
+
+## Features
+
+| ID | Descrição | Épico |
+| -- | --------- | ----- |
+| 01 | Exibir previsão do tempo de um local | 01 |  
+| 02 | Manter localidade | 01 | 
+| 03 | Exibir previsão tempo dos próximos 5 dias | 01 |
+| 04 | Salvar parâmetros de modalidade | 02 |
+| 05 | Relacionar previsão do tempo com modalidades | 02 |
+| 06 | Exibir modalidades favoráveis | 02 |
+| 07 | Enviar notificações | 03 | 
+| 08 | Personalizar envio de notificações | 03 | 
+| 09 | Cancelar envio de notificações | 03 | 
+
+## Histórias de Usuário
+| ID | Descrição | Feature | Épico | Pontos | Prioridade |
+| -- | --------- | ------- | ----- | ------ | ---------- |
+| 01 | Eu, como usuário, desejo que o sistema obtenha o clima de uma cidade para que eu possa saber as condições climáticas do dia | 01 | 01 | | Alta |
+| 02 | Eu, como usuário, desejo que o sistema obtenha a latitute e a logitude de qualquer lugar do mundo a partir da API do Google Maps | 02 | 01 | | Média |
+| 03 | Eu, como usuário, desejo interagir com a Gaia para que ela me responda | 01 | 01, 02 | | Alta |
+| 04 | Eu, como usuário, desejo que o sistema salve os locais com suas latitudes e longitudes para que o sistema não precise fazer diversas requisições | 02 | 01 |  | Média |
+| 05 | Eu, como usuário, desejo que a API Clima chame a API Local para que o sistema possa receber o clima do local | 01 | 01 | | Média |
+| 06 | Eu, como usuário, desejo que a Gaia me informe as condições metereológicas de um determinado local para que eu consiga visualizá-las | 01 | 01 | | Alta |
+
+
+
+
+<!-- # Resultados
 
 ## 1. Clima
 
@@ -54,4 +98,4 @@
 - O sistema deve ter integração com o Facebook;
 - O sistema deve conversar com o usuário em linguagem natural;
 - O sistema deve respeitar a personalidade do bot;
-- O sistema deve aprender novos comportamentos de acordo com a resposta do usuário;
+- O sistema deve aprender novos comportamentos de acordo com a resposta do usuário; -->

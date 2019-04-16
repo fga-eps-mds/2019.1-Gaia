@@ -1,6 +1,6 @@
-# Chatbot Wendy
+# Chatbot Gaia
 ### Arquitetura
-#### Versão 1.5
+#### Versão 1.6
 
 
 ## Histórico de Revisão
@@ -13,6 +13,7 @@
 |29/03/2019|   1.3  |Criação do tópico 1                                                   |Samuel Pereira      |
 |29/03/2019|   1.4  |Criação dos tópicos 2.4.1, 2.4.2,  2.4.3 e 2.4.4.                     |Luis Henrique Taira |
 |05/04/2019|   1.5  |Adição dos tópicos 4.2.1,4.2.2,4.2.3, revisão e formatação do documento          |Micaella Gouveia    |
+|12/04/2019| 1.6 | Adição do tópico 2.3 |Amanda Muniz |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -30,6 +31,8 @@
 &emsp; &emsp; [2.2.4 Busca Local](#_224-busca-local) <br>
 &emsp; &emsp; [2.2.5 API Gateway](#_225-api-gateway) <br>
 &emsp; [2.3 Padrões](#_23-padrões) <br>
+&emsp; &emsp; [2.3.1 Padrão API Gateway](#_231-padrão-api-gateway) <br>
+&emsp; &emsp; [2.3.2 Padrão API Composition](#_232-padrão-api-composition) <br>
 &emsp; [2.4 Tecnologias](#_24-tecnologias) <br>
 &emsp; &emsp; [2.4.1 API de bot do Telegram](#_241-api-de-bot-do-telegram) <br>
 &emsp; &emsp; [2.4.2 API de mensagens do Facebook Messenger](#_242-api-de-mensagens-do-facebook-messenger) <br>
@@ -49,10 +52,10 @@
 
 ## 1. Introdução
 ### 1.1 Finalidade
-<p align="justify">&emsp;&emsp;Este documento tem como finalidade fornecer uma visão geral da arquitetura do Wendy, utilizando-se de diversas visões arquiteturais - tais como a visão lógica e de caso de uso  - a fim de facilitar o entendimento dos processos e funcionamento de todo o sistema. Tem também como objetivo transmitir as decisões arquiteturais significativas tomadas em relação ao mesmo.</p>
+<p align="justify">&emsp;&emsp;Este documento tem como finalidade fornecer uma visão geral da arquitetura do Gaia, utilizando-se de diversas visões arquiteturais - tais como a visão lógica e de caso de uso  - a fim de facilitar o entendimento dos processos e funcionamento de todo o sistema. Tem também como objetivo transmitir as decisões arquiteturais significativas tomadas em relação ao mesmo.</p>
 
 ### 1.2 Escopo
-<p align="justify">&emsp;&emsp;Através desse documento, é possível obter um melhor entendimento da arquitetura do Wendy, permitindo ao leitor compreender o funcionamento de seu sistema, como também a abordagem utilizada para o seu desenvolvimento.</p>
+<p align="justify">&emsp;&emsp;Através desse documento, é possível obter um melhor entendimento da arquitetura do Gaia, permitindo ao leitor compreender o funcionamento de seu sistema, como também a abordagem utilizada para o seu desenvolvimento.</p>
 
 ### 1.3 Definições, Acrônimos e Abreviações
 | Termo | Definição |
@@ -70,9 +73,11 @@
 >MARIOTTI, Flávio. Como documentar a Arquitetura de Software. Disponível em: <http://www.linhadecodigo.com.br/artigo/3343/como-documentar-a-arquitetura-de-software.aspx>. Acesso em: 29 de março de 2019.
 >SILVA, Ana Carolina; DINIZ, Arthur; OLIVEIRA, Bruna; SILVA, Guilherme; LACERDA, Guilherme; OLIVEIRA, Ícaro; GOMES, Weyler; BESSA, Cecília; FILHO, Elmar; CLÍMACO, Gabriel; FERREIRA, Maria Calorina; SOUZA, Júlio. Trezentos: Documento de Arquitetura. Disponível em: <https://github.com/fga-eps-mds/2017.1-Trezentos/wiki/Documento-de-Arquitetura>. Acesso em: 29 de março de 2019.
 >KAMAL, Byron; CERQUEIRA, Eduardo; ALVES, Gabriel; ARAGÃO, Igor; GUIMARÃES, Igor; JARDIM, João Pedro; DOS SANTOS, Marcelo; ASSUNÇÃO, Mateus; ALMEIDA, William. IncluCare: Architecture Document. Disponível em: <https://github.com/fga-eps-mds/2018.1-IncluCare_API/blob/master/docs/ARCHITECTURE_DOCUMENT.md>. Acesso em: 29 de março de 2019.
+>The API Gateway Pattern; Disponível em: <https://freecontent.manning.com/the-api-gateway-pattern/>; Acesso em 12 de abril de 2019.
+>RICHARDSON, Chris; Pattern: API Composition; Disponível em: <https://microservices.io/patterns/data/api-composition.html>; Acesso em 12 de abril de 2019.
 
 ### 1.5 Visão Geral
-<p align="justify">&emsp;&emsp;Este documento apresenta, de forma detalhada, a arquitetura, os requisitos e as decisões tomadas a respeito do Wendy.</p>
+<p align="justify">&emsp;&emsp;Este documento apresenta, de forma detalhada, a arquitetura, os requisitos e as decisões tomadas a respeito do Gaia.</p>
 <p align="justify">&emsp;&emsp;O documento está estruturado da seguinte maneira:</p>
 <ul>
 	<li>Histórico da Revisão: Responsável por deixar explícito cada alteração feita no documento e as informações a respeito do mesmo;</li>
@@ -89,14 +94,14 @@ processos pesados;</li>
 <li>Qualidade: descreve como a arquitetura do software contribui para todos os recursos (exceto a funcionalidade) do sistema.</li>
 </ul>
 
-## 2. Representação Arquitetural 
-### 2.1 Diagrama de Relações 
+## 2. Representação Arquitetural
+### 2.1 Diagrama de Relações
 
 ![alt text](https://i.imgur.com/cceUiwD.png)
 
-<p align="justify">&emsp;&emsp;O estilo arquitetural de microsserviços é uma abordagem que visa implementar uma aplicação como uma suíte de pequenos serviços. Onde cada um executa um processo próprio e se comunica, geralmente, com requests HTTP. Tendo em vista a principal característica desse estilo arquitetural, a independência entre os serviços, o chatbot Wendy terá microsserviços como parte de sua arquitetura. </p>
-<p align="justify">&emsp;&emsp;Além disso, cada serviço interno da Wendy terá seu próprio repositório. Destacando assim, mais uma característica desse estilo arquitetural, onde cada um deles terá seu próprio ambiente, tecnologias, integração contínua e deploy.</p> 
-<p align="justify">&emsp;&emsp;Os serviços que serão implementados na Wendy foram pensados para serem modulares, muitas vezes existindo apenas para executar uma função específica. Sendo assim, os serviços internos que fazem parte da Wendy são:</p>
+<p align="justify">&emsp;&emsp;O estilo arquitetural de microsserviços é uma abordagem que visa implementar uma aplicação como uma suíte de pequenos serviços. Onde cada um executa um processo próprio e se comunica, geralmente, com requests HTTP. Tendo em vista a principal característica desse estilo arquitetural, a independência entre os serviços, o chatbot Gaia terá microsserviços como parte de sua arquitetura. </p>
+<p align="justify">&emsp;&emsp;Além disso, cada serviço interno da Gaia terá seu próprio repositório. Destacando assim, mais uma característica desse estilo arquitetural, onde cada um deles terá seu próprio ambiente, tecnologias, integração contínua e deploy.</p>
+<p align="justify">&emsp;&emsp;Os serviços que serão implementados na Gaia foram pensados para serem modulares, muitas vezes existindo apenas para executar uma função específica. Sendo assim, os serviços internos que fazem parte da Gaia são:</p>
 <ul>
 <li>API Gateway;</li>
 <li>Cronjob Notifica;</li>
@@ -109,29 +114,39 @@ processos pesados;</li>
 <li>API Facebook;</li>
 <li>API OpenWeatherMaps;</li>
 <li>API GoogleMaps.</li></ul>
-<p align="justify">&emsp;&emsp;Além do comportamento interno da Wendy, outro fator importante a ser considerado é a criação do chatbot em si. Para isso, vários fatores precisam ser considerados, como o uso de linguagem natural. Por isso, será utilizado a tecnologia Rasa, que se divide em Rasa Core e Rasa NLU. Rasa Core é de extrema importância para criar um bot baseado em Machine Learning. Já o Rasa NLU é responsável pelo processamento da linguagem natural. Essa combinação vai garantir que a Wendy tenha uma comunicação acessível com o usuário.</p> 
+<p align="justify">&emsp;&emsp;Além do comportamento interno da Gaia, outro fator importante a ser considerado é a criação do chatbot em si. Para isso, vários fatores precisam ser considerados, como o uso de linguagem natural. Por isso, será utilizado a tecnologia Rasa, que se divide em Rasa Core e Rasa NLU. Rasa Core é de extrema importância para criar um bot baseado em Machine Learning. Já o Rasa NLU é responsável pelo processamento da linguagem natural. Essa combinação vai garantir que a Gaia tenha uma comunicação acessível com o usuário.</p>
 
 ### 2.2 Representação dos Microsserviços
 
-#### 2.2.1 Cronjob Notifica 
-<p align="justify">&emsp;&emsp;O termo Cronjob ou Cron Job refere-se a tarefas que são executadas de forma automática dado um intervalo de tempo. Por isso, um microsserviço essencial para a Wendy é um cronjob de notificação. Ele será responsável por registrar as preferências de um usuário, sendo elas, uma cidade e um tempo determinado para a notificação; além de mandar o alerta para o chat com as condições climáticas da localização desejada no período esperado pelo usuário.</p>
+#### 2.2.1 Cronjob Notifica
+<p align="justify">&emsp;&emsp;O termo Cronjob ou Cron Job refere-se a tarefas que são executadas de forma automática dado um intervalo de tempo. Por isso, um microsserviço essencial para a Gaia é um cronjob de notificação. Ele será responsável por registrar as preferências de um usuário, sendo elas, uma cidade e um tempo determinado para a notificação; além de mandar o alerta para o chat com as condições climáticas da localização desejada no período esperado pelo usuário.</p>
 
 #### 2.2.2 Busca Clima
 <p align="justify">&emsp;&emsp;O microsserviço “Busca Clima” é responsável por fazer requisições para a API externa do OpenWeatherMaps. A necessidade dessa funcionalidade ocorre por haver uma limitação de requisições diárias na versão livre dessa API. Dessa forma, todos os pedidos de dados feitos ao OpenWeatherMaps estarão centralizadas em um só local. Além disso, esse microsserviço também será responsável por informar o usuário sobre as condições climáticas de qualquer local do mundo.</p>
 
-#### 2.2.3 Escolhe Esporte 
+#### 2.2.3 Escolhe Esporte
 <p align="justify">&emsp;&emsp;Este microsserviço tem como responsabilidade indicar um esporte ou uma lista de esportes ao usuário, baseado nas condições climáticas da cidade. Ou seja, o usuário perguntará quais são os melhores esportes para serem praticados naquele determinado clima, e o microsserviço terá que comparar as variáveis presentes nas condições climáticas, com a condição climática ideal dos esportes e retornar esse informação ao usuário.</p>
 
 #### 2.2.4 Busca Local
 <p align="justify">&emsp;&emsp;O microsserviço “Busca Local” é responsável por receber o nome de uma cidade e responder com a sua latitude e longitude exata. Isso é necessário, uma vez que, a API OpenWeatherMaps não retorna informações com o nome exato do local como parâmetro - para cidades que não são capitais, mas se tiver a latitude e longitude sim. Por isso, um microsserviço responsável por fazer requisições a API do Google Maps é de extrema importância para manter um diálogo fácil com o usuário e retornar as informações certas sobre a condição climática.</p>
 
 #### 2.2.5 API Gateway
-<p align="justify">&emsp;&emsp;Dentro de uma arquitetura de microsserviços ter um API Gateway é importante para gerenciar o acesso às API’s de um determinado sistema. Ou seja, ele funciona com uma fachada sendo o único ponto de acesso, - que controla as entradas e saídas de dados, o tráfego de tarefas e monitora, - para as API’s internas. Sua existência reduz problemas causados pela interação entre cliente e microsserviços, além de conservar o ambiente dos serviços. </p>
+<p align="justify">&emsp;&emsp;Dentro de uma arquitetura de microsserviços ter um API Gateway é importante para gerenciar o acesso às API’s de um determinado sistema. Ou seja, ele é um padrão de software que funciona de forma similar a uma fachada sendo o único ponto de acesso, - que controla as entradas e saídas de dados, o tráfego de tarefas e monitora, - para as API’s internas. Sua existência reduz problemas causados pela interação entre cliente e microsserviços, além de conservar o ambiente dos serviços. </p>
 
-## 2.3 Padrões
-<p align="justify">&emsp;&emsp;Os padrões vão ser definidos durante a sprint 2.</p>
+### 2.3 Padrões
 
-## 2.4 Tecnologias 
+#### 2.3.1 Padrão API Gateway
+<p align="justify">&emsp;&emsp;Uma API Gateway é um serviço responsável por uma única entrada para os serviços internos. Ela organiza e recebe as requisições externas e as distribui para os microsserviços internos. Além disso, ela precisa se preocupar com as prioridades de requisição e com autenticação.</p>
+<p align="justify">&emsp;&emsp;O Padrão API Gateway é bastante similar ao padrão Facade (Fachada), já que também encapsula a arquitetura interna e provê uma API para os usuários. Suas principais responsabilidades são encaminhar as requisições, compor a API, gerenciar os requests utilizando o padrão API Composition, - ao chamar os diferentes microsserviços e agregar os resultados em uma resposta para o usuário. Cada uma dessas responsabilidades possui características próprias e para o entendimento do padrão API Gateway é preciso entender cada uma delas.</p>
+<p align="justify">&emsp;&emsp;O encaminhamento das requisições é uma das funções principais de uma API Gateway. Ela funciona implementando operações que encaminhem as requisições para o microsserviço correto.</p>
+<p align="justify">&emsp;&emsp;A composição da API garante que a API Gateway seja mais do que um conjunto de funções para encaminhar requisições. Essa composição é feita, geralmente, utilizando o padrão API Composition.</p>
+<p align="justify">&emsp;&emsp;Além dessas duas principais responsabilidades a API Gateway lida com funções como autenticação, autorização, respostas de cache, cors e requisições de log.</p>
+
+#### 2.3.2 Padrão API Composition
+<p align="justify">&emsp;&emsp;Ao encaminhar as requisições para os microsserviços internos a API Gateway irá desmembrar a requisição em pedidos menores e irá mandá-los para cada um dos microsserviços correspondentes. A papel do padrão API Composition é  pegar os resultados individuais de cada microsserviço anteriormente solicitado e compor uma resposta única que será mandado para o usuário.</p>
+
+
+## 2.4 Tecnologias
 
 #### 2.4.1 API do Bot de Telegram
 <p align="justify">&emsp;&emsp;A API de bot do Telegram permite que bots interajam diretamente com usuários por meio de mensagens e comandos.</p>
@@ -159,11 +174,11 @@ processos pesados;</li>
 <p align="justify">&emsp;&emsp;JavaScript é uma linguagem interpretada de alto nível é será utilizada no back end da aplicação em conjunto com o framework Node.js</p>
 
 
-## 3. Metas e Restrições de Arquitetura 
+## 3. Metas e Restrições de Arquitetura
 ### 3.1 Metas
 <p align="justify">&emsp;&emsp;Possuímos as seguintes metas:</p>
 Funcionar nos serviços de mensagens instantâneas Telegram e Messenger.
-Consumir as API’s do Telegram, Facebook, OpenWeatherMaps, GoogleMaps. 
+Consumir as API’s do Telegram, Facebook, OpenWeatherMaps, GoogleMaps.
 
 ### 3.2 Restrições
 <p align="justify">&emsp;&emsp;Possuímos as seguintes restrições:</p>
@@ -174,9 +189,9 @@ JavaScript : linguagem base do Node.js
 MongoDB : Software utilizado para o banco de dados
 
 
-## 4. Visão Lógica 
+## 4. Visão Lógica
 ### 4.1 Visão Geral
-<p align=”justify”>&emsp;&emsp; A aplicação do ChatBot Wendy é construída sobre o framework Rasa em linguagem Python no front-end e sobre a plataforma Node.js em linguagem JavaScript no back-end. O objetivo do RasaNLU é aplicar algoritmos de linguagem natural para extrair a intenção do usuário (intents) e a partir do Rasa Core é possível gerir o diálogo entre o usuário e o bot. A principal funcionalidade é o policy, que recebe a intent do usuário, atualiza o tracker() e prevê a melhor ação do bot (utter, action, listening). A plataforma Node.js é um ambiente de tempo de execução que executa o código em JavaScript para escrever ferramentas de linha de comando e para scripts do lado do servidor, capaz de executar uma entrada/saída assíncrona, que permite que outro processamento continue antes que a transmissão tenha encerrado.</p>
+<p align=”justify”>&emsp;&emsp; A aplicação do ChatBot Gaia é construída sobre o framework Rasa em linguagem Python no front-end e sobre a plataforma Node.js em linguagem JavaScript no back-end. O objetivo do RasaNLU é aplicar algoritmos de linguagem natural para extrair a intenção do usuário (intents) e a partir do Rasa Core é possível gerir o diálogo entre o usuário e o bot. A principal funcionalidade é o policy, que recebe a intent do usuário, atualiza o tracker() e prevê a melhor ação do bot (utter, action, listening). A plataforma Node.js é um ambiente de tempo de execução que executa o código em JavaScript para escrever ferramentas de linha de comando e para scripts do lado do servidor, capaz de executar uma entrada/saída assíncrona, que permite que outro processamento continue antes que a transmissão tenha encerrado.</p>
 
 ### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
@@ -194,4 +209,3 @@ MongoDB : Software utilizado para o banco de dados
 <p align="justify">&emsp;&emsp;Fluxo do Node.js:</p>
 
 ![alt text](https://i.imgur.com/TtAzsd6.png)
-
