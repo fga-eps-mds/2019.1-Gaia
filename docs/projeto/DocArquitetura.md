@@ -1,6 +1,6 @@
 # Chatbot Gaia
 ### Arquitetura
-#### Versão 1.6
+#### Versão 1.7
 
 
 ## Histórico de Revisão
@@ -14,6 +14,7 @@
 |29/03/2019|   1.4  |Criação dos tópicos 2.4.1, 2.4.2,  2.4.3 e 2.4.4.                     |Luis Henrique Taira |
 |05/04/2019|   1.5  |Adição dos tópicos 4.2.1,4.2.2,4.2.3, revisão e formatação do documento          |Micaella Gouveia    |
 |12/04/2019| 1.6 | Adição do tópico 2.3 |Amanda Muniz |
+|17/04/2019| 1.7 | Revisão geral, adição de novas versões dos diagramas, correção de informações |Amanda Muniz |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -109,27 +110,27 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 <li>Busca Clima;</li>
 <li>Escolhe Esporte;</li>
 <li>Busca Local.</li></ul>
-<p align="justify">&emsp;&emsp;Para a execução completa do projeto será necessário consumir dados de fontes externas, sendo elas:</p>
+<p align="justify">&emsp;&emsp;Para a execução completa do projeto será necessário o consumo de dados de fontes externas, sendo elas:</p>
 <ul>
 <li>API Telegram;</li>
 <li>API Facebook;</li>
 <li>API OpenWeatherMaps;</li>
-<li>API GoogleMaps.</li></ul>
+<li>API OpenCage Geocoder.</li></ul>
 <p align="justify">&emsp;&emsp;Além do comportamento interno da Gaia, outro fator importante a ser considerado é a criação do chatbot em si. Para isso, vários fatores precisam ser considerados, como o uso de linguagem natural. Por isso, será utilizado a tecnologia Rasa, que se divide em Rasa Core e Rasa NLU. Rasa Core é de extrema importância para criar um bot baseado em Machine Learning. Já o Rasa NLU é responsável pelo processamento da linguagem natural. Essa combinação vai garantir que a Gaia tenha uma comunicação acessível com o usuário.</p>
 
 ### 2.2 Representação dos Microsserviços
 
 #### 2.2.1 Cronjob Notifica
-<p align="justify">&emsp;&emsp;O termo Cronjob ou Cron Job refere-se a tarefas que são executadas de forma automática dado um intervalo de tempo. Por isso, um microsserviço essencial para a Gaia é um cronjob de notificação. Ele será responsável por registrar as preferências de um usuário, sendo elas, uma cidade e um tempo determinado para a notificação; além de mandar o alerta para o chat com as condições climáticas da localização desejada no período esperado pelo usuário.</p>
+<p align="justify">&emsp;&emsp;O termo Cronjob ou Cron Job refere-se a tarefas que são executadas de forma automática dado um intervalo de tempo. Por isso, um microsserviço essencial para a Gaia é um cronjob de notificação. Ele será responsável por manter um usuário e por registrar as preferências do mesmo, sendo elas, uma cidade e um tempo determinado para a notificação; além de mandar o alerta para o chat com as condições climáticas da localização desejada no período esperado pelo usuário.</p>
 
-#### 2.2.2 Busca Clima
-<p align="justify">&emsp;&emsp;O microsserviço “Busca Clima” é responsável por fazer requisições para a API externa do OpenWeatherMaps. A necessidade dessa funcionalidade ocorre por haver uma limitação de requisições diárias na versão livre dessa API. Dessa forma, todos os pedidos de dados feitos ao OpenWeatherMaps estarão centralizadas em um só local. Além disso, esse microsserviço também será responsável por informar o usuário sobre as condições climáticas de qualquer local do mundo.</p>
+#### 2.2.2 Gaia-Clima
+<p align="justify">&emsp;&emsp;O microsserviço Gaia-Clima é responsável por fazer requisições para a API externa do OpenWeatherMaps. A necessidade dessa funcionalidade ocorre por haver uma limitação de requisições diárias na versão livre dessa API. Dessa forma, todos os pedidos de dados feitos ao OpenWeatherMaps estarão centralizadas em um só local. Outro fator importante é que os dados fornecidos por essa API externa precisam de tratamento, como conversão e entre outros. Além disso, esse microsserviço será responsável por informar o usuário sobre as condições climáticas de qualquer local do mundo.</p>
 
-#### 2.2.3 Escolhe Esporte
+#### 2.2.3 Gaia-Esporte
 <p align="justify">&emsp;&emsp;Este microsserviço tem como responsabilidade indicar um esporte ou uma lista de esportes ao usuário, baseado nas condições climáticas da cidade. Ou seja, o usuário perguntará quais são os melhores esportes para serem praticados naquele determinado clima, e o microsserviço terá que comparar as variáveis presentes nas condições climáticas, com a condição climática ideal dos esportes e retornar esse informação ao usuário.</p>
 
-#### 2.2.4 Busca Local
-<p align="justify">&emsp;&emsp;O microsserviço “Busca Local” é responsável por receber o nome de uma cidade e responder com a sua latitude e longitude exata. Isso é necessário, uma vez que, a API OpenWeatherMaps não retorna informações com o nome exato do local como parâmetro - para cidades que não são capitais, mas se tiver a latitude e longitude sim. Por isso, um microsserviço responsável por fazer requisições a API do Google Maps é de extrema importância para manter um diálogo fácil com o usuário e retornar as informações certas sobre a condição climática.</p>
+#### 2.2.4 Gaia-Local
+<p align="justify">&emsp;&emsp;O microsserviço Gaia-Local é responsável por receber o nome de uma cidade e responder com a sua latitude e longitude exata. Isso é necessário, uma vez que, a API OpenWeatherMaps não retorna informações com o nome exato do local como parâmetro - para cidades que não são capitais, mas se tiver a latitude e longitude sim. Por isso, um microsserviço responsável por fazer requisições a API do OpenCage Geocoder é de extrema importância para manter um diálogo fácil com o usuário e retornar as informações certas sobre a condição climática.</p>
 
 #### 2.2.5 API Gateway
 <p align="justify">&emsp;&emsp;Dentro de uma arquitetura de microsserviços ter um API Gateway é importante para gerenciar o acesso às API’s de um determinado sistema. Ou seja, ele é um padrão de software que funciona de forma similar a uma fachada sendo o único ponto de acesso, - que controla as entradas e saídas de dados, o tráfego de tarefas e monitora, - para as API’s internas. Sua existência reduz problemas causados pela interação entre cliente e microsserviços, além de conservar o ambiente dos serviços. </p>
