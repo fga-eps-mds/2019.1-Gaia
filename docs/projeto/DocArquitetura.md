@@ -97,7 +97,8 @@ processos pesados;</li>
 ## 2. Representação Arquitetural
 ### 2.1 Diagrama de Relações
 
-![alt text](https://i.imgur.com/cceUiwD.png)
+![](../assets/imgs/architecture/arquiteturaV04.png)
+Imagem 01 - Representação da arquitetura através de um diagrama de relações
 
 <p align="justify">&emsp;&emsp;O estilo arquitetural de microsserviços é uma abordagem que visa implementar uma aplicação como uma suíte de pequenos serviços. Onde cada um executa um processo próprio e se comunica, geralmente, com requests HTTP. Tendo em vista a principal característica desse estilo arquitetural, a independência entre os serviços, o chatbot Gaia terá microsserviços como parte de sua arquitetura. </p>
 <p align="justify">&emsp;&emsp;Além disso, cada serviço interno da Gaia terá seu próprio repositório. Destacando assim, mais uma característica desse estilo arquitetural, onde cada um deles terá seu próprio ambiente, tecnologias, integração contínua e deploy.</p>
