@@ -206,12 +206,19 @@ Imagem 04 - Fluxo básico da tecnologia NodeJS
 
 ## 4. Visão Lógica
 ### 4.1 Visão Geral
-<p align=”justify”>&emsp;&emsp; A aplicação do ChatBot Gaia é construída sobre o framework Rasa em linguagem Python no front-end e sobre a plataforma Node.js em linguagem JavaScript no back-end. O objetivo do RasaNLU é aplicar algoritmos de linguagem natural para extrair a intenção do usuário (intents) e a partir do Rasa Core é possível gerir o diálogo entre o usuário e o bot. A principal funcionalidade é o policy, que recebe a intent do usuário, atualiza o tracker() e prevê a melhor ação do bot (utter, action, listening). A plataforma Node.js é um ambiente de tempo de execução que executa o código em JavaScript para escrever ferramentas de linha de comando e para scripts do lado do servidor, capaz de executar uma entrada/saída assíncrona, que permite que outro processamento continue antes que a transmissão tenha encerrado.</p>
+<p align=”justify”>&emsp;&emsp; A aplicação do ChatBot Gaia é construída com a tecnologia Rasa em linguagem Python no bot e sobre a plataforma Node.js em linguagem JavaScript nos microsserviços. O objetivo do RasaNLU é aplicar algoritmos de linguagem natural para extrair a intenção do usuário (intents) e a partir do Rasa Core é possível gerir o diálogo entre o usuário e o bot. A principal funcionalidade é o policy, que recebe a intent do usuário, atualiza o tracker() e prevê a melhor ação do bot (utter, action, listening). A plataforma Node.js é um ambiente de tempo de execução que executa o código em JavaScript para escrever ferramentas de linha de comando e para scripts do lado do servidor, capaz de executar uma entrada/saída assíncrona, que permite que outro processamento continue antes que a transmissão tenha encerrado.</p>
 
 ### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
 #### 4.2.1 Diagrama de pacotes
-![alt text](https://i.imgur.com/HuuLyBC.png)
+
+![](../assets/imgs/architecture/diagramaDePacotesMicrosservicos.png)
+
+Imagem 05 - Diagrama de Pacotes dos Microsserviços
+
+![](../assets/imgs/architecture/diagramaDePacotesBot.png)
+
+Imagem 06 - Diagrama de Pacotes do Bot Gaia
 
 #### 4.2.2 Diagrama de classe
 ![alt text](https://i.imgur.com/GpuBj8p.png)
