@@ -28,9 +28,8 @@
 &emsp; [2.2 Representação dos Microsserviços](#_22-representação-dos-microsserviços) <br>
 &emsp; &emsp; [2.2.1 Cronjob Notifica](#_221-cronjob-notifica) <br>
 &emsp; &emsp; [2.2.2 Gaia-Clima](#_222-gaia-clima) <br>
-&emsp; &emsp; [2.2.3 Gaia-Esporte](#_223-gaia-esporte) <br>
-&emsp; &emsp; [2.2.4 Gaia-Local](#_224-gaia-local) <br>
-&emsp; &emsp; [2.2.5 API Gateway](#_225-api-gateway) <br>
+&emsp; &emsp; [2.2.3 Gaia-Local](#_223-gaia-local) <br>
+&emsp; &emsp; [2.2.4 API Gateway](#_224-api-gateway) <br>
 &emsp; [2.3 Padrões](#_23-padrões) <br>
 &emsp; &emsp; [2.3.1 Padrão API Gateway](#_231-padrão-api-gateway) <br>
 &emsp; &emsp; [2.3.2 Padrão API Composition](#_232-padrão-api-composition) <br>
@@ -99,7 +98,7 @@ processos pesados;</li>
 ## 2. Representação Arquitetural
 ### 2.1 Diagrama de Relações
 
-![](../assets/imgs/architecture/arquiteturaV04.png)
+![](../assets/imgs/architecture/arquiteturaV05.png)
 Imagem 01 - Representação da arquitetura através de um diagrama de relações
 
 <p align="justify">&emsp;&emsp;O estilo arquitetural de microsserviços é uma abordagem que visa implementar uma aplicação como uma suíte de pequenos serviços. Onde cada um executa um processo próprio e se comunica, geralmente, com requests HTTP. Tendo em vista a principal característica desse estilo arquitetural, a independência entre os serviços, o chatbot Gaia terá microsserviços como parte de sua arquitetura. </p>
@@ -108,9 +107,8 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 <ul>
 <li>API Gateway;</li>
 <li>Cronjob Notifica;</li>
-<li>Busca Clima;</li>
-<li>Escolhe Esporte;</li>
-<li>Busca Local.</li></ul>
+<li>Gaia-Clima;</li>
+<li>Gaia-Local.</li></ul>
 <p align="justify">&emsp;&emsp;Para a execução completa do projeto será necessário o consumo de dados de fontes externas, sendo elas:</p>
 <ul>
 <li>API Telegram;</li>
@@ -119,6 +117,11 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 <li>API OpenCage Geocoder.</li></ul>
 <p align="justify">&emsp;&emsp;Além do comportamento interno da Gaia, outro fator importante a ser considerado é a criação do chatbot em si. Para isso, vários fatores precisam ser considerados, como o uso de linguagem natural. Por isso, será utilizado a tecnologia Rasa, que se divide em Rasa Core e Rasa NLU. Rasa Core é de extrema importância para criar um bot baseado em Machine Learning. Já o Rasa NLU é responsável pelo processamento da linguagem natural. Essa combinação vai garantir que a Gaia tenha uma comunicação acessível com o usuário.</p>
 
+<p align="justify">&emsp;&emsp;Para a Release 1 a arquitetura geral não será implementada. Pensando no nível de conhecimento tecnológico dos integrantes de MDS durante a primeira fase da matéria, foi decidido pelos membros de EPS que o bot a ser entregue na primeira release seguirá a seguinte arquitetura:
+
+![](../assets/imgs/architecture/arquiteturaR1.png)
+Imagem 02 - Representação da arquitetura para a R1
+
 ### 2.2 Representação dos Microsserviços
 
 #### 2.2.1 Cronjob Notifica
@@ -126,14 +129,12 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 
 #### 2.2.2 Gaia-Clima
 <p align="justify">&emsp;&emsp;O microsserviço Gaia-Clima é responsável por fazer requisições para a API externa do OpenWeatherMaps. A necessidade dessa funcionalidade ocorre por haver uma limitação de requisições diárias na versão livre dessa API. Dessa forma, todos os pedidos de dados feitos ao OpenWeatherMaps estarão centralizadas em um só local. Outro fator importante é que os dados fornecidos por essa API externa precisam de tratamento, como conversão e entre outros. Além disso, esse microsserviço será responsável por informar o usuário sobre as condições climáticas de qualquer local do mundo.</p>
+<p align="justify">&emsp;&emsp;Outra funcionalidade presente neste microsserviço é a indicação de um esporte ou uma lista de esportes ao usuário, baseado nas condições climáticas da cidade. Ou seja, o usuário perguntará quais são os melhores esportes para serem praticados naquele determinado clima, e o microsserviço terá que comparar as variáveis presentes nas condições climáticas, com a condição climática ideal dos esportes e retornar esse informação ao usuário.</p>
 
-#### 2.2.3 Gaia-Esporte
-<p align="justify">&emsp;&emsp;Este microsserviço tem como responsabilidade indicar um esporte ou uma lista de esportes ao usuário, baseado nas condições climáticas da cidade. Ou seja, o usuário perguntará quais são os melhores esportes para serem praticados naquele determinado clima, e o microsserviço terá que comparar as variáveis presentes nas condições climáticas, com a condição climática ideal dos esportes e retornar esse informação ao usuário.</p>
-
-#### 2.2.4 Gaia-Local
+#### 2.2.3 Gaia-Local
 <p align="justify">&emsp;&emsp;O microsserviço Gaia-Local é responsável por receber o nome de uma cidade e responder com a sua latitude e longitude exata. Isso é necessário, uma vez que, a API OpenWeatherMaps não retorna informações com o nome exato do local como parâmetro - para cidades que não são capitais, mas se tiver a latitude e longitude sim. Por isso, um microsserviço responsável por fazer requisições a API do OpenCage Geocoder é de extrema importância para manter um diálogo fácil com o usuário e retornar as informações certas sobre a condição climática.</p>
 
-#### 2.2.5 API Gateway
+#### 2.2.4 API Gateway
 <p align="justify">&emsp;&emsp;Dentro de uma arquitetura de microsserviços ter um API Gateway é importante para gerenciar o acesso às API’s de um determinado sistema. Ou seja, ele é um padrão de software que funciona de forma similar a uma fachada sendo o único ponto de acesso, - que controla as entradas e saídas de dados, o tráfego de tarefas e monitora, - para as API’s internas. Sua existência reduz problemas causados pela interação entre cliente e microsserviços, além de conservar o ambiente dos serviços. </p>
 
 ### 2.3 Padrões
@@ -203,9 +204,10 @@ Imagem 04 - Fluxo básico da tecnologia NodeJS
 - O sistema deve respeitar a personalidade do bot;
 - O sistema deve aprender novos comportamentos de acordo com a resposta do usuário;
 
-
 ## 4. Visão Lógica
+
 ### 4.1 Visão Geral
+
 <p align=”justify”>&emsp;&emsp; A aplicação do ChatBot Gaia é construída com a tecnologia Rasa em linguagem Python no bot e sobre a plataforma Node.js em linguagem JavaScript nos microsserviços. O objetivo do RasaNLU é aplicar algoritmos de linguagem natural para extrair a intenção do usuário (intents) e a partir do Rasa Core é possível gerir o diálogo entre o usuário e o bot. A principal funcionalidade é o policy, que recebe a intent do usuário, atualiza o tracker() e prevê a melhor ação do bot (utter, action, listening). A plataforma Node.js é um ambiente de tempo de execução que executa o código em JavaScript para escrever ferramentas de linha de comando e para scripts do lado do servidor, capaz de executar uma entrada/saída assíncrona, que permite que outro processamento continue antes que a transmissão tenha encerrado.</p>
 
 ### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
