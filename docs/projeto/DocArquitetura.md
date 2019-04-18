@@ -27,9 +27,9 @@
 &emsp; [2.1 Diagrama de Relações](#_21-diagrama-de-relações) <br>
 &emsp; [2.2 Representação dos Microsserviços](#_22-representação-dos-microsserviços) <br>
 &emsp; &emsp; [2.2.1 Cronjob Notifica](#_221-cronjob-notifica) <br>
-&emsp; &emsp; [2.2.2 Busca Clima](#_222-busca-clima) <br>
-&emsp; &emsp; [2.2.3 Escolhe Esporte](#_223-escolher-esporte) <br>
-&emsp; &emsp; [2.2.4 Busca Local](#_224-busca-local) <br>
+&emsp; &emsp; [2.2.2 Gaia-Clima](#_222-gaia-clima) <br>
+&emsp; &emsp; [2.2.3 Gaia-Esporte](#_223-gaia-esporte) <br>
+&emsp; &emsp; [2.2.4 Gaia-Local](#_224-gaia-local) <br>
 &emsp; &emsp; [2.2.5 API Gateway](#_225-api-gateway) <br>
 &emsp; [2.3 Padrões](#_23-padrões) <br>
 &emsp; &emsp; [2.3.1 Padrão API Gateway](#_231-padrão-api-gateway) <br>
@@ -37,10 +37,11 @@
 &emsp; [2.4 Tecnologias](#_24-tecnologias) <br>
 &emsp; &emsp; [2.4.1 API de bot do Telegram](#_241-api-de-bot-do-telegram) <br>
 &emsp; &emsp; [2.4.2 API de mensagens do Facebook Messenger](#_242-api-de-mensagens-do-facebook-messenger) <br>
-&emsp; &emsp; [2.4.3 API OpenWeatherMap](#_243-api-de-openweathermap) <br>
-&emsp; &emsp; [2.4.4 Google Maps Geocoding API](#_244-google-maps-geocoding-api) <br>
-&emsp; &emsp; [2.4.5 Python](#_245-python) <br>
-&emsp; &emsp; [2.4.6 JavaScript](#_246-javascript) <br>
+&emsp; &emsp; [2.4.3 OpenWeatherMap API](#_243-openweathermap-api) <br>
+&emsp; &emsp; [2.4.4 OpenCage Geocoder API](#_244-opencage-geocoder-api) <br>
+&emsp; &emsp; [2.4.5 Rasa](#_245-rasa) <br>
+&emsp; &emsp; [2.4.6 NodeJS](#_246-nodejs) <br>
+&emsp; &emsp; [2.4.7 MongoDB](#_247-mongodb) <br>
 [3. Metas e Restrições da Arquiteura](#_3-metas-e-restrições-da-arquitetura) <br>
 &emsp; [3.1 Metas](#_31-metas) <br>
 &emsp; [3.2 Restrições](#_31-restrições) <br>
@@ -151,30 +152,36 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 ## 2.4 Tecnologias
 
 #### 2.4.1 API do Bot de Telegram
-<p align="justify">&emsp;&emsp;A API de bot do Telegram permite que bots interajam diretamente com usuários por meio de mensagens e comandos.</p>
-<p align="justify">&emsp;&emsp;O telegram exige uma conexão HTTPS para interagir com a API e pede que todos os desenvolvedores suportem os comandos ‘/start’, ‘/help’, e ‘/settings’ em seus bots para facilitar a interação de usuários com a multitude de bots existentes. </p>
+<p align="justify">&emsp;&emsp;A API de bot do Telegram permite que bots interajam diretamente com usuários por meio de mensagens e comandos. Ela será usada para um dos deploys, de forma a garantir que a Gaia consiga atingir uma faixa de usuários que não utilizam o Facebook. Para isso a Gaia precisará atender alguns critérios, já que o Telegram exige uma conexão HTTPS para interagir com a API e pede que todos os desenvolvedores suportem os comandos ‘/start’, ‘/help’, e ‘/settings’ em seus bots para facilitar a interação de usuários. </p>
 
 #### 2.4.2 API de Mensagens do Facebook Messenger
-<p align="justify">&emsp;&emsp;O Messenger permite que bots mandem e recebam mensagens por meio de sua API.</p>
-<p align="justify">&emsp;&emsp;Diferentemente de outras APIs para bots, a do Messenger possui a política chamada de ‘24+1’, que impõe um limite de 24 horas para que bots mandem mensagens para usuários após o usuário contatar o bot, sendo permitido que o bot mande uma mensagem depois de o limite de 24 horas ter expirado.</p>
-<p align="justify">&emsp;&emsp;A API do Messenger disponibiliza também um modo, que está em beta, de mensagens por inscrição, que permite que bots mandem mensagens periódicas para usuários, sem que exista um limite de 24 horas. </p>
+<p align="justify">&emsp;&emsp;O Messenger permite que bots mandem e recebam mensagens por meio de sua API. Porém diferente de outras, o Messenger possui uma política chamada de ‘24+1’. Essa política impõe um limite de 24 horas, após o contato do usuário, para que os bots consigam mandar mensagens resposta, sendo permitido o envio de uma úncia mensagem depois desse limite ter expirado. A API do Messenger disponibiliza também um modo, atualmente em beta, de mensagens por inscrição que permite que bots mandem mensagens periódicas para usuários sem que exista um limite.</p>
 
-#### 2.4.3 API do OpenWeather
-<p align="justify">&emsp;&emsp;A API do openweathermap.org é capaz de fornecer um grande número de informações relacionadas a previsão do tempo e principalmente de condições climáticas atuais com base em localização.</p>
-<p align="justify">&emsp;&emsp;Podem ser fornecidos nomes de capitais ou coordenadas de localização para se obter dados da API.</p>
+#### 2.4.3 OpenWeatherMap API
+<p align="justify">&emsp;&emsp;A API do OpenWeatherMap é capaz de fornecer um grande número de informações relacionadas a previsão do tempo e principalmente de condições climáticas atuais com base em localização, tanto pelo nome de capitais quanto pelas coordenadas geográficas. Além disso, a OpenWeatherMaps possui diferentes categorias para requests. A Gaia irá utilizar duas dessas categorias, a Current Weather para o microsserviço clima e a 5 days/3 hours forecast para o cronjob de notificação.</p>
 
 
-#### 2.4.4 Google Maps Geocoding API
-<p align="justify">&emsp;&emsp;A Geocoding API do Google Maps fornece coordenadas geográficas quando a ela é fornecido o nome de um lugar como: lago Paranoá, Águas Claras, DF, Brasil.</p>
-<p align="justify">&emsp;&emsp;As coordenadas fornecidas pela API serão fornecidas a API do OpenWeatherMap.</p>
-<p align="justify">&emsp;&emsp;A Geocoding API também pode fornecer informações sobre o lugar fornecido como endereço legível por humanos, CEP e tipo de localização.</p>
+#### 2.4.4 OpenCage Geocoder API
+<p align="justify">&emsp;&emsp; A API OpenCage Geocoder converte coordenadas em nome de lugares e vice-versa. Ela será utilizada pela Gaia no microsserviço Gaia-Local. Isso é necessário porque a API externa OpenWeatherMap só consegue fornecer o clima por nome para cidades grandes. Portanto, a OpenCage Geocoder será acessada sempre que o usuário falar o nome de um local, para que o microsserviço Gaia-Clima consiga forncer o clima a partir da latitude e longitude de um lugar.</p>
 
-#### 2.4.5 Python
-<p align="justify">&emsp;&emsp;Python é uma moderna linguagem interpretada de alto nível é será utilizada no front end da aplicação em conjunto com os frameworks Rasa NLU e Rasa Core.</p>
+#### 2.4.5 Rasa
 
-#### 2.4.6 JavaScript
-<p align="justify">&emsp;&emsp;JavaScript é uma linguagem interpretada de alto nível é será utilizada no back end da aplicação em conjunto com o framework Node.js</p>
+![](../assets/imgs/architecture/diagramaFluxoRASA.jpeg)
+Imagem 03 - Fluxo básico da tecnologia Rasa
 
+<p align="justify">&emsp;&emsp;Rasa é um framework de Python para a criação de bots. Ele tem duas principais frentes, o Rasa Core e o Rasa NLU. O Rasa Core baseia a o desenvolvimento em Machine Learning, onde você consegue treinar e atualizar as models “conversando” e provendo feedback para o bot. Já o Rasa NLU é responsável pelo processamento da linguagem natural.</p>
+
+#### 2.4.6 NodeJS
+
+![](../assets/imgs/architecture/diagramaFluxoNodejs.png)
+
+Imagem 04 - Fluxo básico da tecnologia NodeJS
+
+<p align="justify">&emsp;&emsp;Node.js é uma plataforma de aplicação para Javascript, que tem como principal objetivo facilitar a construção de softwares escaláveis. Ele geralmente é usado ao lado do servidor e é orientado para o estilo de programação voltada a evento. Isso faz com que ele seja leve, eficiente e uma boa alternativa para arquitetura de microsserviços.</p>
+
+#### 2.4.7 MongoDB
+
+<p align="justify">&emsp;&emsp;MongoDB é um framework de banco de dados noSQL. Ele é orientado a documento, livre de esquemas, não relacional, e open-source. MongoDB trabalha com arquivos JSON que contém toda a informação do banco de dados.</p>
 
 ## 3. Metas e Restrições de Arquitetura
 ### 3.1 Metas
