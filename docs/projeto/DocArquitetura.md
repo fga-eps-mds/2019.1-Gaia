@@ -43,8 +43,8 @@
 &emsp; &emsp; [2.4.6 NodeJS](#_246-nodejs) <br>
 &emsp; &emsp; [2.4.7 MongoDB](#_247-mongodb) <br>
 [3. Metas e Restrições da Arquiteura](#_3-metas-e-restrições-da-arquitetura) <br>
-&emsp; [3.1 Metas](#_31-metas) <br>
-&emsp; [3.2 Restrições](#_31-restrições) <br>
+&emsp; [3.1 Restrições Tecnológicas](#_31-restrições-tecnológicas) <br>
+&emsp; [3.2 Requisitos Não Funcionais](#_31-requisitos-não-funcionais) <br>
 [4. Visão Lógica](#_4-visão-lógica) <br>
 &emsp; [4.1. Visão Geral](#_41-visão-geral) <br>
 &emsp; [4.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#_42-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura) <br>
@@ -169,7 +169,7 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 ![](../assets/imgs/architecture/diagramaFluxoRASA.jpeg)
 Imagem 03 - Fluxo básico da tecnologia Rasa
 
-<p align="justify">&emsp;&emsp;Rasa é um framework de Python para a criação de bots. Ele tem duas principais frentes, o Rasa Core e o Rasa NLU. O Rasa Core baseia a o desenvolvimento em Machine Learning, onde você consegue treinar e atualizar as models “conversando” e provendo feedback para o bot. Já o Rasa NLU é responsável pelo processamento da linguagem natural.</p>
+<p align="justify">&emsp;&emsp;Rasa é um conjunto de ferramentas para Python para a criação de bots. Ele tem duas principais frentes, o Rasa Core e o Rasa NLU. O Rasa Core baseia a o desenvolvimento em Machine Learning, onde você consegue treinar e atualizar as models “conversando” e provendo feedback para o bot. Já o Rasa NLU é responsável pelo processamento da linguagem natural.</p>
 
 #### 2.4.6 NodeJS
 
@@ -184,18 +184,24 @@ Imagem 04 - Fluxo básico da tecnologia NodeJS
 <p align="justify">&emsp;&emsp;MongoDB é um framework de banco de dados noSQL. Ele é orientado a documento, livre de esquemas, não relacional, e open-source. MongoDB trabalha com arquivos JSON que contém toda a informação do banco de dados.</p>
 
 ## 3. Metas e Restrições de Arquitetura
-### 3.1 Metas
-<p align="justify">&emsp;&emsp;Possuímos as seguintes metas:</p>
-Funcionar nos serviços de mensagens instantâneas Telegram e Messenger.
-Consumir as API’s do Telegram, Facebook, OpenWeatherMaps, GoogleMaps.
 
-### 3.2 Restrições
-<p align="justify">&emsp;&emsp;Possuímos as seguintes restrições:</p>
-Rasa: Framework para o desenvolvimento do chatbot
-Python : Linguagem base das aplicações do front-end
-Node.js : Plataforma de aplicação utilizada para o back-end
-JavaScript : linguagem base do Node.js
-MongoDB : Software utilizado para o banco de dados
+### 3.1 Restrições Tecnológicas
+
+<p align="justify">&emsp;&emsp;Para o desenvolvimenta da Gaia serão utilizados as seguintes tecnologias:</p>
+
+- Rasa: Conjuntos de ferramentas de Machine Learning para a criação de chatbots.
+- Python: Linguagem base utilizada no Rasa.
+- Node.js: Plataforma de aplicação utilizada nos microsserviços.
+- JavaScript: Linguagem base utilizada no Node.js.
+- MongoDB: Software utilizado para o banco de dados,
+
+### 3.2 Requisitos Não Funcionais
+
+- O sistema deve ter integração com o Telegram;
+- O sistema deve ter integração com o Facebook;
+- O sistema deve conversar com o usuário em linguagem natural;
+- O sistema deve respeitar a personalidade do bot;
+- O sistema deve aprender novos comportamentos de acordo com a resposta do usuário;
 
 
 ## 4. Visão Lógica
@@ -209,12 +215,3 @@ MongoDB : Software utilizado para o banco de dados
 
 #### 4.2.2 Diagrama de classe
 ![alt text](https://i.imgur.com/GpuBj8p.png)
-
-#### 4.2.3 Diagramas de fluxo
-<p align="justify">&emsp;&emsp;Fluxo do Rasa:</p>
-
-![alt text](https://i.imgur.com/ik3vWjQ.jpg)
-
-<p align="justify">&emsp;&emsp;Fluxo do Node.js:</p>
-
-![alt text](https://i.imgur.com/TtAzsd6.png)
