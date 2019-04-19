@@ -223,4 +223,7 @@ Imagem 05 - Diagrama de Pacotes dos Microsserviços
 Imagem 06 - Diagrama de Pacotes do Bot Gaia
 
 #### 4.2.2 Diagrama de classe
-![alt text](https://i.imgur.com/GpuBj8p.png)
+
+![](../assets/imgs/architecture/diagramaDeClasse.png)
+
+Imagem 07 - Diagrama de Classe
