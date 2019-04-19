@@ -41,6 +41,7 @@
 &emsp; &emsp; [2.4.5 Rasa](#_245-rasa) <br>
 &emsp; &emsp; [2.4.6 NodeJS](#_246-nodejs) <br>
 &emsp; &emsp; [2.4.7 MongoDB](#_247-mongodb) <br>
+&emsp; [2.5 Arquitetura de integração de microsserviços](#_25-arquitetura-de-integração-de-microsserviços) <br>
 [3. Metas e Restrições da Arquiteura](#_3-metas-e-restrições-da-arquitetura) <br>
 &emsp; [3.1 Restrições Tecnológicas](#_31-restrições-tecnológicas) <br>
 &emsp; [3.2 Requisitos Não Funcionais](#_31-requisitos-não-funcionais) <br>
@@ -150,7 +151,7 @@ Imagem 02 - Representação da arquitetura para a R1
 <p align="justify">&emsp;&emsp;Ao encaminhar as requisições para os microsserviços internos a API Gateway irá desmembrar a requisição em pedidos menores e irá mandá-los para cada um dos microsserviços correspondentes. A papel do padrão API Composition é  pegar os resultados individuais de cada microsserviço anteriormente solicitado e compor uma resposta única que será mandado para o usuário.</p>
 
 
-## 2.4 Tecnologias
+### 2.4 Tecnologias
 
 #### 2.4.1 API do Bot de Telegram
 <p align="justify">&emsp;&emsp;A API de bot do Telegram permite que bots interajam diretamente com usuários por meio de mensagens e comandos. Ela será usada para um dos deploys, de forma a garantir que a Gaia consiga atingir uma faixa de usuários que não utilizam o Facebook. Para isso a Gaia precisará atender alguns critérios, já que o Telegram exige uma conexão HTTPS para interagir com a API e pede que todos os desenvolvedores suportem os comandos ‘/start’, ‘/help’, e ‘/settings’ em seus bots para facilitar a interação de usuários. </p>
@@ -183,6 +184,12 @@ Imagem 04 - Fluxo básico da tecnologia NodeJS
 #### 2.4.7 MongoDB
 
 <p align="justify">&emsp;&emsp;MongoDB é um framework de banco de dados noSQL. Ele é orientado a documento, livre de esquemas, não relacional, e open-source. MongoDB trabalha com arquivos JSON que contém toda a informação do banco de dados.</p>
+
+### 2.5 Arquitetura de Integração de Microsserviços
+
+<p align="justify">&emsp;&emsp;O estilo arquitetural da integração de microsserviços que será utilizado na Gaia é o estilo orquestrado. Ele é caracterizado por centralizar o ponto de comando, nesse caso a API Gateway, que deve ser responsável por fazer as requisições aos microsserviços e compor uma resposta final ao usuário com os retornos individuais de cada microsserviço.</p>
+<p align="justify">&emsp;&emsp;Dentro do estilo orquestrado será utilizada a integração REST, que é baseada nas requisições HTTP. Essa escolha foi feita, porque esse tipo de integração é capaz de suportar o uso de cache e consegue possibilitar maior autonomia e flexibilidade entre os microsserviços.</p>
+
 
 ## 3. Metas e Restrições de Arquitetura
 
