@@ -46,9 +46,3 @@
 ### Backlog de Melhoria
 
 * Adicionar endpoints no index e mostrar no localhost <span>[3]</span>
-
-
-### Obervações
-
-* Foi reduzida a quantidade de tarefas de EPS, levando em conta que as entregas estavam sendo prejudicadas, principalmente pelo tempo usado para ajudar MDS.
-* A mudança de equipe para o pareamento das dívidas técnicas ocorreu por problemas ocorridos na sprint passada e EPS enxergou  que inserir o Eduardo no time poderia ajudar de forma efetiva na estrega das dívidas. 
