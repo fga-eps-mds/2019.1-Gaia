@@ -9,6 +9,7 @@
   - [Backlog do Produto](produto/requisitos.md)
   - [Manual de Identidade Visual](produto/manualDeIdentidadeVisual.md)
   - [Protótipo de Baixa Fidelidade](/produto/prototipo.md)
+  - [Modalidadades](/produto/modalidades.md)
 
 - [**Projeto**](/projeto/)
   - [Plano de Comunicação](/projeto/planoComunicacao.md)
