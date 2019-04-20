@@ -8,7 +8,7 @@
   - [Canvas](produto/canvas.md)
   - [Backlog do Produto](produto/requisitos.md)
   - [Manual de Identidade Visual](produto/manualDeIdentidadeVisual.md)
-  - [Protótipo de Baixa Fidelidade](/produto/prototipo.md)
+  - [Protótipos](/produto/prototipo.md)
 
 - [**Projeto**](/projeto/)
   - [Plano de Comunicação](/projeto/planoComunicacao.md)
