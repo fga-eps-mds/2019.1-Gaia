@@ -1,14 +1,13 @@
 - [Home](/)
 
 - [**Produto**](/produto/)
-  - [Documento de Visão](produto/DocVisao.md)
   - [Termo de Abertura do Projeto](produto/TAP.md)
   - [Estrutura Analítica do Projeto](produto/EAP.md)
-  - [Documento de Visão](projeto/DocVisao.md)
+  - [Documento de Visão](produto/DocVisao.md)
   - [Canvas](produto/canvas.md)
   - [Backlog do Produto](produto/requisitos.md)
   - [Manual de Identidade Visual](produto/manualDeIdentidadeVisual.md)
-  - [Protótipo de Baixa Fidelidade](/produto/prototipo.md)
+  - [Protótipos](/produto/prototipo.md)
 
 - [**Projeto**](/projeto/)
   - [Plano de Comunicação](/projeto/planoComunicacao.md)

@@ -4,20 +4,21 @@
 
 ## Histórico de Revisão
 
-| Data     | Versão |                         Descrição                                    |  Autor            |
-|----------|--------|----------------------------------------------------------------------|--------------------|
-|23/03/2019|  1.0   |Criação e formatação do documento.                                    |Samuel Pereira      |
-|23/03/2019|   1.1  |Adição dos tópicos 1.1, 1.2 e 1.4                                     |Sofia Patrocínio    |
-|23/03/2019|   1.2  |Adição do Tópico 2.                                                   |Samuel Pereira      |
-|23/03/2019|   1.3  |Adição do Tópico 4.                                                   |Luis Henrique Taira |
-|23/03/2019|   1.4  |Adição do Tópico 5 e 6.                                               |Micaella Gouveia    |
-|24/03/2019|   1.5  |Adição do Tópico 7.                                                   |Luis Henrique Taira |
-|24/03/2019|   1.6  |Adição do Tópico 3.                                                   |Eduardo Lima        |
-|24/03/2019|   1.7  |Refeito o Tópico 4.1 com mais detalhes.                               |Luis Henrique Taira |
-|24/03/2019|   1.8  |Revisão dos tópicos 3.1, 3.2, 3.3, 3.4.1 e 3.5. Adição do tópico 3.4.3|Eduardo Lima        |
-|25/03/2019|   1.9  |Revisão do documento e adição dos tópicos 1.3 e 1.5.                  |Sofia Patrocínio    |
-|25/03/2019|   2.0  |Revisão do documento, paginação e modificação do índice.              |Samuel Pereira      |
-|25/03/2019|   2.1  |Revisão dos tópicos 1.2, 6.1 e 6.4.                                   |Eduardo Lima        |
+| Data | Versão | Descrição | Autor |
+| ---- | ------ | --------- | ----- |
+|23/03/2019| 1.0 | Criação e formatação do documento. | Samuel Pereira | 
+23/03/2019 | 1.1 | Adição dos tópicos 1.1, 1.2 e 1.4  | Sofia Patrocínio |
+|23/03/2019| 1.2 | Adição do Tópico 2. |Samuel Pereira |
+|23/03/2019| 1.3 | Adição do Tópico 4. | Luis Henrique Taira |
+|23/03/2019| 1.4 | Adição do Tópico 5 e 6. |Micaella Gouveia |
+|24/03/2019| 1.5 | Adição do Tópico 7. | Luis Henrique Taira |
+|24/03/2019| 1.6 | Adição do Tópico 3. | Eduardo Lima |
+|24/03/2019| 1.7 | Refeito o Tópico 4.1 com mais detalhes. |Luis Henrique Taira |
+|24/03/2019| 1.8 | Revisão dos tópicos 3.1, 3.2, 3.3, 3.4.1 e 3.5. Adição do tópico 3.4.3| Eduardo Lima |
+|25/03/2019| 1.9 | Revisão do documento e adição dos tópicos 1.3 e 1.5. |Sofia Patrocínio |
+|25/03/2019| 2.0 | Revisão do documento, paginação e modificação do índice. |Samuel Pereira |
+|25/03/2019| 2.1 | Revisão dos tópicos 1.2, 6.1 e 6.4. | Eduardo Lima |
+| 18/04/2019 | 2.2 | Revisão do documento | Indiara Duarte | 
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -64,9 +65,16 @@
 Esse documento visa especificar de maneira geral as características do desenvolvimento do ChatBot Gaia, deixando claro seu objetivo, razão de sua necessidade, características, utilidade e requisitos do sistema.
 
 ### 1.2 Escopo
-O Chatbot possuirá duas funcionalidades principais. Essas funcionalidades juntas, formam o escopo do software, que será entregue completo ao final da segunda release. O bot terá como primeira responsabilidade enviar notificações sobre o clima da cidade que o usuário cadastrar. Assim, o usuário poderá definir uma cidade e os dias em que precisa ser notificado e o bot terá que, na quantidade de dias desejados, enviar notificações diariamente.
+O Chatbot Gaia possuirá três funcionalidades principais. Essas funcionalidades juntas, formam o escopo do software, que será entregue completo ao final da segunda release.
 
-A segunda responsabilidade do bot será a identificação dos esportes que podem ser melhor praticados de acordo com o clima do dia. Ou seja, o usuário pedirá o clima específico de uma cidade e o bot responderá com um esporte ou uma lista de esportes que podem ser praticados nessas circunstâncias climáticas.
+O bot terá como primeira funcionalidade consultar meteorologia, onde o usuário poderá informar qualquer localidade do mundo e assim obter informações à respeito das condições meteorológicas deste. Entende-se como condições meteorológicas dados sobre pressão atmosférica, umidade, rajadas de vento, temperatura, nebulosidade, dentre outras.
+
+A segunda funcionalidade do Chatbot será a sugestão de modalidades ao ar livre de acordo com a meteorologia do dia. Portanto, com base na previsão do tempo de uma localidade específica, o Chatbot responderá com uma ou várias modalidades que forem mais favoráveis a serem praticas naquele período e clima.
+
+A terceira funcionalidade contempla o gerenciamento de notificações do Chatbot. Deste modo, o usuário poderá cadastrar localidades e os dias que deseja ser notificado. Por exemplo, ele pode receber notificações diárias sobre a previsão do tempo na cidade de Brasília/DF. 
+
+Por fim, tem-se o acompanhamento de furacão. Essa funcionalidade foi inserida no planejamento de produto, mas não de projeto. O intuito é que o usuário seja alertado quando houver ocorrência de furacões em quaisquer localidades do mundo.
+
 ### 1.3 Definições, Acrônimos e Abreviações
 | Abreviação | Definição |
 |--|--|
@@ -83,7 +91,7 @@ A segunda responsabilidade do bot será a identificação dos esportes que podem
  - ADIDA, Ben. Understanding Open-Source Licensing. Disponível em: [https://openacs.org/about/licensing/open-source-licensing](https://openacs.org/about/licensing/open-source-licensing). Acesso em: 24 mar. 2019.
  
 ### 1.5 Visão Geral
-Este documento descreve de forma detalhada o embasamento, o planejamento e a construção do ChatBot Gaia. Para isso, serão apresentados tópicos referentes a declaração do problema que iremos solucionar, posicionamento do produto em relação ao mercado, as partes interessadas e usuários, perspectiva geral do produto: recursos e restrições, e requisitos para a aplicação do produto e documentação necessária para o bom andamento da aplicação.
+Este documento descreve de forma detalhada o embasamento, o planejamento e a construção do ChatBot Gaia. Para isso, serão apresentados tópicos referentes a descrição do problema a ser solucionado, posicionamento do produto em relação ao mercado, as partes interessadas e usuários, perspectiva geral do produto: recursos e restrições, e requisitos para a aplicação do produto.
 
 ## 2. Planejamento
 ### 2.1 Oportunidade de Negócios
@@ -91,229 +99,78 @@ No contexto atual, a obtenção de informações acerca do clima são comumente 
 Dessa forma, o Chatbot Gaia busca solucionar o problema de uma forma tecnológica e inteligente, disponibilizando aos usuários dados em tempo real a respeito do clima e recomendações de atividades esportivas referente aos dados recebidos, tal como a possibilidade de consultas automáticas agendadas pelo próprio usuário através de notificações.
 
 ### 2.2 Declaração do Problema
-<table>
-	<tr>
-		<td><b>O problema da</b></th>
-		<td>Necessidade de ter informações sobre o clima de determinado local em tempo real</th>
-	</tr>
-	<tr>
-		<td><b>O qual afeta</b></th>
-		<td>Eventos e compromissos, e os indivíduos envolvidos em tais</th>
-	</tr>
-	<tr>
-		<td><b>O impacto do problema é</b></th>
-		<td>O mal planejamento em razão da falta de informação a respeito do clima</th>
-	</tr>
-	<tr>
-		<td><b>Uma solução ideal seria</b></th>
-		<td>Uma forma automatizada e inteligente de informatização a respeito do clima e eventos esportivos recomendados para o mesmo</th>
-	</tr>
-</table>
+| O problema da | afeta | cujo impacto é | uma boa solução seria | 
+| ------------- | ----- | -------------- | --------------------- | 
+| Dificuldade em encontrar condições meteorológicas correlacionadas com modalidades ao ar livre | praticantes de exercicíos físicos | pouca praticidade para encontrar esta informação | automatizar o acesso às informações meteorológicas e disponibilizar modalidades mais farováveis |
+
 
 ### 2.3 Declaração da Posição do Produto
-<table>
-	<tr>
-		<td><b>Para</b></td>
-		<td>Praticantes de atividades ao ar livre</td>
-	</tr>
-	<tr>
-		<td><b>Quem</b></td>
-		<td>Desejam um melhor planejamento diário em relação ao clima</td>
-	</tr>
-	<tr>
-		<td><b>O Gaia</b></td>
-		<td>É um Chatbot</td>
-	</tr>
-	<tr>
-		<td><b>Que</b></td>
-		<td>Visa informatizar, de maneira inteligente e automatizada, a respeito do clima e eventos esportivos recomendados</td>
-	</tr>
-	<tr>
-		<td><b>Diferente</b></td>
-		<td>De consultas feitas através de jornais e websites, de forma manual</td>
-	</tr>
-	<tr>
-		<td><b>Nosso produto</b></td>
-		<td>Automatiza o processo de informatização tanto a respeito ao clima como às recomendações de eventos esportivos</td>
-	</tr>
-</table>
+| Para | Que | A Gaia | Que | Diferente de | Nosso produto | 
+| ---- | --- | ------ | --- | ------------ | ------------- |
+| Praticantes de modalidades ao ar livre | Desejam saber qual(is) são os melhores dias e modalidades para praticar | É um Chabot | Informa previsão do tempo e modalidades propícias | Apps que exibem apenas previsão do tempo | Disponibiliza informações meteorológicas e as correlaciona com modalidades ao ar livre mais propícia em determinado local | 
+
 
 ## 3. Descrições da Parte Interessada e do Usuário
 ### 3.1 Resumo da parte interessada
 | Nome | Descrição | Responsabilidade |
-|--|--|--|
-| Equipe de desenvolvimento | Graduandos em Engenharia de Software, cursando a disciplina Métodos de desenvolvimento de Software, pela Universidade de Brasília. | Desenvolver o software no período estipulado, bem como testá-lo e implementá-lo. |
-| Equipe de engenharia de produto | Graduandos em Engenharia de Software, cursando a disciplina Engenharia de Produto de Software, pela Universidade de Brasília. | Gestão da equipe de desenvolvimento. Garantir a aplicação do ágil e viabilidade do projeto. |
-| Cliente | Requisitor do projeto. | Informar suas preferências e exigências acerca do projeto. |
-| Professora | Professoras da Universidade de Brasília, do curso de Engenharia de Software. | Orientar, acompanhar e avaliar o projeto. |
+| ---- | --------- | ---------------- |
+| Equipe de desenvolvimento | Graduandos em Engenharia de Software, cursando a disciplina Métodos de desenvolvimento de Software, pela Universidade de Brasília. | Desenvolver o software no período estipulado, bem como testá-lo e implementá-lo |
+| Equipe de engenharia de produto | Graduandos em Engenharia de Software, cursando a disciplina Engenharia de Produto de Software, pela Universidade de Brasília. | Gestão da equipe de desenvolvimento. Garantir a aplicação do ágil e viabilidade do projeto |
+| Carla Rocha e Bruna Moreira | Professoras da Universidade de Brasília, do curso de Engenharia de Software. | Orientar, acompanhar e avaliar o projeto |
 
 ### 3.2 Resumo do Usuário
 | Nome | Descrição | Responsabilidades |
-|--|--|--|
-| Praticantes de modalidades ao ar livre | Pessoas interessadas em receber informações sobre o clima. | Utilizar o ChatBot nas plataformas disponíveis. |
-| Atleta | Pessoas interessadas em receber informações sobre atividades físicas de acordo com o clima atual. | Utilizar o ChatBot nas plataformas disponíveis. |
+|----- | --------- | ----------------- |
+| Praticantes de modalidades ao ar livre | Pessoas interessadas em receber informações sobre meteorologia  e atividades esportivas ao ar livre | Utilizar o ChatBot nas plataformas disponíveis. |
+
 
 ### 3.3 Ambiente do Usuário
-O Chatbot Gaia poderá ser acessado através do Facebook e Telegram. Sendo necessário um browser ou aplicativo do Facebook ou aplicativo do Telegram, conexão com a internet e uma conta na plataforma Facebook ou Telegram.
+O Chatbot Gaia poderá ser acessado através do Facebook e Telegram, sendo necessário um browser ou aplicativo do Facebook ou aplicativo do Telegram, conexão com a internet e uma conta na plataforma Facebook ou Telegram.
 
 ### 3.4 Perfis das partes interessadas
 #### 3.4.1 Equipe de Desenvolvimento
-<table>
-	<tr>
-		<td>Representantes</td>
-		<td>Eduardo Vieira Lima, Luís Henrique Pereira Taira, Sofia Costa Patrocínio, Samuel de Souza Buters Pereira e Micaella Lorraine Gouveia de Lima.</td>
-	</tr>
-	<tr>
-		<td>Descrição</td>
-		<td>Desenvolvedores.</td>
-	</tr>
-	<tr>
-		<td>Tipo</td>
-		<td>Alunos da Universidade de Brasília, cursando Métodos de Desenvolvimento de Software.</td>
-	</tr>
-	<tr>
-		<td>Responsabilidade</td>
-		<td>Desenvolver e testar o Software, assim como elaborar seus documentos.</td>
-	</tr>
-	<tr>
-		<td>Critério de sucesso</td>
-		<td>Desenvolver o software no período estipulado, como todos seus requisitos.</td>
-	</tr>
-	<tr>
-		<td>Envolvimento</td>
-		<td>Alto.</td>
-	</tr>
-</table>
+| Representantes | Descrição | Tipo | Responsabilidade | Critério de sucesso | Envolvimento |
+| -------------- | --------- | ---- | ---------------- | ------------------- | ------------ |
+| Eduardo Vieira Lima, Luís Henrique Pereira Taira, Sofia Costa Patrocínio, Samuel de Souza Buters Pereira e Micaella Lorraine Gouveia de Lima | Desenvolvedores | Alunos da Universidade de Brasília, cursando Métodos de Desenvolvimento de Software | Desenvolver e testar o software, assim como elaborar documentação | Desenvolver o produto no período estipulado, como todos seus requisitos atendidos | Alto |
+
 
 #### 3.4.2 Equipe de Engenharia de Produto
-<table>
-	<tr>
-		<td>Representantes</td>
-		<td>Calebe Rios, Amanda Muniz, Indiara Duarte e Luciana Ribeiro.</td>
-	</tr>
-	<tr>
-		<td>Descrição</td>
-		<td>Gestores do projeto.</td>
-	</tr>
-	<tr>
-		<td>Tipo</td>
-		<td>Alunos da Universidade de Brasília, cursando Engenharia de Produto de Software.</td>
-	</tr>
-	<tr>
-		<td>Responsabilidade</td>
-		<td>Gerir e dar suporte à equipe de desenvolvimento, garantindo o melhor processo para o desenvolvimento do produto.</td>
-	</tr>
-	<tr>
-		<td>Critério de sucesso</td>
-		<td>Garantir os prazos estipulados do projeto, aplicando o melhor processo para tal.</td>
-	</tr>
-	<tr>
-		<td>Envolvimento</td>
-		<td>Alto.</td>
-	</tr>
-</table>
+| Representantes | Descrição | Tipo | Responsabilidade | Critério de sucesso | Envolvimento |
+| -------------- | --------- | ---- | ---------------- | ------------------- | ------------ |
+| Calebe Rios, Amanda Muniz, Indiara Duarte e Luciana Ribeiro | Gerentes de Projeto | Alunos da Universidade de Brasília, cursando Engenharia de Produto de Software | Gerir e dar suporte à equipe de desenvolvimento, garantindo o melhor processo para o desenvolvimento do produto | Garantir qualidade de entrega, baseado em custo, tempo e escopo | Alto |
+
 
 #### 3.4.3 Professoras
-<table>
-	<tr>
-		<td>Representantes</td>
-		<td>Professoras Bruna Moreira e Carla Rocha.</td>
-	</tr>
-	<tr>
-		<td>Descrição</td>
-		<td>Professoras.</td>
-	</tr>
-	<tr>
-		<td>Tipo</td>
-		<td>Professoras das disciplinas Métodos de Desenvolvimento de Software e Engenharia de Produto de Software respectivamente, pela Universidade de Brasília.</td>
-	</tr>
-	<tr>
-		<td>Responsabilidade</td>
-		<td>Orientar, acompanhar e avaliar o processo de desenvolvimento, bem como as equipes de Desenvolvimento e Engenharia de produto. Avaliar o produto em sua completude.</td>
-	</tr>
-	<tr>
-		<td>Critério de sucesso</td>
-		<td>-</td>
-	</tr>
-	<tr>
-		<td>Envolvimento</td>
-		<td>Médio.</td>
-	</tr>
-</table>
+| Representantes | Descrição | Tipo | Responsabilidade | Critério de sucesso | Envolvimento |
+| -------------- | --------- | ---- | ---------------- | ------------------- | ------------ |
+| Bruna Moreira e Carla Rocha | Professoras das disciplinas Métodos de Desenvolvimento de Software e Engenharia de Produto de Software respectivamente, pela Universidade de Brasília | Professor | Orientar, acompanhar e avaliar o processo de desenvolvimento, bem como as equipes de Desenvolvimento e Engenharia de produto | Avaliar o produto em sua completude | Médio |
+
 
 ### 3.5 Perfis de Usuário
-<table>
-	<tr>
-		<td>Representantes</td>
-		<td>Praticante de modalidades ao ar livre.</td>
-	</tr>
-	<tr>
-		<td>Descrição</td>
-		<td>Qualquer pessoa interessada em se organizar com o auxílio de informações sobre o clima ou praticar esportes.</td>
-	</tr>
-	<tr>
-		<td>Tipo</td>
-		<td>Usuário.</td>
-	</tr>
-	<tr>
-		<td>Responsabilidade</td>
-		<td>Utilizar o serviço da forma que preferir.</td>
-	</tr>
-	<tr>
-		<td>Critério de sucesso</td>
-		<td>Receber as informações desejadas.</td>
-	</tr>
-	<tr>
-		<td>Envolvimento</td>
-		<td>Baixo.</td>
-	</tr>
-</table>
-<br>
-<table>
-	<tr>
-		<td>Representantes</td>
-		<td>Atleta.</td>
-	</tr>
-	<tr>
-		<td>Descrição</td>
-		<td>Atleta interessado em escolher sua atividade física de acordo com o clima.</td>
-	</tr>
-	<tr>
-		<td>Tipo</td>
-		<td>Usuário.</td>
-	</tr>
-	<tr>
-		<td>Responsabilidade</td>
-		<td>Utilizar o serviço da forma que preferir.</td>
-	</tr>
-	<tr>
-		<td>Critério de sucesso</td>
-		<td>Receber as informações desejadas.</td>
-	</tr>
-	<tr>
-		<td>Envolvimento</td>
-		<td>Baixo.</td>
-	</tr>
-</table>
+| Representantes | Descrição | Tipo | Responsabilidade | Critério de sucesso | Envolvimento |
+| -------------- | --------- | ---- | ---------------- | ------------------- | ------------ |
+| Praticantes de modalidades ao ar livre | Pessoa interessada em se organizar com o auxílio de informações sobre condições meteorológicas ou praticar atividades ao ar livre | Usuário |  Utilizar o Chatbot nas plataformas disponíveis | Obtenção das informações desejadas através do Chabot | Alto |
+
 
 ### 3.6 Necessidades Principais do Investidor ou Usuário
 | Necessidade | Prioridade | Interesse | Solução Atual | Solução Proposta |
-|--|--|--|--|--|
-| Receber informações sobre o clima e vento. | Alta. | Facilitar o acesso à informação de forma natural e conveniente. | Procurar em jornais físicos e virtuais. | Receber a informação desejada por meio de um ChatBot no Facebook. |
-| Receber sugestões de atividades físicas para o clima atual. | Alta. | Facilitar o acesso à informação de forma natural e conveniente. | Pesquisar manualmente sobre a atividade física desejada em várias fontes. | Receber a informação desejada em um único lugar. |
+| ----------- | ---------- | --------- | ------------- | ---------------- |
+| Receber informações sobre condições meteorológicas de qualquer localidade | Alta | Facilitar o acesso à informação com maior praticidade | Buscar em noticiários e/ou aplicações  | Obter a informação desejada através de um ChatBot no Facebook e Telegram |
+| Receber sugestões de atividades físicas conforme as condições meteorológicas | Alta | Facilitar o acesso à informação com maior praticidade | Pesquisar manualmente sobre a atividade física desejada em várias fontes | Obter a informação desejada através de um ChatBot no Facebook e Telegram |
 
 ## 4. Visão Geral do Produto
 ### 4.1 Perspectiva do Produto
 O software será um chatbot com o qual o usuário pode conversar em linguagem natural, podendo pedir informações sobre o tempo em tempo real.
 O chatbot será capaz de fornecer informações nos dias desejados pelo usuário assim como sugerir os melhores esportes para se praticar com base no tempo.
+
 ### 4.2. Resumo de Recursos
 | Benefício para o cliente | Recursos de suporte |
-|--|--|
+|------------------------- | ------------------- |
 | Comunicar-se com o ChatBot em linguagem natural | A troca de informações entre o usuário e o ChatBot ocorre no formato de uma conversa natural |
-| Possui fácil acesso a informações do tempo | O ChatBot manda mensagens para o usuário informando-o das condições do tempo |
-| Pode escolher o local do qual quer receber informações | São mandadas informações do tempo de um lugar previamente especificado |
-| Pode escolher a frequência de notificações sobre o tempo desejada. | O ChatBot pode mandar mensagens para o usuário em dias especificados. |
-| Receber uma lista de esportes com base no tempo | Montar uma lista de esportes que podem ser melhor praticados nas condições do tempo de cada dia |
+| Fácil acesso a previsão do tempo | O ChatBot manda mensagens para o usuário informando-o das condições do tempo |
+| Escolher o local que deseja-se receber informações | São enviadas informações meteorológicas sobre um lugar previamente especificado |
+| Personalizar a periodicidade de recebimento de notificações | O ChatBot pode mandar notificações para o usuário em dias escolhidos por ele |
+| Visualizar modalidades ao ar livre mais propícias de acordo com a previsão do tempo | Enviar modalidades favoráveis à meteorologia de um determinado local e data |
 
 ### 4.3 Licenciamento
 O ChatBot será distribuído sob a licença MIT para softwares livres, que dá liberdade para todos que o adquirirem de modificar, distribuir, sublicenciar, vender e contribuir para o software.
@@ -335,16 +192,20 @@ O ChatBot será distribuído sob a licença MIT para softwares livres, que dá l
 
 ## 6. Restrições do Produto
 ### 6.1 Restrições de implementação
-O sistema será implementado utilizando as tecnologias NodeJs(Javascript) e MongoDB para o banco de dados , o chatbot será construído com o uso do framework Rasa, que utiliza a linguagem Python.
+O sistema será implementado utilizando as tecnologias NodeJs(Javascript) e MongoDB para o banco de dados e framework Rasa, que utiliza a linguagem Python.
+
 ### 6.2 Restrições externas
-A inexperiência e o período de tempo curto podem se tornar empecilhos para a produção do projeto.
+A inexperiência e o período de tempo curto podem se tornar grandes riscos para o desenvolvimento do produto.
+
 ### 6.3 Restrições de Design
 O sistema deve ser feito em uma interface de fácil usabilidade, tornando-o intuitivo para o usuário.
+
 ### 6.4  Restrições de Uso
 Para  utilizar o ChatBot Gaia, o usuário deve ter uma conexão com a internet, possuir uma conta no Facebook com acesso ao Messenger ou conta no Telegram.
+
 ### 6.5  Restrições de Confiabilidade
 O sistema terá uma cobertura de testes, de no mínimo 90% do sistema.
 
 ## 7. Faixas de Qualidade
-Toda da interação com o software deve ocorrer na forma de uma conversa natural. Deve ser fácil entender como se usar todos os recursos do ChatBot apenas conversando com ele.
-O software buscará oferecer um serviço consistente e confiável, considerando que problemas na API OpenWeather ou na rede social escolhida (Facebook messenger) podem afetar o funcionamento desse serviço.
+Toda da interação com o software deve ocorrer na forma de uma conversa natural. Deve ser fácil entender como se usar todos os recursos do ChatBot apenas interagindo com ele.
+O software oferecerá consistentência e confiabilidade, considerando que problemas na API OpenWeather e API OpenCageData ou na plataforma de uso escolhida (Facebook Messenger e Telegram) podem afetar o funcionamento desse serviço.
