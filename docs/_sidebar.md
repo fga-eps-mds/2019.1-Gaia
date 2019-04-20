@@ -17,5 +17,6 @@
   - [Plano de Metodologia](/projeto/planoMetodologia.md)
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
   - [Plano de Métricas](projeto/planoMetricas.md)
+  - [Plano de Gerenciamento de Riscos](projeto/planoRisco.md)
 
 - [**Sprints**](/sprints/)
