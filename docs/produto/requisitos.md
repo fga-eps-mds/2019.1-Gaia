@@ -42,12 +42,15 @@ EP 04 - Acompanhamento de furacões
 ## Histórias de Usuário
 | ID | Descrição | Feature | Épico | Pontos | Prioridade |
 | -- | --------- | ------- | ----- | ------ | ---------- |
-| 01 | Eu, como usuário, desejo que o sistema obtenha o clima de uma cidade para que eu possa saber as condições climáticas do dia | 01 | 01 | | Alta |
-| 02 | Eu, como usuário, desejo que o sistema obtenha a latitute e a logitude de qualquer lugar do mundo a partir da API do Google Maps | 02 | 01 | | Média |
-| 03 | Eu, como usuário, desejo interagir com a Gaia para que ela me responda | 01 | 01, 02 | | Alta |
-| 04 | Eu, como usuário, desejo que o sistema salve os locais com suas latitudes e longitudes para que o sistema não precise fazer diversas requisições | 02 | 01 |  | Média |
-| 05 | Eu, como usuário, desejo que a API Clima chame a API Local para que o sistema possa receber o clima do local | 01 | 01 | | Média |
-| 06 | Eu, como usuário, desejo que a Gaia me informe as condições metereológicas de um determinado local para que eu consiga visualizá-las | 01 | 01 | | Alta |
+| 01 | Eu, como usuário, desejo que o sistema obtenha o clima de uma cidade para que eu possa saber as condições climáticas do dia | 01 | 01 | 08 | Alta |
+| 02 | Eu, como usuário, desejo que o sistema obtenha a latitute e a logitude de qualquer lugar do mundo a partir da API do Google Maps | 02 | 01 | 13 | Média |
+| 03 | Eu, como usuário, desejo interagir com a Gaia para que ela me responda | 01 | 01, 02 | 13 | Alta |
+| 04 | Eu, como usuário, desejo que o sistema salve os locais com suas latitudes e longitudes para que o sistema não precise fazer diversas requisições | 02 | 01 | 08 | Média |
+| 05 | Eu, como usuário, desejo que a API Clima chame a API Local para que o sistema possa receber o clima do local | 01 | 01 | 05 | Média |
+| 06 | Eu, como usuário, desejo obter resposta plausíveis sempre que eu falar com a Gaia para que eu possa manter um diálogo | 01 | 01, 02 | 03 | Alta |
+| 07 | Eu, como usuário, desejo que o sistema seja capaz de tratar os dados referentes ao clima para que eu possa entendê-los | 01 | 01 | 05 | Média |
+| 08 | Eu, como usuário, desejo que a Gaia exiba as modalidades mais favoráveis a serem praticadas para que eu fique informado | 06 | 02 |  | Alta |
+| 09 | Eu, como usuário, desejo que o sistema salve os parâmetros de modalidade no banco para que eu consiga consultá-los a qualquer momento | 04 | 02 | | Média |
 
 
 
