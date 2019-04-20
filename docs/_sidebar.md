@@ -1,7 +1,6 @@
 - [Home](/)
 
 - [**Produto**](/produto/)
-  - [Documento de Visão](produto/DocVisao.md)
   - [Termo de Abertura do Projeto](produto/TAP.md)
   - [Estrutura Analítica do Projeto](produto/EAP.md)
   - [Documento de Visão](projeto/DocVisao.md)
