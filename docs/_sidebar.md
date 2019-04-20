@@ -3,7 +3,7 @@
 - [**Produto**](/produto/)
   - [Termo de Abertura do Projeto](produto/TAP.md)
   - [Estrutura Analítica do Projeto](produto/EAP.md)
-  - [Documento de Visão](projeto/DocVisao.md)
+  - [Documento de Visão](produto/DocVisao.md)
   - [Canvas](produto/canvas.md)
   - [Backlog do Produto](produto/requisitos.md)
   - [Manual de Identidade Visual](produto/manualDeIdentidadeVisual.md)
