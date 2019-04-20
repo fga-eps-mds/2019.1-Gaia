@@ -1,6 +1,6 @@
 # Chatbot Gaia
 ### Arquitetura
-#### Versão 1.6
+#### Versão 1.7
 
 
 ## Histórico de Revisão
@@ -14,6 +14,7 @@
 |29/03/2019|   1.4  |Criação dos tópicos 2.4.1, 2.4.2,  2.4.3 e 2.4.4.                     |Luis Henrique Taira |
 |05/04/2019|   1.5  |Adição dos tópicos 4.2.1,4.2.2,4.2.3, revisão e formatação do documento          |Micaella Gouveia    |
 |12/04/2019| 1.6 | Adição do tópico 2.3 |Amanda Muniz |
+|17/04/2019| 1.7 | Revisão geral, adição de novas versões dos diagramas, correção de informações |Amanda Muniz |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -26,23 +27,23 @@
 &emsp; [2.1 Diagrama de Relações](#_21-diagrama-de-relações) <br>
 &emsp; [2.2 Representação dos Microsserviços](#_22-representação-dos-microsserviços) <br>
 &emsp; &emsp; [2.2.1 Cronjob Notifica](#_221-cronjob-notifica) <br>
-&emsp; &emsp; [2.2.2 Busca Clima](#_222-busca-clima) <br>
-&emsp; &emsp; [2.2.3 Escolhe Esporte](#_223-escolher-esporte) <br>
-&emsp; &emsp; [2.2.4 Busca Local](#_224-busca-local) <br>
-&emsp; &emsp; [2.2.5 API Gateway](#_225-api-gateway) <br>
+&emsp; &emsp; [2.2.2 Gaia-Clima](#_222-gaia-clima) <br>
+&emsp; &emsp; [2.2.3 Gaia-Local](#_223-gaia-local) <br>
+&emsp; &emsp; [2.2.4 API Gateway](#_224-api-gateway) <br>
 &emsp; [2.3 Padrões](#_23-padrões) <br>
 &emsp; &emsp; [2.3.1 Padrão API Gateway](#_231-padrão-api-gateway) <br>
 &emsp; &emsp; [2.3.2 Padrão API Composition](#_232-padrão-api-composition) <br>
 &emsp; [2.4 Tecnologias](#_24-tecnologias) <br>
 &emsp; &emsp; [2.4.1 API de bot do Telegram](#_241-api-de-bot-do-telegram) <br>
 &emsp; &emsp; [2.4.2 API de mensagens do Facebook Messenger](#_242-api-de-mensagens-do-facebook-messenger) <br>
-&emsp; &emsp; [2.4.3 API OpenWeatherMap](#_243-api-de-openweathermap) <br>
-&emsp; &emsp; [2.4.4 Google Maps Geocoding API](#_244-google-maps-geocoding-api) <br>
-&emsp; &emsp; [2.4.5 Python](#_245-python) <br>
-&emsp; &emsp; [2.4.6 JavaScript](#_246-javascript) <br>
+&emsp; &emsp; [2.4.3 OpenWeatherMap API](#_243-openweathermap-api) <br>
+&emsp; &emsp; [2.4.4 OpenCage Geocoder API](#_244-opencage-geocoder-api) <br>
+&emsp; &emsp; [2.4.5 Rasa](#_245-rasa) <br>
+&emsp; &emsp; [2.4.6 NodeJS](#_246-nodejs) <br>
+&emsp; &emsp; [2.4.7 MongoDB](#_247-mongodb) <br>
 [3. Metas e Restrições da Arquiteura](#_3-metas-e-restrições-da-arquitetura) <br>
-&emsp; [3.1 Metas](#_31-metas) <br>
-&emsp; [3.2 Restrições](#_31-restrições) <br>
+&emsp; [3.1 Restrições Tecnológicas](#_31-restrições-tecnológicas) <br>
+&emsp; [3.2 Requisitos Não Funcionais](#_31-requisitos-não-funcionais) <br>
 [4. Visão Lógica](#_4-visão-lógica) <br>
 &emsp; [4.1. Visão Geral](#_41-visão-geral) <br>
 &emsp; [4.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#_42-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura) <br>
@@ -97,7 +98,8 @@ processos pesados;</li>
 ## 2. Representação Arquitetural
 ### 2.1 Diagrama de Relações
 
-![alt text](https://i.imgur.com/cceUiwD.png)
+![](../assets/imgs/architecture/arquiteturaV05.png)
+Imagem 01 - Representação da arquitetura através de um diagrama de relações
 
 <p align="justify">&emsp;&emsp;O estilo arquitetural de microsserviços é uma abordagem que visa implementar uma aplicação como uma suíte de pequenos serviços. Onde cada um executa um processo próprio e se comunica, geralmente, com requests HTTP. Tendo em vista a principal característica desse estilo arquitetural, a independência entre os serviços, o chatbot Gaia terá microsserviços como parte de sua arquitetura. </p>
 <p align="justify">&emsp;&emsp;Além disso, cada serviço interno da Gaia terá seu próprio repositório. Destacando assim, mais uma característica desse estilo arquitetural, onde cada um deles terá seu próprio ambiente, tecnologias, integração contínua e deploy.</p>
@@ -105,32 +107,34 @@ processos pesados;</li>
 <ul>
 <li>API Gateway;</li>
 <li>Cronjob Notifica;</li>
-<li>Busca Clima;</li>
-<li>Escolhe Esporte;</li>
-<li>Busca Local.</li></ul>
-<p align="justify">&emsp;&emsp;Para a execução completa do projeto será necessário consumir dados de fontes externas, sendo elas:</p>
+<li>Gaia-Clima;</li>
+<li>Gaia-Local.</li></ul>
+<p align="justify">&emsp;&emsp;Para a execução completa do projeto será necessário o consumo de dados de fontes externas, sendo elas:</p>
 <ul>
 <li>API Telegram;</li>
 <li>API Facebook;</li>
 <li>API OpenWeatherMaps;</li>
-<li>API GoogleMaps.</li></ul>
+<li>API OpenCage Geocoder.</li></ul>
 <p align="justify">&emsp;&emsp;Além do comportamento interno da Gaia, outro fator importante a ser considerado é a criação do chatbot em si. Para isso, vários fatores precisam ser considerados, como o uso de linguagem natural. Por isso, será utilizado a tecnologia Rasa, que se divide em Rasa Core e Rasa NLU. Rasa Core é de extrema importância para criar um bot baseado em Machine Learning. Já o Rasa NLU é responsável pelo processamento da linguagem natural. Essa combinação vai garantir que a Gaia tenha uma comunicação acessível com o usuário.</p>
+
+<p align="justify">&emsp;&emsp;Para a Release 1 a arquitetura geral não será implementada. Pensando no nível de conhecimento tecnológico dos integrantes de MDS durante a primeira fase da matéria, foi decidido pelos membros de EPS que o bot a ser entregue na primeira release seguirá a seguinte arquitetura:
+
+![](../assets/imgs/architecture/arquiteturaR1.png)
+Imagem 02 - Representação da arquitetura para a R1
 
 ### 2.2 Representação dos Microsserviços
 
 #### 2.2.1 Cronjob Notifica
-<p align="justify">&emsp;&emsp;O termo Cronjob ou Cron Job refere-se a tarefas que são executadas de forma automática dado um intervalo de tempo. Por isso, um microsserviço essencial para a Gaia é um cronjob de notificação. Ele será responsável por registrar as preferências de um usuário, sendo elas, uma cidade e um tempo determinado para a notificação; além de mandar o alerta para o chat com as condições climáticas da localização desejada no período esperado pelo usuário.</p>
+<p align="justify">&emsp;&emsp;O termo Cronjob ou Cron Job refere-se a tarefas que são executadas de forma automática dado um intervalo de tempo. Por isso, um microsserviço essencial para a Gaia é um cronjob de notificação. Ele será responsável por manter um usuário e por registrar as preferências do mesmo, sendo elas, uma cidade e um tempo determinado para a notificação; além de mandar o alerta para o chat com as condições climáticas da localização desejada no período esperado pelo usuário.</p>
 
-#### 2.2.2 Busca Clima
-<p align="justify">&emsp;&emsp;O microsserviço “Busca Clima” é responsável por fazer requisições para a API externa do OpenWeatherMaps. A necessidade dessa funcionalidade ocorre por haver uma limitação de requisições diárias na versão livre dessa API. Dessa forma, todos os pedidos de dados feitos ao OpenWeatherMaps estarão centralizadas em um só local. Além disso, esse microsserviço também será responsável por informar o usuário sobre as condições climáticas de qualquer local do mundo.</p>
+#### 2.2.2 Gaia-Clima
+<p align="justify">&emsp;&emsp;O microsserviço Gaia-Clima é responsável por fazer requisições para a API externa do OpenWeatherMaps. A necessidade dessa funcionalidade ocorre por haver uma limitação de requisições diárias na versão livre dessa API. Dessa forma, todos os pedidos de dados feitos ao OpenWeatherMaps estarão centralizadas em um só local. Outro fator importante é que os dados fornecidos por essa API externa precisam de tratamento, como conversão e entre outros. Além disso, esse microsserviço será responsável por informar o usuário sobre as condições climáticas de qualquer local do mundo.</p>
+<p align="justify">&emsp;&emsp;Outra funcionalidade presente neste microsserviço é a indicação de um esporte ou uma lista de esportes ao usuário, baseado nas condições climáticas da cidade. Ou seja, o usuário perguntará quais são os melhores esportes para serem praticados naquele determinado clima, e o microsserviço terá que comparar as variáveis presentes nas condições climáticas, com a condição climática ideal dos esportes e retornar esse informação ao usuário.</p>
 
-#### 2.2.3 Escolhe Esporte
-<p align="justify">&emsp;&emsp;Este microsserviço tem como responsabilidade indicar um esporte ou uma lista de esportes ao usuário, baseado nas condições climáticas da cidade. Ou seja, o usuário perguntará quais são os melhores esportes para serem praticados naquele determinado clima, e o microsserviço terá que comparar as variáveis presentes nas condições climáticas, com a condição climática ideal dos esportes e retornar esse informação ao usuário.</p>
+#### 2.2.3 Gaia-Local
+<p align="justify">&emsp;&emsp;O microsserviço Gaia-Local é responsável por receber o nome de uma cidade e responder com a sua latitude e longitude exata. Isso é necessário, uma vez que, a API OpenWeatherMaps não retorna informações com o nome exato do local como parâmetro - para cidades que não são capitais, mas se tiver a latitude e longitude sim. Por isso, um microsserviço responsável por fazer requisições a API do OpenCage Geocoder é de extrema importância para manter um diálogo fácil com o usuário e retornar as informações certas sobre a condição climática.</p>
 
-#### 2.2.4 Busca Local
-<p align="justify">&emsp;&emsp;O microsserviço “Busca Local” é responsável por receber o nome de uma cidade e responder com a sua latitude e longitude exata. Isso é necessário, uma vez que, a API OpenWeatherMaps não retorna informações com o nome exato do local como parâmetro - para cidades que não são capitais, mas se tiver a latitude e longitude sim. Por isso, um microsserviço responsável por fazer requisições a API do Google Maps é de extrema importância para manter um diálogo fácil com o usuário e retornar as informações certas sobre a condição climática.</p>
-
-#### 2.2.5 API Gateway
+#### 2.2.4 API Gateway
 <p align="justify">&emsp;&emsp;Dentro de uma arquitetura de microsserviços ter um API Gateway é importante para gerenciar o acesso às API’s de um determinado sistema. Ou seja, ele é um padrão de software que funciona de forma similar a uma fachada sendo o único ponto de acesso, - que controla as entradas e saídas de dados, o tráfego de tarefas e monitora, - para as API’s internas. Sua existência reduz problemas causados pela interação entre cliente e microsserviços, além de conservar o ambiente dos serviços. </p>
 
 ### 2.3 Padrões
@@ -149,63 +153,77 @@ processos pesados;</li>
 ## 2.4 Tecnologias
 
 #### 2.4.1 API do Bot de Telegram
-<p align="justify">&emsp;&emsp;A API de bot do Telegram permite que bots interajam diretamente com usuários por meio de mensagens e comandos.</p>
-<p align="justify">&emsp;&emsp;O telegram exige uma conexão HTTPS para interagir com a API e pede que todos os desenvolvedores suportem os comandos ‘/start’, ‘/help’, e ‘/settings’ em seus bots para facilitar a interação de usuários com a multitude de bots existentes. </p>
+<p align="justify">&emsp;&emsp;A API de bot do Telegram permite que bots interajam diretamente com usuários por meio de mensagens e comandos. Ela será usada para um dos deploys, de forma a garantir que a Gaia consiga atingir uma faixa de usuários que não utilizam o Facebook. Para isso a Gaia precisará atender alguns critérios, já que o Telegram exige uma conexão HTTPS para interagir com a API e pede que todos os desenvolvedores suportem os comandos ‘/start’, ‘/help’, e ‘/settings’ em seus bots para facilitar a interação de usuários. </p>
 
 #### 2.4.2 API de Mensagens do Facebook Messenger
-<p align="justify">&emsp;&emsp;O Messenger permite que bots mandem e recebam mensagens por meio de sua API.</p>
-<p align="justify">&emsp;&emsp;Diferentemente de outras APIs para bots, a do Messenger possui a política chamada de ‘24+1’, que impõe um limite de 24 horas para que bots mandem mensagens para usuários após o usuário contatar o bot, sendo permitido que o bot mande uma mensagem depois de o limite de 24 horas ter expirado.</p>
-<p align="justify">&emsp;&emsp;A API do Messenger disponibiliza também um modo, que está em beta, de mensagens por inscrição, que permite que bots mandem mensagens periódicas para usuários, sem que exista um limite de 24 horas. </p>
+<p align="justify">&emsp;&emsp;O Messenger permite que bots mandem e recebam mensagens por meio de sua API. Porém diferente de outras, o Messenger possui uma política chamada de ‘24+1’. Essa política impõe um limite de 24 horas, após o contato do usuário, para que os bots consigam mandar mensagens resposta, sendo permitido o envio de uma úncia mensagem depois desse limite ter expirado. A API do Messenger disponibiliza também um modo, atualmente em beta, de mensagens por inscrição que permite que bots mandem mensagens periódicas para usuários sem que exista um limite.</p>
 
-#### 2.4.3 API do OpenWeather
-<p align="justify">&emsp;&emsp;A API do openweathermap.org é capaz de fornecer um grande número de informações relacionadas a previsão do tempo e principalmente de condições climáticas atuais com base em localização.</p>
-<p align="justify">&emsp;&emsp;Podem ser fornecidos nomes de capitais ou coordenadas de localização para se obter dados da API.</p>
+#### 2.4.3 OpenWeatherMap API
+<p align="justify">&emsp;&emsp;A API do OpenWeatherMap é capaz de fornecer um grande número de informações relacionadas a previsão do tempo e principalmente de condições climáticas atuais com base em localização, tanto pelo nome de capitais quanto pelas coordenadas geográficas. Além disso, a OpenWeatherMaps possui diferentes categorias para requests. A Gaia irá utilizar duas dessas categorias, a Current Weather para o microsserviço clima e a 5 days/3 hours forecast para o cronjob de notificação.</p>
 
 
-#### 2.4.4 Google Maps Geocoding API
-<p align="justify">&emsp;&emsp;A Geocoding API do Google Maps fornece coordenadas geográficas quando a ela é fornecido o nome de um lugar como: lago Paranoá, Águas Claras, DF, Brasil.</p>
-<p align="justify">&emsp;&emsp;As coordenadas fornecidas pela API serão fornecidas a API do OpenWeatherMap.</p>
-<p align="justify">&emsp;&emsp;A Geocoding API também pode fornecer informações sobre o lugar fornecido como endereço legível por humanos, CEP e tipo de localização.</p>
+#### 2.4.4 OpenCage Geocoder API
+<p align="justify">&emsp;&emsp; A API OpenCage Geocoder converte coordenadas em nome de lugares e vice-versa. Ela será utilizada pela Gaia no microsserviço Gaia-Local. Isso é necessário porque a API externa OpenWeatherMap só consegue fornecer o clima por nome para cidades grandes. Portanto, a OpenCage Geocoder será acessada sempre que o usuário falar o nome de um local, para que o microsserviço Gaia-Clima consiga forncer o clima a partir da latitude e longitude de um lugar.</p>
 
-#### 2.4.5 Python
-<p align="justify">&emsp;&emsp;Python é uma moderna linguagem interpretada de alto nível é será utilizada no front end da aplicação em conjunto com os frameworks Rasa NLU e Rasa Core.</p>
+#### 2.4.5 Rasa
 
-#### 2.4.6 JavaScript
-<p align="justify">&emsp;&emsp;JavaScript é uma linguagem interpretada de alto nível é será utilizada no back end da aplicação em conjunto com o framework Node.js</p>
+![](../assets/imgs/architecture/diagramaFluxoRASA.jpeg)
+Imagem 03 - Fluxo básico da tecnologia Rasa
 
+<p align="justify">&emsp;&emsp;Rasa é um conjunto de ferramentas para Python para a criação de bots. Ele tem duas principais frentes, o Rasa Core e o Rasa NLU. O Rasa Core baseia a o desenvolvimento em Machine Learning, onde você consegue treinar e atualizar as models “conversando” e provendo feedback para o bot. Já o Rasa NLU é responsável pelo processamento da linguagem natural.</p>
+
+#### 2.4.6 NodeJS
+
+![](../assets/imgs/architecture/diagramaFluxoNodejs.png)
+
+Imagem 04 - Fluxo básico da tecnologia NodeJS
+
+<p align="justify">&emsp;&emsp;Node.js é uma plataforma de aplicação para Javascript, que tem como principal objetivo facilitar a construção de softwares escaláveis. Ele geralmente é usado ao lado do servidor e é orientado para o estilo de programação voltada a evento. Isso faz com que ele seja leve, eficiente e uma boa alternativa para arquitetura de microsserviços.</p>
+
+#### 2.4.7 MongoDB
+
+<p align="justify">&emsp;&emsp;MongoDB é um framework de banco de dados noSQL. Ele é orientado a documento, livre de esquemas, não relacional, e open-source. MongoDB trabalha com arquivos JSON que contém toda a informação do banco de dados.</p>
 
 ## 3. Metas e Restrições de Arquitetura
-### 3.1 Metas
-<p align="justify">&emsp;&emsp;Possuímos as seguintes metas:</p>
-Funcionar nos serviços de mensagens instantâneas Telegram e Messenger.
-Consumir as API’s do Telegram, Facebook, OpenWeatherMaps, GoogleMaps.
 
-### 3.2 Restrições
-<p align="justify">&emsp;&emsp;Possuímos as seguintes restrições:</p>
-Rasa: Framework para o desenvolvimento do chatbot
-Python : Linguagem base das aplicações do front-end
-Node.js : Plataforma de aplicação utilizada para o back-end
-JavaScript : linguagem base do Node.js
-MongoDB : Software utilizado para o banco de dados
+### 3.1 Restrições Tecnológicas
 
+<p align="justify">&emsp;&emsp;Para o desenvolvimenta da Gaia serão utilizados as seguintes tecnologias:</p>
+
+- Rasa: Conjuntos de ferramentas de Machine Learning para a criação de chatbots.
+- Python: Linguagem base utilizada no Rasa.
+- Node.js: Plataforma de aplicação utilizada nos microsserviços.
+- JavaScript: Linguagem base utilizada no Node.js.
+- MongoDB: Software utilizado para o banco de dados,
+
+### 3.2 Requisitos Não Funcionais
+
+- O sistema deve ter integração com o Telegram;
+- O sistema deve ter integração com o Facebook;
+- O sistema deve conversar com o usuário em linguagem natural;
+- O sistema deve respeitar a personalidade do bot;
+- O sistema deve aprender novos comportamentos de acordo com a resposta do usuário;
 
 ## 4. Visão Lógica
+
 ### 4.1 Visão Geral
-<p align=”justify”>&emsp;&emsp; A aplicação do ChatBot Gaia é construída sobre o framework Rasa em linguagem Python no front-end e sobre a plataforma Node.js em linguagem JavaScript no back-end. O objetivo do RasaNLU é aplicar algoritmos de linguagem natural para extrair a intenção do usuário (intents) e a partir do Rasa Core é possível gerir o diálogo entre o usuário e o bot. A principal funcionalidade é o policy, que recebe a intent do usuário, atualiza o tracker() e prevê a melhor ação do bot (utter, action, listening). A plataforma Node.js é um ambiente de tempo de execução que executa o código em JavaScript para escrever ferramentas de linha de comando e para scripts do lado do servidor, capaz de executar uma entrada/saída assíncrona, que permite que outro processamento continue antes que a transmissão tenha encerrado.</p>
+
+<p align=”justify”>&emsp;&emsp; A aplicação do ChatBot Gaia é construída com a tecnologia Rasa em linguagem Python no bot e sobre a plataforma Node.js em linguagem JavaScript nos microsserviços. O objetivo do RasaNLU é aplicar algoritmos de linguagem natural para extrair a intenção do usuário (intents) e a partir do Rasa Core é possível gerir o diálogo entre o usuário e o bot. A principal funcionalidade é o policy, que recebe a intent do usuário, atualiza o tracker() e prevê a melhor ação do bot (utter, action, listening). A plataforma Node.js é um ambiente de tempo de execução que executa o código em JavaScript para escrever ferramentas de linha de comando e para scripts do lado do servidor, capaz de executar uma entrada/saída assíncrona, que permite que outro processamento continue antes que a transmissão tenha encerrado.</p>
 
 ### 4.2 Pacotes de Design Significativos do Ponto de Vista da Arquitetura
 
 #### 4.2.1 Diagrama de pacotes
-![alt text](https://i.imgur.com/HuuLyBC.png)
+
+![](../assets/imgs/architecture/diagramaDePacotesMicrosservicos.png)
+
+Imagem 05 - Diagrama de Pacotes dos Microsserviços
+
+![](../assets/imgs/architecture/diagramaDePacotesBot.png)
+
+Imagem 06 - Diagrama de Pacotes do Bot Gaia
 
 #### 4.2.2 Diagrama de classe
-![alt text](https://i.imgur.com/GpuBj8p.png)
 
-#### 4.2.3 Diagramas de fluxo
-<p align="justify">&emsp;&emsp;Fluxo do Rasa:</p>
+![](../assets/imgs/architecture/diagramaDeClasse.png)
 
-![alt text](https://i.imgur.com/ik3vWjQ.jpg)
-
-<p align="justify">&emsp;&emsp;Fluxo do Node.js:</p>
-
-![alt text](https://i.imgur.com/TtAzsd6.png)
+Imagem 07 - Diagrama de Classe
