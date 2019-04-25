@@ -16,34 +16,28 @@ O padrão de condições adotado segue a seguinte escala:
 
 * Condições favoráveis;
 
-* Condições razoáveis;
-
 * Condições ruins;
-
-* Perigoso;
-
-* Não adequado.
 
 ## Ventos
 
-| Condições de vento | Windsurf | Kitesurf | Surf e Bodyboard | Stand Up Paddle | Vela |
+| Condições de vento | Windsurf | Kitesurf | Surf | Stand Up Paddle | Vela |
 | - | - | - | - | - | - |
-0 a 20 nós | Condições favoráveis  | Condições favoráveis  | Condições favoráveis | Condições ruins | Não adequado |
-21 a 30 nós | Não adequado  | Condições ruins | Condições ruins | Condições razoáveis | Perigoso |
-31 a 40 nós | Condições razoáveis | Perigoso | Não adequado | Condições faroráveis | Condições ruins |
-41 a 50 nós | Condições ruins | Condições razoáveis | Não adequado | Perigoso | Condições favoráveis |
+0 a 20 nós | Condições ruins  | Condições favoráveis  | Condições ruins | Condições ruins | Condições favoráveis |
+21 a 30 nós | Condições favoráveis  | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins |
+31 a 40 nós | Condições ruins | Condiçoes favoráveis | Condições favoráveis | Condições faroráveis | Condições ruins |
+41 a 50 nós | Condições favoráveis | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis |
 
 
 <div class="space"></div> 
 
 ## Temperatura
 
-| Temperatura média | Windsurf | Kitesurf | Surf e Bodyboard | Stand Up Paddle | Vela |
+| Temperatura média | Windsurf | Kitesurf | Surf | Stand Up Paddle | Vela |
 | - | - | - | - | - | - |
-15 a 19 ºC | Condições ruins | Condições razoáveis | Condições razoáveis | Não adequado | Condições favoráveis |
-20 a 24 ºC | Condições favoráveis | Condições ruins | Condições razoáveis | Condições favoráveis | Condições razoáveis |
-25 a 29 ºC | Condições ruins | Perigoso | Condições favoráveis | Não adequado | Condições razoáveis |
-30 a 35 ºC | Condições razoáveis | Condições razoáveis | Perigoso | Condições ruins | Condições favoráveis |
+15 a 19 ºC | Condições ruins | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis |
+20 a 24 ºC | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições favoráveis |
+25 a 29 ºC | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins |
+30 a 35 ºC | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições favoráveis |
 
 
 ## Umidade
@@ -53,9 +47,9 @@ O padrão de condições adotado segue a seguinte escala:
     <th>Umidade relativa</th>
     <th>Windsurf</th>
     <th>Kitesurf</th>
-    <th>Surf e Bodyboard</th>
+    <th>Surf </th>
     <th>Stand Up Paddle</th>
-    <th>Vela</th>
+    <th>Vela </th>
   </tr>
   <tr>
     <td>Entre 70% e 40%</td>
