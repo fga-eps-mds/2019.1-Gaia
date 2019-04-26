@@ -19,3 +19,6 @@
 
 - Sprint 4
   - [Planejamento Sprint 4](sprints/sprint4/planning4.md)
+
+- Sprint 5
+  - [Planejamento Sprint 5](sprints/sprint5/planning5.md)
