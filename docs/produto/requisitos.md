@@ -49,8 +49,12 @@ EP 04 - Acompanhamento de furacões
 | 05 | Eu, como usuário, desejo que a API Clima chame a API Local para que o sistema possa receber o clima do local | 01 | 01 | 05 | Média |
 | 06 | Eu, como usuário, desejo obter resposta plausíveis sempre que eu falar com a Gaia para que eu possa manter um diálogo | 01 | 01, 02 | 03 | Alta |
 | 07 | Eu, como usuário, desejo que o sistema seja capaz de tratar os dados referentes ao clima para que eu possa entendê-los | 01 | 01 | 05 | Média |
-| 08 | Eu, como usuário, desejo que a Gaia exiba as modalidades mais favoráveis a serem praticadas para que eu fique informado | 06 | 02 |  | Alta |
-| 09 | Eu, como usuário, desejo que o sistema salve os parâmetros de modalidade no banco para que eu consiga consultá-los a qualquer momento | 04 | 02 | | Média |
+| 08 | Eu, como usuário, desejo que a Gaia me responda de forma coerente | 06 | 01, 02 | 03 | Média |
+| 09 | Eu, como usuário, desejo que a Gaia forneça os dados corretos a respeito de clima | 01, 02 | 01 | 13 | Alta |
+| 10 | Eu, como usuário, desejo que a Gaia forneça os dados corretos a respeito do esporte | 01, 04, 05, 06 | 01, 02 | 05 | Média |
+| 11 | Eu, como usuário, desejo que o sistema consiga filtrar o esporte de acordo com as condições meteorológicas | 04, 05, 06 | 01, 02 | 08 | Alta |
+| 12 | Eu, como usuário, desejo que o sistema retorne o local com mais acurácia e precisão | 01, 02, 06 | 01, 02 | 13 | Alta |
+| 13 | Eu, como usuário, desejo que o serviço me indique os endpoints | 01, 02, 04, 05 | 02 | 01 | Baixa |
 
 
 
