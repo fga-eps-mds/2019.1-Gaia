@@ -112,6 +112,12 @@ Utilizando uma dinâmica de retrospectiva obtida no site [Knowledge](https://www
 
 ![Health Check Sprint 3](../../assets/imgs/healthcheck/healthcheck-s3.png)
 
+
+# Burndown de Riscos 
+
+![Burndown de Riscos 3](../../assets/imgs/riscos/riscos3.png)
+
+
 ### Observações levantadas ao longo da reunião
 
 * Foi reduzida a quantidade de tarefas de EPS, levando em conta que as entregas estavam sendo prejudicadas, principalmente pelo tempo usado para ajudar MDS.

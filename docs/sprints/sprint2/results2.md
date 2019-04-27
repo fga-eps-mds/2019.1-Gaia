@@ -102,6 +102,12 @@ Na Sprint 2 houve a primeira coleta do Health Check, por isso ainda não é poss
 
 1: Bom | 2: Mediano | 3: Ruim
 
+
+# Burndown de Riscos 
+
+![Burndown de Riscos 2](../../assets/imgs/riscos/riscos2.png)
+
+
 ### Observações levantadas ao longo da reunião
 
 - Tratamento de dados, como tradução para português, unidades de medida e etc.
