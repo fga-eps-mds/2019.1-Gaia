@@ -53,6 +53,11 @@ O objetivo da Sprint 0 foi contextualizar o time MDS sobre a matéria, escolher 
 ![Velocity Sprint 1](../../assets/imgs/velocity/Velocity-Sprint0.png)
 
 
+# Burndown de Riscos 
+
+![Burndown de Riscos 0](../../assets/imgs/riscos/riscos0.png)
+
+
 ## Avaliação Tech Lead
 
 
