@@ -1,0 +1,9 @@
+.release-imgs{
+    position: relative;
+    width: 15em !important;
+    transition: all .2s ease-in-out;  
+}
+
+.release-imgs:hover{
+    transform: scale(1.1);
+}

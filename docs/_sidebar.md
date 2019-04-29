@@ -21,3 +21,10 @@
   - [Plano de Gerenciamento de Riscos](projeto/planoRisco.md)
 
 - [**Sprints**](/sprints/)
+  
+- Avaliação da Release 1
+  - [Burndown](/sprints/release1/burndown.md)
+  - [Velocity](/sprints/release1/velocity.md)
+  - [Conhecimento](/sprints/release1/conhecimento.md)
+  - [Health Check](/sprints/release1/healthcheck.md)
+  - [Burndown de Riscos](/sprints/release1/riscos.md)
