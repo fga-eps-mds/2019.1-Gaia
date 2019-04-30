@@ -5,9 +5,10 @@
   - [Estrutura Analítica do Projeto](produto/EAP.md)
   - [Documento de Visão](produto/DocVisao.md)
   - [Canvas](produto/canvas.md)
+  - [Análise de Mercado](produto/matrizValor.md)
   - [Backlog do Produto](produto/requisitos.md)
   - [Manual de Identidade Visual](produto/manualDeIdentidadeVisual.md)
-  - [Modalidadades](/produto/modalidades.md)
+  - [Modalidades](/produto/modalidades.md)
   - [Protótipos](/produto/prototipo.md)
 
 - [**Projeto**](/projeto/)
