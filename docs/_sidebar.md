@@ -2,32 +2,40 @@
 - [Home](/)
 
 - [**Produto**](/produto/)
+  - [Estrutura Analítica do Projeto](produto/EAP.md)
+  - [Documento de Visão](produto/DocVisao.md)
+  - [Canvas](produto/canvas.md)
+  - [Análise de Mercado](produto/matrizValor.md)
   - [Backlog do Produto](produto/requisitos.md)
   - [Canvas](produto/canvas.md)
   - [Documento de Visão](produto/DocVisao.md)
   - [Estrutura Analítica do Projeto](produto/EAP.md)
   - [Manual de Identidade Visual](produto/manualDeIdentidadeVisual.md)
-  - [Modalidadades](/produto/modalidades.md)
+  - [Modalidades](/produto/modalidades.md)
   - [Protótipos](/produto/prototipo.md)
   - [Termo de Abertura do Projeto](produto/TAP.md)
 
 - [**Projeto**](/projeto/)
+  - [Definição da Arquitetura](projeto/definicaoArquitetura.md)
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
   - [Plano de Comunicação](/projeto/planoComunicacao.md)
   - [Plano de Gerenciamento de Riscos](projeto/planoRisco.md)
   - [Plano de Metodologia](/projeto/planoMetodologia.md)
   - [Plano de Métricas](projeto/planoMetricas.md)
-  - [Processo de Implementação](/projeto/processo.md)
-  - [Roadmap dos Papéis](/projeto/RoadmapPapeis.md)
   - [Roadmap dos Papéis](/projeto/RoadmapPapeis.md)
   - [Roadmap Geral](/projeto/roadmapGeral.md)
-    
+  - [Pipeline de Entrega](projeto/pipelineEntrega.md)
+
+<br />
+
 - Avaliação da Release 1
   - [Burndown](/sprints/release1/burndown.md)
   - [Velocity](/sprints/release1/velocity.md)
   - [Conhecimento](/sprints/release1/conhecimento.md)
   - [Health Check](/sprints/release1/healthcheck.md)
   - [Burndown de Riscos](/sprints/release1/riscos.md)
+
+<br />
 
 - [**Sprints**](/sprints/)
   - Sprint0
