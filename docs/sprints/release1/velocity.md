@@ -7,6 +7,5 @@
 ![velocity2](../../assets/imgs/velocity/Velocity-Sprint2.png)
 ![velocity3](../../assets/imgs/velocity/Velocity-Sprint3.png)
 ![velocity4](../../assets/imgs/velocity/Velocity-Sprint4.png)
-![velocity5](../../assets/imgs/velocity/Velocity-Sprint4.png)
 
   
