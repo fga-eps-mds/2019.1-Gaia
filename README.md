@@ -13,7 +13,7 @@ A Gaia tem como principais funcionalidades:
 
 # Encontre a Gaia
 
-Você pode conversar com a Gaia pelo Telegram com o [@DeusaGaiaBot](https://t.me/DeusaGaiaBot) e futuramente pelo Facebook!
+Você pode conversar com a Gaia pelo Telegram com o [@GaiaHmlBot](https://t.me/GaiaHmlBot) e futuramente pelo Facebook!
 
 
 # Quer contribuir para o projeto? 
