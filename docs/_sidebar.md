@@ -19,6 +19,7 @@
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
   - [Plano de Métricas](projeto/planoMetricas.md)
   - [Plano de Gerenciamento de Riscos](projeto/planoRisco.md)
+  - [Pipeline de Entrega](projeto/pipelineEntrega.md)
 
 - [**Sprints**](/sprints/)
   
