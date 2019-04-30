@@ -2,31 +2,11 @@
 
 <br />
 
-<div class="container">
-  <div class="row">
-    <div class="col release-img">
-        <img src="../../assets/imgs/velocity/Velocity-Sprint0.png" alt="...">
-    </div>
-    <div class="col release-img">
-        <img src="../../assets/imgs/velocity/Velocity-Sprint1.png" alt="...">
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-sm release-img">
-      <img src="../../assets/imgs/velocity/Velocity-Sprint2.png" alt="...">    
-    </div>
-    <div class="col-sm release-img">
-      <img src="../../assets/imgs/velocity/Velocity-Sprint3.png" alt="...">
-    </div>
-    </div>
-  <br />
-  <div class="row">
-    <div class="col-sm release-img">
-        <img src="../../assets/imgs/velocity/Velocity-Sprint4.png" alt="...">
-    </div>
-    <div class="col-sm release-img">
-      <img src="../../assets/imgs/velocity/Velocity-Sprint4.png" alt="...">    
-    </div>
-  </div>
-  </div>
-</div>
+![velocity0](../../assets/imgs/velocity/Velocity-Sprint0.png)
+![velocity1](../../assets/imgs/velocity/Velocity-Sprint1.png)
+![velocity2](../../assets/imgs/velocity/Velocity-Sprint2.png)
+![velocity3](../../assets/imgs/velocity/Velocity-Sprint3.png)
+![velocity4](../../assets/imgs/velocity/Velocity-Sprint4.png)
+![velocity5](../../assets/imgs/velocity/Velocity-Sprint4.png)
+
+  
