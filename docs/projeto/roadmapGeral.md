@@ -94,6 +94,7 @@
    * Treinamento de testes 
    * Criar roadmap geral 
 
+<br />
 
 # Sprint 4
 
@@ -112,6 +113,7 @@
    * Documentar planejaamento da Sprint 4 
    * Documentar resultados da Sprint 3 
 
+<br />
 
 # Sprint 5
 
