@@ -13,16 +13,17 @@
 - [**Projeto**](/projeto/)
   - [Roadmap Geral](/projeto/roadmapGeral.md)
   - [Plano de Comunicação](/projeto/planoComunicacao.md)
-  - [Processo de Implementação](/projeto/processo.md)
   - [Roadmap dos Papéis](/projeto/RoadmapPapeis.md)
   - [Plano de Metodologia](/projeto/planoMetodologia.md)
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
   - [Plano de Métricas](projeto/planoMetricas.md)
   - [Plano de Gerenciamento de Riscos](projeto/planoRisco.md)
   - [Pipeline de Entrega](projeto/pipelineEntrega.md)
+  - [Definição da Arquitetura](projeto/definicaoArquitetura.md)
+
 
 - [**Sprints**](/sprints/)
-  
+
 - Avaliação da Release 1
   - [Burndown](/sprints/release1/burndown.md)
   - [Velocity](/sprints/release1/velocity.md)
