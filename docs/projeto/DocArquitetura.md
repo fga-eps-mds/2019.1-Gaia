@@ -49,7 +49,10 @@
 &emsp; [4.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#_42-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura) <br>
 &emsp; &emsp; [4.2.1 Diagrama de Pacotes](#_421-diagrama-de-pacotes) <br>
 &emsp; &emsp; [4.2.2 Diagrama de Classes](#_422-diagrama-de-classes) <br>
-&emsp; &emsp; [4.2.3 Diagramas de Fluxo](#_423-diagramas-de-fluxo) <br>
+&emsp; &emsp; &emsp; [4.2.2.1 Diagrama de Classe do Gaia-Notifica](#_4221-diagrama-de-classe-do-gaia-notifica) <br>
+&emsp; &emsp; &emsp; [4.2.2.2 Diagrama de Classe do Gaia-Clima](#_4222-diagrama-de-classe-do-gaia-clima) <br>
+&emsp; &emsp; &emsp; [4.2.2.3 Diagrama de Classe do Gaia-Local](#_4223-diagrama-de-classe-do-gaia-local) <br>
+
 
 ## 1. Introdução
 ### 1.1 Finalidade
@@ -224,6 +227,20 @@ Imagem 06 - Diagrama de Pacotes do Bot Gaia
 
 #### 4.2.2 Diagrama de classe
 
-![](../assets/imgs/architecture/diagramaDeClasse.png)
+##### 4.2.2.1 Diagrama de Classe do Gaia-Notifica
 
-Imagem 07 - Diagrama de Classe
+![](../assets/imgs/architecture/diagramaClasseNotifica.png)
+
+Imagem 07 - Diagrama de Classe do Microsserviço Cronjob Notifica
+
+##### 4.2.2.2 Diagrama de Classe do Gaia-Clima
+
+![](../assets/imgs/architecture/diagramaClasseClima.png)
+
+Imagem 08 - Diagrama de Classe do Microsserviço Gaia-Clima
+
+##### 4.2.2.1 Diagrama de Classe do Gaia-Local
+
+![](../assets/imgs/architecture/digramaClasseLocal.png)
+
+Imagem 09 - Diagrama de Classe do Microsserviço Gaia-Local
