@@ -1,10 +1,13 @@
-<h1 class="display-1 sub-title">BIO</h1>
+<h1 class="display-1 sub-title">Bio</h1>
 
 <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Placerat in egestas erat imperdiet sed. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Tempus egestas sed sed risus pretium. Non blandit massa enim nec. Vitae congue mauris rhoncus aenean vel. Consequat nisl vel pretium lectus quam id. Ut tortor pretium viverra suspendisse potenti nullam ac tortor. Semper viverra nam libero justo. Id cursus metus aliquam eleifend mi. 
+  Deusa da Terra, a mãe geradora de todos os deuses e criadora do planeta, Gaia é também conhecida por Geia, Gaea ou Gê. Nascida do Caos, foi a ordenadora do Cosmos, acabando assim com a desordem e a destruição no ambiente em que se encontrava, criando a harmonia.
+    
+  Deste modo, o chatbot com inspiração de personalidade na figura mitológica Gaia, se apresenta com uma personalidade forte, concisa e muito direta em suas orientações. Com intuito de compartilhar todo seu sobre-humano conhecimento, Gaia é uma solução desenvolvida para auxiliar àqueles que praticam modalidades ao ar livre. Seu propósito é disponibilizar informações quanto a atividades mais favoráveis de serem praticadas, conforme sua previsão do tempo.
+
 </p>
 
-<h1 class="display-1 sub-title2">TIME</h1>
+<h1 class="display-1 sub-title2">Time</h1>
 
  
 <div class="container">
