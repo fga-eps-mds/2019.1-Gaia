@@ -21,7 +21,7 @@ O objetivo da Sprint 1 é instruir o time de MDS para que o Documento de Visão 
    * Docker Buscar Local <span>[13]</span>
    * Roadmap de cada frente <span>[3]</span>
    * Pipeline de DevOps <span>[3]</span>
-   * Docker Rasa <span><span>[13]</span>
+   * Docker Rasa <span>[13]</span>
 
-### Total de pontos da Sprint X: 93
+### Total de pontos da Sprint 1: 93
   

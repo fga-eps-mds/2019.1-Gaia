@@ -1,14 +1,3 @@
-# Técnicas de Elicitação Utilizadas
-
-## 1. Brainstorming
-
-<p align="justify">&emsp;&emsp;O Brainstorming é uma técnica de reunião bem difundida na Engenharia de Requisitos. Ela consiste em um grupo de pessoas de diferentes áreas levantando opiniões e trocando ideias sobre determinado assunto. O Brainstorming foi utilizado pela equipe de EPS para pensar em quais seriam as principais funcionalidades de cada microsserviço. Assim, os cinco microsserviços que existem na arquitetura do bot e o chat possuem um objetivo geral. A partir desse funcionalidade principal foram elicitados outros requisitos.</p>
-
-## 2. Introspecção
-
-<p align="justify">&emsp;&emsp;A introspecção é uma técnica muito utilizada na etapa de elicitação. Ela consiste em entender as funcionalidades importantes de um sistema. Apesar de muito usada nem sempre a introspecção traz uma visão próxima da realidade, para evitar isso a Product Owner esteve presente na elicitação levando em conta a sua visão do produto.</p>
-
-
 # Backlog do Produto
 
 O Backlog do Produto é uma lista contendo todas as funcionalidades desejadas para o chatbot Gaia. O conteúdo desta lista é definido pelo Product Owner. O Product Backlog não precisa estar completo no início de um projeto. Pode-se começar com tudo aquilo que é mais óbvio em um primeiro momento. Com o passar das sprints, o Product Backlog cresce e muda à medida que se aprende mais sobre o produto e seus usuários. 
@@ -23,7 +12,6 @@ EP 02 - Sugestão de modalidades
 EP 03 - Gerenciamento de notificações
 
 EP 04 - Acompanhamento de furacões
-
 
 ## Features
 
@@ -42,17 +30,42 @@ EP 04 - Acompanhamento de furacões
 ## Histórias de Usuário
 | ID | Descrição | Feature | Épico | Pontos | Prioridade |
 | -- | --------- | ------- | ----- | ------ | ---------- |
-| 01 | Eu, como usuário, desejo que o sistema obtenha o clima de uma cidade para que eu possa saber as condições climáticas do dia | 01 | 01 | | Alta |
-| 02 | Eu, como usuário, desejo que o sistema obtenha a latitute e a logitude de qualquer lugar do mundo a partir da API do Google Maps | 02 | 01 | | Média |
-| 03 | Eu, como usuário, desejo interagir com a Gaia para que ela me responda | 01 | 01, 02 | | Alta |
-| 04 | Eu, como usuário, desejo que o sistema salve os locais com suas latitudes e longitudes para que o sistema não precise fazer diversas requisições | 02 | 01 |  | Média |
-| 05 | Eu, como usuário, desejo que a API Clima chame a API Local para que o sistema possa receber o clima do local | 01 | 01 | | Média |
-| 06 | Eu, como usuário, desejo que a Gaia me informe as condições metereológicas de um determinado local para que eu consiga visualizá-las | 01 | 01 | | Alta |
+| 01 | Eu, como usuário, desejo que o sistema obtenha o clima de uma cidade para que eu possa saber as condições climáticas do dia | 01 | 01 | 08 | Alta |
+| 02 | Eu, como usuário, desejo que o sistema obtenha a latitute e a logitude de qualquer lugar do mundo a partir da API do Google Maps | 02 | 01 | 13 | Média |
+| 03 | Eu, como usuário, desejo interagir com a Gaia para que ela me responda | 01 | 01, 02 | 13 | Alta |
+| 04 | Eu, como usuário, desejo que o sistema salve os locais com suas latitudes e longitudes para que o sistema não precise fazer diversas requisições | 02 | 01 | 08 | Média |
+| 05 | Eu, como usuário, desejo que a API Clima chame a API Local para que o sistema possa receber o clima do local | 01 | 01 | 05 | Média |
+| 06 | Eu, como usuário, desejo obter resposta plausíveis sempre que eu falar com a Gaia para que eu possa manter um diálogo | 01 | 01, 02 | 03 | Alta |
+| 07 | Eu, como usuário, desejo que o sistema seja capaz de tratar os dados referentes ao clima para que eu possa entendê-los | 01 | 01 | 05 | Média |
+| 08 | Eu, como usuário, desejo que a Gaia me responda de forma coerente | 06 | 01, 02 | 03 | Média |
+| 09 | Eu, como usuário, desejo que a Gaia forneça os dados corretos a respeito de clima | 01, 02 | 01 | 13 | Alta |
+| 10 | Eu, como usuário, desejo que a Gaia forneça os dados corretos a respeito do esporte | 01, 04, 05, 06 | 01, 02 | 05 | Média |
+| 11 | Eu, como usuário, desejo que o sistema consiga filtrar o esporte de acordo com as condições meteorológicas | 04, 05, 06 | 01, 02 | 08 | Alta |
+| 12 | Eu, como usuário, desejo que o sistema retorne o local com mais acurácia e precisão | 01, 02, 06 | 01, 02 | 13 | Alta |
+| 13 | Eu, como usuário, desejo que o serviço me indique os endpoints | 01, 02, 04, 05 | 02 | 01 | Baixa |
 
 
+<div class="space"></div> 
 
+# Técnicas de Elicitação Utilizadas
 
-<!-- # Resultados
+## 1. Brainstorming
+
+<p align="justify">&emsp;&emsp;O Brainstorming é uma técnica de reunião bem difundida na Engenharia de Requisitos. Ela consiste em um grupo de pessoas de diferentes áreas levantando opiniões e trocando ideias sobre determinado assunto. O Brainstorming foi utilizado pela equipe de EPS para pensar em quais seriam as principais funcionalidades de cada microsserviço. Assim, os cinco microsserviços que existem na arquitetura do bot e o chat possuem um objetivo geral. A partir desse funcionalidade principal foram elicitados outros requisitos.</p>
+
+## 2. Introspecção
+
+<p align="justify">&emsp;&emsp;A introspecção é uma técnica muito utilizada na etapa de elicitação. Ela consiste em entender as funcionalidades importantes de um sistema. Apesar de muito usada nem sempre a introspecção traz uma visão próxima da realidade, para evitar isso a Product Owner esteve presente na elicitação levando em conta a sua visão do produto.</p>
+
+## 3. Rich Picture
+<p align="justify">&emsp;&emsp; Rich Pictures são artefatos que são, geralmente, elaborados na fase de pré-rastreabilidade. Eles são desenhos, feitos a mão ou digitalmente, que representam um sub-sistema de um sistema maior. Rich Pictures procuram mostrar todas as partes externas ou internas, envolvidas em um fluxo do problema. Esse artefato costuma ser bastante informal e auxilia bastante na identificação das partes envolvidas no problema. </p>
+
+<img class="richpicture" src="../assets/imgs/richpicture/richp.png" alt="...">
+ 
+
+<div class="space"></div>
+
+# Resultados
 
 ## 1. Clima
 
@@ -98,4 +111,4 @@ EP 04 - Acompanhamento de furacões
 - O sistema deve ter integração com o Facebook;
 - O sistema deve conversar com o usuário em linguagem natural;
 - O sistema deve respeitar a personalidade do bot;
-- O sistema deve aprender novos comportamentos de acordo com a resposta do usuário; -->
+- O sistema deve aprender novos comportamentos de acordo com a resposta do usuário;

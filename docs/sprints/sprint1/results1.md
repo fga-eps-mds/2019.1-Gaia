@@ -66,6 +66,10 @@ O objetivo da Sprint 1 foi instruir o time de MDS para que o Documento de Visão
 ![Retrospectiva Sprint 0](../../assets/imgs/retrospectiva/retrospectiva-S0.png)
 
 
+# Burndown de Riscos 
+
+![Burndown de Riscos 1](../../assets/imgs/riscos/riscos1.png)
+
 
 ### Observações levantadas ao longo da reunião:
 
