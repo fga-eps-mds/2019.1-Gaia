@@ -13,7 +13,7 @@ quais o setor de Chatbots investe e compete.
 ![](../assets/imgs/ocean/mav.png)
 
 
-## O Modelo das Quatro Ações
+## Matriz Eliminar-Elevar-Reduzir-Criar
 
 Esse modelo juda a estruturar a nova matriz de valor do produto através de quatro ações, onde as duas primeiras ações de “reduzir” e “eliminar” desenvolvem novas ideias sobre como otimizar a estrutura de valor em comparação aos concorrentes e as duas outras ações de “criar” e “elevar” se destinam criação de novos atributos agregadores de valor para a organização.
 
