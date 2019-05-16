@@ -32,3 +32,15 @@
 
 - Sprint 5
   - [Planejamento Sprint 5](sprints/sprint5/planning5.md)
+  - [Resultado Sprint 5](sprints/sprint5/results5.md)
+
+- Sprint 6
+  - [Planejamento Sprint 6](sprints/sprint6/planning6.md)
+  - [Resultado Sprint 6](sprints/sprint6/results6.md)
+
+- Sprint 7
+ - [Planejamento Sprint 7](sprints/sprint7/planning7.md)
+  - [Resultado Sprint 7](sprints/sprint7/results7.md)
+
+- Sprint 8
+ - [Planejamento Sprint 8](sprints/sprint8/planning8.md)
