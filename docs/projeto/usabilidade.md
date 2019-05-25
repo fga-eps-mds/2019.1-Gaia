@@ -46,19 +46,13 @@ Neste teste de usabilidade iremos testar chatbot Gaia, e cada teste levará entr
 
 ### Anotações gerais
 
-Produto: Gaia versão Telegram
-
-Teste nº: x
-
-Data: dd/mm/aaaa
-
-Horário de início da sessão: hh:mm
-
-Horário de término da sessão: hh:mm
-
-Local: 
-
-Entrevistador: Product Owner
+Produto: Gaia versão Telegram  
+Teste nº: x  
+Data: dd/mm/aaaa  
+Horário de início da sessão: hh:mm  
+Horário de término da sessão: hh:mm   
+Local:  
+Entrevistador: Product Owner 
 
 
 ### Instrução inicial
@@ -104,9 +98,22 @@ Descrição da tarefa: Você está se preparando para sair de casa, mas não sab
 
 Tarefa 3
 
-Objetivo: Entender se a Gaia compreende as intenções e o que é dito pelo usuário. 
+Objetivo: Entender se a Gaia fornece dados de maneira fácil e intuitiva. 
 
-Descrição da tarefa: Você deseja se exercitar ao ar livre em um determinado local, mas não sabe se a condição do tempo está favorável. Utilizando a Gaia, descubra se o clima está favorável.
+Descrição da tarefa: Você deseja se exercitar ao ar livre em um determinado local, mas não sabe se a condição do tempo está favorável neste local. Utilizando a Gaia, descubra se o clima está favorável em uma localidade específica.
+
+        Usuário conseguiu realizar a tarefa?
+        - [ ] Sim, com facilidade
+        - [ ] Sim, com dificuldade
+        - [ ] Não conseguiu realizar a tarefa
+  
+        Perguntar impressões gerais.
+
+Tarefa 4
+
+Objetivo: Entender se a Gaia é clara e direta ao recomendar modalidades. 
+
+Descrição da tarefa: Você deseja ir a um lugar determinado para se exercitar, mas não sabe que modalidades são favoráveis neste local. Utilizando a Gaia, descubra quais modalidades você poderia praticar nesse lugar em específico.
 
         Usuário conseguiu realizar a tarefa?
         - [ ] Sim, com facilidade
@@ -116,12 +123,11 @@ Descrição da tarefa: Você deseja se exercitar ao ar livre em um determinado l
         Perguntar impressões gerais.
 
 
-
 # Referências Bibliográficas
 - NIELSEN, Jakob. Why You Only Need to Test with 5 Users; Disponível em: <https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/>; Acesso em 20 de maio de 2019.
 - Curso UX e Usabilidade aplicados em Mobile e Web, Capítulo 11, Apêndice: Testes de Usabilidade; Disponível em: <https://www.caelum.com.br/apostila-ux-usabilidade-mobile-web/usabilidade/#preparao-prvia>; Acesso em 20 de maio de 2019.
 - Portal de Serviços Públicos do Governo Federal, Testes de Usabilidade; Disponível em <https://servicosgovbr.github.io/portal-de-servicos/design/testes-de-usabilidade.html>; Acesso em 20 de maio de 2019.
-- 
+- UX: Pesquisa com o Usuário – Hipsters #44; Disponível em: <https://hipsters.tech/ux-pesquisa-com-o-usuario-hipsters-44/>; Acesso em 20 de maio de 2019.
 
 
 
