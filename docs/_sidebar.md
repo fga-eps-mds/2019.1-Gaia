@@ -25,6 +25,7 @@
   - [Roadmap dos Papéis](/projeto/RoadmapPapeis.md)
   - [Roadmap Geral](/projeto/roadmapGeral.md)
   - [Pipeline de Entrega](projeto/pipelineEntrega.md)
+  - [Usabilidade](projeto/usabilidade.md)
 
 <br />
 
