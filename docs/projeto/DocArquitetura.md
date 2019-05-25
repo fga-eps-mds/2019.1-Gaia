@@ -15,6 +15,7 @@
 |05/04/2019|   1.5  |Adição dos tópicos 4.2.1,4.2.2,4.2.3, revisão e formatação do documento          |Micaella Gouveia    |
 |12/04/2019| 1.6 | Adição do tópico 2.3 |Amanda Muniz |
 |17/04/2019| 1.7 | Revisão geral, adição de novas versões dos diagramas, correção de informações |Amanda Muniz |
+|25/05/2019| 1.8 | Adição do microsserviço Gaia-Ciclone |Amanda Muniz |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -29,7 +30,8 @@
 &emsp; &emsp; [2.2.1 Cronjob Notifica](#_221-cronjob-notifica) <br>
 &emsp; &emsp; [2.2.2 Gaia-Clima](#_222-gaia-clima) <br>
 &emsp; &emsp; [2.2.3 Gaia-Local](#_223-gaia-local) <br>
-&emsp; &emsp; [2.2.4 API Gateway](#_224-api-gateway) <br>
+&emsp; &emsp; [2.2.4 Gaia-Ciclone](#_224-gaia-ciclone) <br>
+&emsp; &emsp; [2.2.5 API Gateway](#_224-api-gateway) <br>
 &emsp; [2.3 Padrões](#_23-padrões) <br>
 &emsp; &emsp; [2.3.1 Padrão API Gateway](#_231-padrão-api-gateway) <br>
 &emsp; &emsp; [2.3.2 Padrão API Composition](#_232-padrão-api-composition) <br>
@@ -111,13 +113,15 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 <li>API Gateway;</li>
 <li>Cronjob Notifica;</li>
 <li>Gaia-Clima;</li>
-<li>Gaia-Local.</li></ul>
+<li>Gaia-Local;</li>
+<li>Gaia-Ciclone.</li></ul>
 <p align="justify">&emsp;&emsp;Para a execução completa do projeto será necessário o consumo de dados de fontes externas, sendo elas:</p>
 <ul>
 <li>API Telegram;</li>
 <li>API Facebook;</li>
 <li>API OpenWeatherMaps;</li>
-<li>API OpenCage Geocoder.</li></ul>
+<li>API OpenCage Geocoder;</li>
+<li>API Aeris Weather;</li></ul>
 <p align="justify">&emsp;&emsp;Além do comportamento interno da Gaia, outro fator importante a ser considerado é a criação do chatbot em si. Para isso, vários fatores precisam ser considerados, como o uso de linguagem natural. Por isso, será utilizado a tecnologia Rasa, que se divide em Rasa Core e Rasa NLU. Rasa Core é de extrema importância para criar um bot baseado em Machine Learning. Já o Rasa NLU é responsável pelo processamento da linguagem natural. Essa combinação vai garantir que a Gaia tenha uma comunicação acessível com o usuário.</p>
 
 <p align="justify">&emsp;&emsp;Para a Release 1 a arquitetura geral não será implementada. Pensando no nível de conhecimento tecnológico dos integrantes de MDS durante a primeira fase da matéria, foi decidido pelos membros de EPS que o bot a ser entregue na primeira release seguirá a seguinte arquitetura:
@@ -137,7 +141,10 @@ Imagem 02 - Representação da arquitetura para a R1
 #### 2.2.3 Gaia-Local
 <p align="justify">&emsp;&emsp;O microsserviço Gaia-Local é responsável por receber o nome de uma cidade e responder com a sua latitude e longitude exata. Isso é necessário, uma vez que, a API OpenWeatherMaps não retorna informações com o nome exato do local como parâmetro - para cidades que não são capitais, mas se tiver a latitude e longitude sim. Por isso, um microsserviço responsável por fazer requisições a API do OpenCage Geocoder é de extrema importância para manter um diálogo fácil com o usuário e retornar as informações certas sobre a condição climática.</p>
 
-#### 2.2.4 API Gateway
+#### 2.2.4 Gaia-Ciclone
+<p align=""justify>&emsp;&emsp;O microsserviço Gaia-Ciclone é responsável por manter notificações sobre furacões, tufões e ciclones. Ele deve fazer requisições para a API externa Aeris Weather a cada duas horas, no endpoint /tropicalcyclones que retorna a lista de ciclones que estão acontecendo. Sempre que essa lista retornar um objeto, o microsserviço terá que mandar notificações para os usuários que a agendaram anteriormente. Além disso, em sua resposta deve conter o nome da localidade que está sofrendo com as tempestades de vento. Por isso, deverá fazer requisições para a API OpenCage Geocoder.</p>
+
+#### 2.2.5 API Gateway
 <p align="justify">&emsp;&emsp;Dentro de uma arquitetura de microsserviços ter um API Gateway é importante para gerenciar o acesso às API’s de um determinado sistema. Ou seja, ele é um padrão de software que funciona de forma similar a uma fachada sendo o único ponto de acesso, - que controla as entradas e saídas de dados, o tráfego de tarefas e monitora, - para as API’s internas. Sua existência reduz problemas causados pela interação entre cliente e microsserviços, além de conservar o ambiente dos serviços. </p>
 
 ### 2.3 Padrões
