@@ -1,6 +1,5 @@
 # RESULTADOS da Sprint 5
 
-
 ### Presentes na reunião 20/04/19
 
 | Nome | Status |
@@ -63,7 +62,7 @@
 ![Velocity Sprint 5](../../assets/imgs/velocity/Velocity-Sprint5.png)
 
 
-## Retrospectiva: Aprendizados obtidos na *Sprint X* 
+## Retrospectiva: Aprendizados obtidos na *Sprint 5* 
 
 ![Retrospectiva Sprint 5](../../assets/imgs/retrospectiva/retrospectiva-S05.png)
 
@@ -83,3 +82,5 @@
 
 ## Avaliação Tech Lead
 
+<p>Direfentemente do que estava ocorrendo nas sprints anteriores, MDS melhorou consideravelmente as entregas, isso é nítido no Burndown por ser uma sprint que caminhou bem e que entregaram todas as histórias planejadas, além das dívidas técnicas. Para a sprint 5 houveram muitas issues e para que as entregas fossem constantes e que não houvessem dívidas para a próxima sprint, o time de EPS optou por organizar as entregas por dia e funcionou muito bem.</p> 
+<p>Na Sprint 5 todos os riscos diminuíram, inclusive o risco de gerenciamento foi completamente mitigado e isso ocorreu devido ao fato de que o time de EPS está conseguindo melhorar os indicadores e elevar a produtividade do time de MDS.</p>
