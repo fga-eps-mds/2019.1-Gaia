@@ -4,31 +4,16 @@
 
 <br />
 
-<div class="container">
-    <h3>Sprint 2</h3>
-    <div class="row">
-        <div class="col release-img">
-            <img src="../../assets/imgs/conhecimento/conhecimento-s2.png" alt="...">
-        </div>
-    </div>
-    <h3>Sprint 3</h3>
-    <div class="row">
-    <div class="col release-img">
-        <img src="../../assets/imgs/conhecimento/conhecimento-s3.png" alt="...">
-    </div>
-    </div>
-    <h3>Sprint 4</h3>
-    <div class="row">
-    <div class="col-sm release-img">
-      <img src="../../assets/imgs/conhecimento/conhecimento-s3.png" alt="...">    
-    </div>
-    </div>
-    <h3>Sprint 5</h3>
-    <div class="row">
-    <div class="col-sm release-img">
-      <img src="../../assets/imgs/conhecimento/conhecimento-s4.png" alt="...">
-    </div>
-    </div>
-    </div>
-  </div>
-</div>
+### Sprint 2
+![conhecimento2](../../assets/imgs/conhecimento/conhecimento-s2.png)
+
+### Sprint 3
+
+![conhecimento3](../../assets/imgs/conhecimento/conhecimento-s3.png)
+
+### Sprint 4
+![conhecimento4](../../assets/imgs/conhecimento/conhecimento-s4.png)
+
+### Spring 5
+![conhecimento5](../../assets/imgs/conhecimento/conhecimento-s5.png)
+

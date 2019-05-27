@@ -1,5 +1,5 @@
 # PLANEJAMENTO - Sprint 5
-### Período: 20/04/19 a 26/04/19
+### Período: 20/04/19 a 27/04/19
 
 
 
@@ -14,13 +14,8 @@
    * US12 - Eu como usuário desejo que o sistema retorne o local com mais acurácia e precisão <span>[13]</span> - Calebe e Samuel
 
 #### EPS
-   * Viabilidade ténica de cada frente
   
-      1. Arquiteta: Justificativa da definição da arquitetura <span>[3]</span> e procurar referencias externas
-      2. DevOps: Documentação da folha de estilo <span>[3]</span>, pipeline<span>[3]</span> e procurar referencias externas
-      3. Product Owner: Oceano Azul<span>[3]</span> e procurar referencias externas
-      4. Tech Lead: procurar referencias externas
-  
+   * Documentação da folha de estilo - Calebe <span>[3]</span>
    * Estudo da parte de composição da API Gateway - Amanda <span>[5]</span>
    * Evoluir os diagramas de classe e pacote <span>[1]</span>
    * Alterar o Docker para aceitar esporte - Calebe <span>[3]</span>
@@ -28,7 +23,6 @@
    * Deploy de esporte em homolog - Calebe <span>[3]</span>
    * Enriquecer a tabela de esportes - Indiara <span>[1]</span>
    * Documentar técnicas de requisitos - Indiara <span>[3]</span>
-   * Criar roadmap geral - Luciana <span>[5]</span>
    * Documentar planning da sprint 5 - Luciana <span>[1]</span>
    * Documentar resultados da sprint 4 - Luciana <span>[3]</span>
 
@@ -41,10 +35,10 @@
 <br />
 
 
-#### Total de pontos planejados: 80
+#### Total de pontos planejados: 66
 #### Total de pontos de dívidas da Sprint 4: 5 
 
-### Total de pontos da Sprint 5: 85 
+### Total de pontos da Sprint 5: 71 
 
 ### Pareamentos
 
