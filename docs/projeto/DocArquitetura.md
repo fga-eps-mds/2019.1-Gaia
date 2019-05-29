@@ -16,6 +16,7 @@
 |12/04/2019| 1.6 | Adição do tópico 2.3 |Amanda Muniz |
 |17/04/2019| 1.7 | Revisão geral, adição de novas versões dos diagramas, correção de informações |Amanda Muniz |
 |25/05/2019| 1.8 | Adição do microsserviço Gaia-Ciclone |Amanda Muniz |
+|29/05/2019| 1.9 | Remover versão da arquitetura da release 1| Amanda Muniz |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -111,9 +112,7 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 <p align="justify">&emsp;&emsp;Os serviços que serão implementados na Gaia foram pensados para serem modulares, muitas vezes existindo apenas para executar uma função específica. Sendo assim, os serviços internos que fazem parte da Gaia são:</p>
 <ul>
 <li>API Gateway;</li>
-<li>Cronjob Notifica;</li>
-<li>Gaia-Clima;</li>
-<li>Gaia-Local;</li>
+<li>Gaia-Esporte;</li>
 <li>Gaia-Ciclone.</li></ul>
 <p align="justify">&emsp;&emsp;Para a execução completa do projeto será necessário o consumo de dados de fontes externas, sendo elas:</p>
 <ul>
@@ -123,11 +122,6 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 <li>API OpenCage Geocoder;</li>
 <li>API Aeris Weather;</li></ul>
 <p align="justify">&emsp;&emsp;Além do comportamento interno da Gaia, outro fator importante a ser considerado é a criação do chatbot em si. Para isso, vários fatores precisam ser considerados, como o uso de linguagem natural. Por isso, será utilizado a tecnologia Rasa, que se divide em Rasa Core e Rasa NLU. Rasa Core é de extrema importância para criar um bot baseado em Machine Learning. Já o Rasa NLU é responsável pelo processamento da linguagem natural. Essa combinação vai garantir que a Gaia tenha uma comunicação acessível com o usuário.</p>
-
-<p align="justify">&emsp;&emsp;Para a Release 1 a arquitetura geral não será implementada. Pensando no nível de conhecimento tecnológico dos integrantes de MDS durante a primeira fase da matéria, foi decidido pelos membros de EPS que o bot a ser entregue na primeira release seguirá a seguinte arquitetura:
-
-![](../assets/imgs/architecture/arquiteturaR1.png)
-Imagem 02 - Representação da arquitetura para a R1
 
 ### 2.2 Representação dos Microsserviços
 
@@ -178,7 +172,7 @@ Imagem 02 - Representação da arquitetura para a R1
 #### 2.4.5 Rasa
 
 ![](../assets/imgs/architecture/diagramaFluxoRASA.jpeg)
-Imagem 03 - Fluxo básico da tecnologia Rasa
+Imagem 02 - Fluxo básico da tecnologia Rasa
 
 <p align="justify">&emsp;&emsp;Rasa é um conjunto de ferramentas para Python para a criação de bots. Ele tem duas principais frentes, o Rasa Core e o Rasa NLU. O Rasa Core baseia a o desenvolvimento em Machine Learning, onde você consegue treinar e atualizar as models “conversando” e provendo feedback para o bot. Já o Rasa NLU é responsável pelo processamento da linguagem natural.</p>
 
@@ -186,7 +180,7 @@ Imagem 03 - Fluxo básico da tecnologia Rasa
 
 ![](../assets/imgs/architecture/diagramaFluxoNodejs.png)
 
-Imagem 04 - Fluxo básico da tecnologia NodeJS
+Imagem 03 - Fluxo básico da tecnologia NodeJS
 
 <p align="justify">&emsp;&emsp;Node.js é uma plataforma de aplicação para Javascript, que tem como principal objetivo facilitar a construção de softwares escaláveis. Ele geralmente é usado ao lado do servidor e é orientado para o estilo de programação voltada a evento. Isso faz com que ele seja leve, eficiente e uma boa alternativa para arquitetura de microsserviços.</p>
 
@@ -226,11 +220,11 @@ Imagem 04 - Fluxo básico da tecnologia NodeJS
 
 ![](../assets/imgs/architecture/diagramaDePacotesMicrosservicos.png)
 
-Imagem 05 - Diagrama de Pacotes dos Microsserviços
+Imagem 04 - Diagrama de Pacotes dos Microsserviços
 
 ![](../assets/imgs/architecture/diagramaDePacotesBot.png)
 
-Imagem 06 - Diagrama de Pacotes do Bot Gaia
+Imagem 05 - Diagrama de Pacotes do Bot Gaia
 
 #### 4.2.2 Diagrama de classe
 
@@ -238,16 +232,16 @@ Imagem 06 - Diagrama de Pacotes do Bot Gaia
 
 ![](../assets/imgs/architecture/diagramaClasseNotifica.png)
 
-Imagem 07 - Diagrama de Classe do Microsserviço Cronjob Notifica
+Imagem 06 - Diagrama de Classe do Microsserviço Cronjob Notifica
 
 ##### 4.2.2.2 Diagrama de Classe do Gaia-Clima
 
 ![](../assets/imgs/architecture/diagramaClasseClima.png)
 
-Imagem 08 - Diagrama de Classe do Microsserviço Gaia-Clima
+Imagem 07 - Diagrama de Classe do Microsserviço Gaia-Clima
 
 ##### 4.2.2.1 Diagrama de Classe do Gaia-Local
 
 ![](../assets/imgs/architecture/digramaClasseLocal.png)
 
-Imagem 09 - Diagrama de Classe do Microsserviço Gaia-Local
+Imagem 08 - Diagrama de Classe do Microsserviço Gaia-Local
