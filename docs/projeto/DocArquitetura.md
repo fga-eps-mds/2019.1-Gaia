@@ -18,6 +18,7 @@
 |25/05/2019| 1.8 | Adição do microsserviço Gaia-Ciclone |Amanda Muniz |
 |29/05/2019| 1.9 | Remoção versão da arquitetura da release 1| Amanda Muniz |
 |29/05/2019| 2.0 | Mudança da arquitetura | Amanda Muniz |
+|29/05/2019| 2.1 | Refatoração do diagrama de relações | Amanda Muniz |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -103,7 +104,7 @@ processos pesados;</li>
 ## 2. Representação Arquitetural
 ### 2.1 Diagrama de Relações
 
-![](../assets/imgs/architecture/arquiteturaV05.png)
+![](../assets/imgs/architecture/arquiteturaV06.png)
 Imagem 01 - Representação da arquitetura através de um diagrama de relações
 
 <p align="justify">&emsp;&emsp;O estilo arquitetural de microsserviços é uma abordagem que visa implementar uma aplicação como uma suíte de pequenos serviços. Onde cada um executa um processo próprio e se comunica, geralmente, com requests HTTP. Tendo em vista a principal característica desse estilo arquitetural, a independência entre os serviços, o chatbot Gaia terá microsserviços como parte de sua arquitetura. </p>
