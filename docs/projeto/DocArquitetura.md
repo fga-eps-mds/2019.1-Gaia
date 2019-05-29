@@ -16,7 +16,8 @@
 |12/04/2019| 1.6 | Adição do tópico 2.3 |Amanda Muniz |
 |17/04/2019| 1.7 | Revisão geral, adição de novas versões dos diagramas, correção de informações |Amanda Muniz |
 |25/05/2019| 1.8 | Adição do microsserviço Gaia-Ciclone |Amanda Muniz |
-|29/05/2019| 1.9 | Remover versão da arquitetura da release 1| Amanda Muniz |
+|29/05/2019| 1.9 | Remoção versão da arquitetura da release 1| Amanda Muniz |
+|29/05/2019| 2.0 | Mudança da arquitetura | Amanda Muniz |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -28,11 +29,9 @@
 [2. Representação Arquitetural](#_2-representação-arquitetural) <br>
 &emsp; [2.1 Diagrama de Relações](#_21-diagrama-de-relações) <br>
 &emsp; [2.2 Representação dos Microsserviços](#_22-representação-dos-microsserviços) <br>
-&emsp; &emsp; [2.2.1 Cronjob Notifica](#_221-cronjob-notifica) <br>
-&emsp; &emsp; [2.2.2 Gaia-Clima](#_222-gaia-clima) <br>
-&emsp; &emsp; [2.2.3 Gaia-Local](#_223-gaia-local) <br>
-&emsp; &emsp; [2.2.4 Gaia-Ciclone](#_224-gaia-ciclone) <br>
-&emsp; &emsp; [2.2.5 API Gateway](#_224-api-gateway) <br>
+&emsp; &emsp; [2.2.1 Gaia-Esporte](#_221-gaia-esporte) <br>
+&emsp; &emsp; [2.2.2 Gaia-Ciclone](#_222-gaia-ciclone) <br>
+&emsp; &emsp; [2.2.3 API Gateway](#_223-api-gateway) <br>
 &emsp; [2.3 Padrões](#_23-padrões) <br>
 &emsp; &emsp; [2.3.1 Padrão API Gateway](#_231-padrão-api-gateway) <br>
 &emsp; &emsp; [2.3.2 Padrão API Composition](#_232-padrão-api-composition) <br>
@@ -125,20 +124,20 @@ Imagem 01 - Representação da arquitetura através de um diagrama de relações
 
 ### 2.2 Representação dos Microsserviços
 
-#### 2.2.1 Cronjob Notifica
-<p align="justify">&emsp;&emsp;O termo Cronjob ou Cron Job refere-se a tarefas que são executadas de forma automática dado um intervalo de tempo. Por isso, um microsserviço essencial para a Gaia é um cronjob de notificação. Ele será responsável por manter um usuário e por registrar as preferências do mesmo, sendo elas, uma cidade e um tempo determinado para a notificação; além de mandar o alerta para o chat com as condições climáticas da localização desejada no período esperado pelo usuário.</p>
+#### 2.2.1 Gaia-Esporte
+<p align="justify">&emsp;&emsp;O microsserviço Gaia-Esporte é responsável por lidar com o core do projeto, - indicação de esportes. Para isso ele possui diversas funcionalidades. A principal delas é o cronjob de notificação, que irá manter notificações. Isso será feito registrando as preferências do usuário, sendo elas, uma cidade, um esporte, um tempo determinado para a notificação. Além disso, deverá mandar o alerta para o chat com as condições climáticas da localização desejada no período esperado pelo usuário.</p>
 
-#### 2.2.2 Gaia-Clima
-<p align="justify">&emsp;&emsp;O microsserviço Gaia-Clima é responsável por fazer requisições para a API externa do OpenWeatherMaps. A necessidade dessa funcionalidade ocorre por haver uma limitação de requisições diárias na versão livre dessa API. Dessa forma, todos os pedidos de dados feitos ao OpenWeatherMaps estarão centralizadas em um só local. Outro fator importante é que os dados fornecidos por essa API externa precisam de tratamento, como conversão e entre outros. Além disso, esse microsserviço será responsável por informar o usuário sobre as condições climáticas de qualquer local do mundo.</p>
-<p align="justify">&emsp;&emsp;Outra funcionalidade presente neste microsserviço é a indicação de um esporte ou uma lista de esportes ao usuário, baseado nas condições climáticas da cidade. Ou seja, o usuário perguntará quais são os melhores esportes para serem praticados naquele determinado clima, e o microsserviço terá que comparar as variáveis presentes nas condições climáticas, com a condição climática ideal dos esportes e retornar esse informação ao usuário.</p>
+<p align="justify">&emsp;&emsp;Para mandar as notificações será preciso saber as condições climáticas. Isso traz a necessidade das funcionalidades referentes ao clima: indicar o clima atual e indicar a previsão do tempo de até cinco dias. Para essas funcionalidades serem possíveis, o microsserviço irá consumir a API Externa OpenWeatherMaps e irá tratar os dados que são recebidos.  </p>
 
-#### 2.2.3 Gaia-Local
-<p align="justify">&emsp;&emsp;O microsserviço Gaia-Local é responsável por receber o nome de uma cidade e responder com a sua latitude e longitude exata. Isso é necessário, uma vez que, a API OpenWeatherMaps não retorna informações com o nome exato do local como parâmetro - para cidades que não são capitais, mas se tiver a latitude e longitude sim. Por isso, um microsserviço responsável por fazer requisições a API do OpenCage Geocoder é de extrema importância para manter um diálogo fácil com o usuário e retornar as informações certas sobre a condição climática.</p>
+<p align="justify">&emsp;&emsp;Porém, a API OpenWeatherMaps não retorna informações com o nome exato do local como parâmetro - para cidades que não são capitais, mas se tiver a latitude e longitude sim. Portanto, o microsserviço irá fazer requisições para a API externa OpenCage Geocoder, para receber a latitude e longitude exata de um local. Isso é de extrema importância para manter um diálogo fácil com o usuário.</p>
 
-#### 2.2.4 Gaia-Ciclone
-<p align=""justify>&emsp;&emsp;O microsserviço Gaia-Ciclone é responsável por manter notificações sobre furacões, tufões e ciclones. Ele deve fazer requisições para a API externa Aeris Weather a cada duas horas, no endpoint /tropicalcyclones que retorna a lista de ciclones que estão acontecendo. Sempre que essa lista retornar um objeto, o microsserviço terá que mandar notificações para os usuários que a agendaram anteriormente. Além disso, em sua resposta deve conter o nome da localidade que está sofrendo com as tempestades de vento. Por isso, deverá fazer requisições para a API OpenCage Geocoder.</p>
+<p align="justify">&emsp;&emsp;A última funcionalidade presente neste microsserviço é a indicação de um esporte ou uma lista de esportes ao usuário, baseado nas condições climáticas da cidade. Ou seja, o usuário perguntará quais são os melhores esportes para serem praticados naquele determinado clima, e o microsserviço terá que comparar as variáveis presentes nas condições climáticas, com a condição climática ideal dos esportes e retornar esse informação ao usuário.</p>
 
-#### 2.2.5 API Gateway
+#### 2.2.2 Gaia-Ciclone
+
+<p align="justify">&emsp;&emsp;O microsserviço Gaia-Ciclone é responsável por manter notificações sobre furacões, tufões e ciclones. Ele deve fazer requisições para a API externa Aeris Weather a cada duas horas, no endpoint /tropicalcyclones que retorna a lista de ciclones que estão acontecendo. Sempre que essa lista retornar um objeto, o microsserviço terá que mandar notificações para os usuários que a agendaram anteriormente. Além disso, em sua resposta deve conter o nome da localidade que está sofrendo com as tempestades de vento. Por isso, deverá fazer requisições para a API OpenCage Geocoder.</p>
+
+#### 2.2.3 API Gateway
 <p align="justify">&emsp;&emsp;Dentro de uma arquitetura de microsserviços ter um API Gateway é importante para gerenciar o acesso às API’s de um determinado sistema. Ou seja, ele é um padrão de software que funciona de forma similar a uma fachada sendo o único ponto de acesso, - que controla as entradas e saídas de dados, o tráfego de tarefas e monitora, - para as API’s internas. Sua existência reduz problemas causados pela interação entre cliente e microsserviços, além de conservar o ambiente dos serviços. </p>
 
 ### 2.3 Padrões
