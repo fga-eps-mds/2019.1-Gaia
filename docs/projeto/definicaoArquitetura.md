@@ -6,8 +6,8 @@
 
 <p align="justify">&emsp;&emsp;Esses microsserviços são gerenciados por uma API Gateway, que é uma parte do sistema responsável por controlar o acesso aos microsserviços internos. Ela funciona de forma similar a uma fachada (padrão de software), sendo o único ponto de acesso a esses serviços. A API Gateway pode reduzir os problemas causados pelas interações cliente-serviço e melhora a conservação do ambiente dos microsserviços. Além disso, ela também controla as requisições e saídas de dados, que nesse estilo arquitetural são feitas através de requests HTTP.</p>
 
-<p align="justify">&emsp;&emsp;Sendo assim, a Gaia terá três microsserviços e um
-Gateway para formar a API da aplicação e um sistema para a construção do bot em si. Ao todo os sistemas são Gaia, Gaia-Clima, Gaia-Local, Gaia-Notifica e Gaia-Gateway. </p>
+<p align="justify">&emsp;&emsp;Sendo assim, a Gaia terá quatro microsserviços e um
+Gateway para formar a API da aplicação e um sistema para a construção do bot em si. Ao todo os sistemas são Gaia, Gaia-Clima, Gaia-Local, Gaia-Notifica, Gaia-Ciclone e Gaia-Gateway. </p>
 
 <p align="justify">&emsp;&emsp;A Gaia será o serviço do bot, que será construído utilizando as tecnologias Rasa Core e Rasa NLU. Ela será responsável por lidar com o contato com o usuário, ao manter um diálogo com o mesmo. Além disso, terá que respeitar a manter a personalidade do bot e precisará mandar as requisições do usuário para os serviços internos.</p>
 
@@ -18,6 +18,8 @@ Gateway para formar a API da aplicação e um sistema para a construção do bot
 <p align="justify">&emsp;&emsp;O microsserviço Gaia-Local consumirá dados da API externa OpenCage Geocoder. Isso é necessário uma vez que a API utilizada para consumir dados relacionados ao clima dificulta o acesso com apenas o nome de uma localidade. Portanto, Gaia-Local irá receber o nome de uma cidade e retornar sua latitude e longitude. Além disso, salvará essa informação no banco de dados, para que a dependência para com essa API externa se torne menor ao longo do tempo.</p>
 
 <p align="justify">&emsp;&emsp;O microsserviço Gaia-Notifica será um cronjob de notificação. Ele terá que manter um usuário e lidar com os alertas. Cada usuário poderá ter uma ou mais preferências de notificação, e este microsserviço será responsável por isso. Além disso, ele terá que mandar a previsão do tempo de até cinco dias toda vez que o usuário pedir esse tipo de notificação. </p>
+
+<p align="justify">&emsp;&emsp;O microsserviço Gaia-Ciclone será um cronjob de notificação. Ele, assim como o Gaia-Notifica, terá um user e mandará notificações para ele. A diferença entre os dois é que esse microsserviço terá que mandará uma notificação sempre que um Ciclone estiver ocorrendo em alguma parte do mundo. Para isso, ele consumirá dados da API Externa Aeris Weather, sempre fazendo uma nova requisição a cada duas horas. Além disso, consumirá também a API OpenCage Geocoder para informar o nome exato do local que está sendo atingido pelo ciclone. </p>
 
 ## 2. Tecnologias escolhidas
 
