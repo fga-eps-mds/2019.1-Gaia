@@ -54,7 +54,7 @@
 &emsp; &emsp; &emsp; [4.2.2.1 Diagrama de Classe do Gaia-Notifica](#_4221-diagrama-de-classe-do-gaia-notifica) <br>
 &emsp; &emsp; &emsp; [4.2.2.2 Diagrama de Classe do Gaia-Clima](#_4222-diagrama-de-classe-do-gaia-clima) <br>
 &emsp; &emsp; &emsp; [4.2.2.3 Diagrama de Classe do Gaia-Local](#_4223-diagrama-de-classe-do-gaia-local) <br>
-
+&emsp; &emsp; &emsp; [4.2.2.4 Diagrama de Classe do Gaia-Ciclone](#_4224-diagrama-de-classe-do-gaia-ciclone) <br>
 
 ## 1. Introdução
 ### 1.1 Finalidade
@@ -246,8 +246,14 @@ Imagem 07 - Diagrama de Classe do Microsserviço Cronjob Notifica
 
 Imagem 08 - Diagrama de Classe do Microsserviço Gaia-Clima
 
-##### 4.2.2.1 Diagrama de Classe do Gaia-Local
+##### 4.2.2.3 Diagrama de Classe do Gaia-Local
 
-![](../assets/imgs/architecture/digramaClasseLocal.png)
+![](../assets/imgs/architecture/diagramaClasseLocal.png)
 
 Imagem 09 - Diagrama de Classe do Microsserviço Gaia-Local
+
+##### 4.2.2.4 Diagrama de Classe do Gaia-Ciclone
+
+![](../assets/imgs/architecture/diagramaClasseCiclone.png)
+
+Imagem 10 - Diagrama de Classe do Microsserviço Gaia-Ciclone
