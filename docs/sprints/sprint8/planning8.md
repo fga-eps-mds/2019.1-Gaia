@@ -17,7 +17,6 @@
 
 #### Dívidas da Sprint 7
 
-   * Criar fluxograma principal de interação da Gaia [5]
    * Subir o mongo no Kubernets [3]
    * Criar EVM [5]
    * Configurar deploy contínuo [3]
