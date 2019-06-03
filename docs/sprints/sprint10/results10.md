@@ -1,6 +1,6 @@
 # RESULTADOS da Sprint 10
 
-### Presentes na reunião XX/XX/XX
+### Presentes na reunião 25/05/19
 
 | Nome | Status |
 | --------- | -------- |
