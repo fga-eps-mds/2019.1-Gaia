@@ -68,17 +68,17 @@
    - [Planejamento Sprint 7](sprints/sprint7/planning7.md)
     - [Resultado Sprint 7](sprints/sprint7/results7.md)
 
-- Sprint 8
- - [Planejamento Sprint 8](sprints/sprint8/planning8.md)
- - [Resultado Sprint 8](sprints/sprint8/results8.md)
+  - Sprint 8
+   - [Planejamento Sprint 8](sprints/sprint8/planning8.md)
+   - [Resultado Sprint 8](sprints/sprint8/results8.md)
+    
+  - Sprint 9
+   - [Planejamento Sprint 9](sprints/sprint9/planning9.md)
+   - [Resultado Sprint 9](sprints/sprint9/results9.md)
   
-- Sprint 9
- - [Planejamento Sprint 9](sprints/sprint9/planning9.md)
- - [Resultado Sprint 9](sprints/sprint9/results9.md)
-
-- Sprint 10
- - [Planejamento Sprint 10](sprints/sprint10/planning10.md)
- - [Resultado Sprint 10](sprints/sprint10/results10.md)
-
-- Sprint 11
- - [Planejamento Sprint 11](sprints/sprint11/planning11.md)
+  - Sprint 10
+   - [Planejamento Sprint 10](sprints/sprint10/planning10.md)
+   - [Resultado Sprint 10](sprints/sprint10/results10.md)
+  
+  - Sprint 11
+   - [Planejamento Sprint 11](sprints/sprint11/planning11.md)

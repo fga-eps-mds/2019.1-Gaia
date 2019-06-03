@@ -43,42 +43,36 @@
 | Criar EVM | 
 | Configurar o Kibana com Elasticsearch | 
 
-### Total de pontos planejados: << pts >>
+### Total de issues planejadas: 15
 
-### Pontos entregues: << pts >>
+### Issues entregues: 12
 
-### Pontos de dívidas para a próxima sprint: << pts >>
+### Dívidas para a próxima sprint: 3
 
 
 ## Burndown
 
 
-![Burndown Sprint X](../../assets/imgs/burndown/)
+![Burndown Sprint 10](../../assets/imgs/burndown/Burndown-Sprint10.png)
 
 
-## Velocity
+## Retrospectiva: Aprendizados obtidos na *Sprint 10* 
 
-
-![Velocity Sprint X](../../assets/imgs/velocity/)
-
-
-## Retrospectiva: Aprendizados obtidos na *Sprint X* 
-
-![Retrospectiva Sprint X](../../assets/imgs/retrospectiva/)
+![Retrospectiva Sprint 10](../../assets/imgs/retrospectiva/)
 
 
 ## Quadro de Conhecimento 
 
-![Retrospectiva Sprint 5](../../assets/imgs/conhecimento/conhecimento-sx.png)
+![Quadro de Conhecimento Sprint 5](../../assets/imgs/conhecimento/conhecimento-s10.png)
 
 
 ## Health Check 
 
-![Retrospectiva Sprint 5](../../assets/imgs/healthcheck/healthcheck-sx.png)
+![Health Check Sprint 5](../../assets/imgs/healthcheck/healthcheck-s10.png)
 
 ## Burndown de Riscos 
 
-![Burndown de Riscos 5](../../assets/imgs/riscos/riscosX.png)
+![Burndown de Riscos 5](../../assets/imgs/riscos/riscos10.png)
 
 
 ### Observações levantadas ao longo da reunião

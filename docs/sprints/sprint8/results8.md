@@ -45,42 +45,37 @@
 | US19 -Eu como usuário desejo que a Gaia me responda com mais acurácia e precisão | 3 |
 
 
-### Total de pontos planejados: 61
+### Total de pontos planejados: 56
 
 ### Pontos entregues: 25
 
-### Pontos de dívidas para a próxima sprint: 36
+### Pontos de dívidas para a próxima sprint: 31
 
 
 ## Burndown
 
 
-![Burndown Sprint X](../../assets/imgs/burndown/)
+![Burndown Sprint 8](../../assets/imgs/burndown/Burndown-Sprint8.png)
 
 
-## Velocity
 
+## Retrospectiva: Aprendizados obtidos na *Sprint 8* 
 
-![Velocity Sprint X](../../assets/imgs/velocity/)
-
-
-## Retrospectiva: Aprendizados obtidos na *Sprint X* 
-
-![Retrospectiva Sprint X](../../assets/imgs/retrospectiva/)
+![Retrospectiva Sprint 8](../../assets/imgs/retrospectiva/retrospectiva-S08.png)
 
 
 ## Quadro de Conhecimento 
 
-![Retrospectiva Sprint 5](../../assets/imgs/conhecimento/conhecimento-sx.png)
+![Quadro de Conhecimento Sprint 5](../../assets/imgs/conhecimento/conhecimento-s8.png)
 
 
 ## Health Check 
 
-![Retrospectiva Sprint 5](../../assets/imgs/healthcheck/healthcheck-sx.png)
+![Health Check Sprint 5](../../assets/imgs/healthcheck/healthcheck-s8.png)
 
 ## Burndown de Riscos 
 
-![Burndown de Riscos 5](../../assets/imgs/riscos/riscosX.png)
+![Burndown de Riscos 5](../../assets/imgs/riscos/riscos8.png)
 
 
 ### Observações levantadas ao longo da reunião

@@ -51,7 +51,7 @@
 ### Observação: As US24 e US25 foram removidas as sprint para que todas as dívidas pudessem ser entregues.
 
 
-### Total de issues planejados: 16
+### Total de issues planejadas: 16
 
 ### Número de issues entregues: 12
 
@@ -61,32 +61,27 @@
 ## Burndown
 
 
-![Burndown Sprint X](../../assets/imgs/burndown/)
+![Burndown Sprint 9](../../assets/imgs/burndown/Burndown-Sprint9.png)
 
 
-## Velocity
 
+## Retrospectiva: Aprendizados obtidos na *Sprint 9* 
 
-![Velocity Sprint X](../../assets/imgs/velocity/)
-
-
-## Retrospectiva: Aprendizados obtidos na *Sprint X* 
-
-![Retrospectiva Sprint X](../../assets/imgs/retrospectiva/)
+![Retrospectiva Sprint 9](../../assets/imgs/retrospectiva/retrospectiva-S09.png)
 
 
 ## Quadro de Conhecimento 
 
-![Retrospectiva Sprint 5](../../assets/imgs/conhecimento/conhecimento-sx.png)
+![Quadro de Conhecimento Sprint 5](../../assets/imgs/conhecimento/conhecimento-s9.png)
 
 
 ## Health Check 
 
-![Retrospectiva Sprint 5](../../assets/imgs/healthcheck/healthcheck-sx.png)
+![Health Check Sprint 5](../../assets/imgs/healthcheck/healthcheck-s9.png)
 
 ## Burndown de Riscos 
 
-![Burndown de Riscos 5](../../assets/imgs/riscos/riscosX.png)
+![Burndown de Riscos 5](../../assets/imgs/riscos/riscos9.png)
 
 
 ### Observações levantadas ao longo da reunião
