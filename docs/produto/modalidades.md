@@ -20,24 +20,24 @@ O padrão de condições adotado segue a seguinte escala:
 
 ## Ventos
 
-| Condições de vento | Windsurf | Kitesurf | Surf | Stand Up Paddle | Vela |
-| - | - | - | - | - | - |
-0 a 20 nós | Condições ruins  | Condições favoráveis  | Condições ruins | Condições ruins | Condições favoráveis |
-21 a 30 nós | Condições favoráveis  | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins |
-31 a 40 nós | Condições ruins | Condiçoes favoráveis | Condições favoráveis | Condições faroráveis | Condições ruins |
-41 a 50 nós | Condições favoráveis | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis |
+| Velocidade | Windsurf | Kitesurf | Surf | Stand Up Paddle | Vela | Caiaque | Wakeboard | Remo | Trekking | Paraquedismo | Caminhada | Golf | Tênis | Vôlei de areia |
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+0 a 20 nós | Condições ruins  | Condições favoráveis  | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis|
+21 a 30 nós | Condições favoráveis  | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins | Condições ruins |
+31 a 40 nós | Condições ruins | Condiçoes favoráveis | Condições favoráveis | Condições faroráveis | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições favoráveis | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições favoráveis |
+41 a 50 nós | Condições favoráveis | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis | Condições ruins | Condições ruins | Condições ruins | Condições ruins |
 
 
 <div class="space"></div> 
 
 ## Temperatura
 
-| Temperatura média | Windsurf | Kitesurf | Surf | Stand Up Paddle | Vela |
-| - | - | - | - | - | - |
-15 a 19 ºC | Condições ruins | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis |
-20 a 24 ºC | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições favoráveis |
-25 a 29 ºC | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins |
-30 a 35 ºC | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições favoráveis |
+| Temperatura média | Windsurf | Kitesurf | Surf | Stand Up Paddle | Vela | Caiaque | Wakeboard | Remo | Trekking | Paraquedismo | Caminhada | Golf | Tênis | Vôlei de areia | 
+| - | - | - | - | - | - | - | - | - | - | - | - | - | - | - |
+15 a 19 ºC | Condições ruins | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições favoráveis |
+20 a 24 ºC | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições favoráveis | Condições favoráveis | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições favoráveis |
+25 a 29 ºC | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins |
+30 a 35 ºC | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições favoráveis | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins | Condições ruins | Condições ruins | Condições favoráveis | Condições favoráveis | Condições ruins |
 
 
 ## Umidade
@@ -50,23 +50,33 @@ O padrão de condições adotado segue a seguinte escala:
     <th>Surf </th>
     <th>Stand Up Paddle</th>
     <th>Vela </th>
+    <th>Caiaque </th>
+    <th>Wakeboard </th>
+    <th>Remo </th>
+    <th>Trekking </th>
+    <th>Paraquedismo </th>
+    <th>Caminhada </th>
+    <th>Golf </th>
+    <th>Tênis </th>
+    <th>Vôlei de Praia </th>
+    <th>Paraquedismo </th>
   </tr>
   <tr>
     <td>Entre 70% e 40%</td>
-    <td align="center" colspan="5">Condição favorável</td>
+    <td align="center" colspan="15">Condição favorável</td>
   </tr>
   <tr>
     <td>Entre 39% e 21%</td>
-    <td align="center" colspan="5">Condição razoável</td>
+    <td align="center" colspan="15">Condição razoável</td>
   </tr>
   <tr>
     <td>Entre 20% e 13%</td>
-    <td align="center" colspan="5">Condição ruim</td>
+    <td align="center" colspan="15">Condição ruim</td>
  
   </tr>
   <tr>
     <td>Abaixo de 12%</td>
-    <td align="center" colspan="5">Perigoso</td>
+    <td align="center" colspan="15">Perigoso</td>
   </tr>
 </table>
 
