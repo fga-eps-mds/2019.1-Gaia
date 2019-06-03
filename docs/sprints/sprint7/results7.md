@@ -1,7 +1,5 @@
 # RESULTADOS da Sprint 7
 
-
-
 ### Presentes na reunião 11/04/19
 
 | Nome | Status |
@@ -64,7 +62,7 @@
 ![Velocity Sprint 7](../../assets/imgs/velocity/Velocity-Sprint7.png)
 
 
-## Retrospectiva: Aprendizados obtidos na *Sprint 7 * 
+## Retrospectiva: Aprendizados obtidos na *Sprint 7* 
 
 ![Retrospectiva Sprint 7](../../assets/imgs/retrospectiva/retrospectiva-S07.png)
 
@@ -89,3 +87,6 @@ Reunião feita em duas partes para que todos os integrantes de MDS pudessem part
 
 ## Avaliação Tech Lead
 
+<p>A Sprint 7 foi até o momento a mais complicada. O time não entregou nada nos primeiros 4 dias de sprint. Isso por si só não demostra muita coisa, porém, ao analisar o velocity, é possível ver como o planejado e o entregue são tão discrepantes. Isso aconteceu devido ao cansaço da R1, a produtividade caiu e houveram poucas entregas.</p>
+<p>Com todos esses problemas alguns riscos aumentaram. O risco de desânimo dos membros aumentou e as entregas também, e o time de EPS está atento e se planejando para resolver esse problema.</p>
+<p>Na Sprint 7 ocorreu um evento em que 3/4 membros do time de EPS tiveram que participar, deixando a reunião da sprint a cargo de uma única pessoa de EPS. O time tentou mitigar esse risco separando antecipadamente o que os membros de MDS teriam que fazer na próxima sprint, também organizando um pequeno roteiro do que precisaria ser feito na reunião.</p>

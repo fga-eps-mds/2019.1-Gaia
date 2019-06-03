@@ -60,7 +60,7 @@
 ![Velocity Sprint X](../../assets/imgs/velocity/Velocity-Sprint6.png)
 
 
-## Retrospectiva: Aprendizados obtidos na *Sprint X* 
+## Retrospectiva: Aprendizados obtidos na *Sprint 6* 
 
 ![Retrospectiva Sprint X](../../assets/imgs/retrospectiva/retrospectiva-S06.png)
 
@@ -81,3 +81,5 @@
 
 ## Avaliação Tech Lead
 
+<p>Ao contrário da Sprint 5, a Sprint 6 foi um pouco conturbada. Até o dia 30, que foi o dia da nossa apresentação da R1, a entrega estava contínua e seguindo o burndown, porém a partir do dia 31, as entregas pararam e só voltaram a ocorrer no dia 03/05, 1 dia antes de fechar a sprint. Isso ocorreu devido à exaustão causada na sprint anterior.</p>
+<p>Foi nessa sprint que um novo risco surgiu <b>Desânimo dos Membros</b>, onde a maior preocupação é o desanimo tanto dos membros de MDS quanto de EPS. Nessa sprint também ocorreu um grande aumento no risco da arquitetura, por ocorrer uma mudança de última hora.</p>
