@@ -43,6 +43,16 @@ EP 04 - Acompanhamento de furacões
 | 11 | Eu, como usuário, desejo que o sistema consiga filtrar o esporte de acordo com as condições meteorológicas | 04, 05, 06 | 01, 02 | 08 | Alta |
 | 12 | Eu, como usuário, desejo que o sistema retorne o local com mais acurácia e precisão | 01, 02, 06 | 01, 02 | 13 | Alta |
 | 13 | Eu, como usuário, desejo que o serviço me indique os endpoints | 01, 02, 04, 05 | 02 | 01 | Baixa |
+| 14 | Eu, como usuário, desejo que a gaia consiga guardar meus dados e minhas preferências | 07, 08 | 03 | 08 | Alta |
+| 15 | Eu, como usuário, desejo que a Gaia me informe se um determinado esporte é favorável de ser realizado ou não | 05, 06 | 02 | 03 | Alta |
+| 16 | Eu, como usuário, desejo agendar uma notificação | 07, 08 | 03 | 08 | Alta |
+| 17 | Eu, como usuário, desejo que o sistema consiga a previsão de até cinco dias | 03 | 02 | 03 | Média |
+| 18 | Eu, como usuário, desejo que o sistema Gateway seja capaz de gerenciar minhas requisições de esporte | 05, 06 | 02 | 05 | Média |
+| 19 | Eu, como usuário, desejo que a Gaia me responda com mais acurácia e precisão | 03, 06 | 01, 02 | 03 | Média | 
+| 20 | Eu, como usuário, desejo ver mais opções de local caso a minha não esteja não lista | 02 | 01, 02 | 05 | Baixa | 
+| 21 | Eu, como usuário, desejo que o sistema trate das opções de local repetidas | 01, 02 | 01, 02 | 03 | Baixa |
+| 22 | Eu, como usuário, desejo saber a previsão do tempo de um determinado horário ou local de no máximo 5 dias | 01, 03 | 01, 02 | 05 | Alta |
+
 
 
 <div class="space"></div> 
