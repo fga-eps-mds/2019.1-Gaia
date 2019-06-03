@@ -88,3 +88,4 @@
 
 ## Avaliação Tech Lead
 
+<p>Na Sprint 9 houveram algumas dívidas, porém um número bem menor do que na sprint anterior. A tática de diminuir as issues para que MDS focasse nas dívidas deu certo. Nessa sprint cada pessoa ficou com uma issue, os pareamentos ocorreram de forma orgânica, ou seja, pareavam quando havia algum problema ou dificuldade. Avaliando o Health Check, a equipe pontuou a velocidade de entrega como menor do que a sprint anterior, porém a saúde do código melhorou. Na sprint 9 houve um salto no risco de comunicação, onde a equipe de MDS não se comunicou de forma eficiente. O time de EPS percebeu que os desenvolvedores estavam bem desmotivados, além disso algumas atitudes de MDS não estavam sendo bem vistas, pensando nisso, boa parte da reunião semanal foi utilizada para uma dinâmica de feedback, chamada fearless feedback, onde foram passados feedbacks individualmente e em grupo para cada um.</p>

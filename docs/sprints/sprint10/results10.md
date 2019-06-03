@@ -56,11 +56,6 @@
 ![Burndown Sprint 10](../../assets/imgs/burndown/Burndown-Sprint10.png)
 
 
-## Retrospectiva: Aprendizados obtidos na *Sprint 10* 
-
-![Retrospectiva Sprint 10](../../assets/imgs/retrospectiva/)
-
-
 ## Quadro de Conhecimento 
 
 ![Quadro de Conhecimento Sprint 5](../../assets/imgs/conhecimento/conhecimento-s10.png)
@@ -75,9 +70,7 @@
 ![Burndown de Riscos 5](../../assets/imgs/riscos/riscos10.png)
 
 
-### Observações levantadas ao longo da reunião
-
-Reunião no parque
-
 ## Avaliação Tech Lead
 
+<p>Após os feedbacks passados na reunião anterior, todos os time se sentiram mais motivados e engajados em realizar o projeto. É possível ver isso com diferença na quantidade de dívdas da sprint passada e dessa. Os riscos no geral diminuíram, nenhum risco aumentou e apenas os riscos de comunicação, arquitetura e tecnologias continuaram com os mesmo valores. Achei interessante ver o progresso e a maturidade do time, a responsabilidade de todos é um grande fator motivacional. Alguns membros que não estavam mais motivados voltaram a se interessar e a querer entregar. Essa mudança foi muito importante para o time. É possível ver também uma grande melhora no conhecimento e que a equipe está evoluindo de forma madura.</p> 
+<p>O Burndown foi feito com as issues pesando o mesmo valor, então eĺe expressa bem como está a entrega ao longo da semana, sem considerar a pontuação de cada issue.</p>   

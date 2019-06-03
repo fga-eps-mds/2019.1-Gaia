@@ -78,7 +78,6 @@
 ![Burndown de Riscos 5](../../assets/imgs/riscos/riscos8.png)
 
 
-### Observações levantadas ao longo da reunião
-
 ## Avaliação Tech Lead
 
+<p>A sprint 8 foi um pouco preocupante, o time de MDS deixou muitas dívidas técnicas, com isso o risco das entregas contínuou muito alto. Para reverter isso, EPS planejou para a sprint seguinte a sprint de forma mais leve para que eles pudesse se concentrar nas dívidas da sprint anterior. Segundo o que foi levantado na retrospectiva, a comunicação entre o time por meio de issues melhorou, por isso houve uma diminuição do risco de comunicação.</p>
