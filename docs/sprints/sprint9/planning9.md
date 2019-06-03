@@ -9,6 +9,10 @@
 
    * US24: Eu como usuário desejo que o Gateway trate minhas requisições 
    * US25: Eu como usuário desejo que o Gateway autentique minhas requisições 
+   * Melhorar fluxo da Gaia
+   * Passar Gaia-Notifica para Gaia-Esporte
+   * Passar Gaia-Clima para Gaia-Esporte
+   * Passar Gaia-Local para Gaia-Esporte
 
 #### EPS
    * Refatorar arquitetura

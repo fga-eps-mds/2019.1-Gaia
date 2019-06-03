@@ -30,7 +30,7 @@
 | Planejar teste de usabilidade | - | 
 | Estudar como coletar metricas do bot | - |
 | Estudar deploy para facebook messenger | - |
-| Passar Gaia-Local para Gaia-Esporte (Backlog de Melhoria) | - |
+| Passar Gaia-Local para Gaia-Esporte | - |
 | Refatorar os Gitlab CIs | - |
 | Realizar alterações de melhoria no microsserviço Gaia-Local | 3 |
 | Criar e configurar novo repositorio | - |
@@ -44,6 +44,9 @@
 | Refatorar arquitetura | - |
 | Criar EVM | 5 |
 | US23: Eu como usuário desejo que o sistema me notifique quando eu desejar | - |
+| Melhorar fluxo da Gaia | - | 
+| Passar Gaia-Notifica para Gaia-Esporte | - |
+| Passar Gaia-Clima para Gaia-Esporte | - |
 
 ### Observação: As US24 e US25 foram removidas as sprint para que todas as dívidas pudessem ser entregues.
 

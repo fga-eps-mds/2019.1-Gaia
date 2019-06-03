@@ -6,21 +6,21 @@
 
 #### MDS
 
-   * Issue [pts]
-   * Issue [pts]
+   * Issue 
+   * Issue 
 
 #### EPS
-   * Issue [pts]
-   * Issue [pts]
+   * Issue 
+   * Issue 
 
 #### Dívidas da Sprint X-1
 
-   * Issue [pts]
-   * Issue [pts]
+   * Issue 
+   * Issue 
 
 
-#### Total de pontos planejados:
-#### Total de pontos de dívidas da Sprint X-1:
+#### Total de issues planejadas:
+#### Total de dívidas da Sprint X-1:
 
 ### Pareamentos
 
