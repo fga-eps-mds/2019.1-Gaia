@@ -5,6 +5,7 @@
   - [Termo de Abertura do Projeto](produto/TAP.md)
   - [Estrutura Analítica do Projeto](produto/EAP.md)
   - [Documento de Visão](produto/DocVisao.md)
+  - [Política de Privacidade](produto/politicaPrivacidade.md)
   - [Canvas](produto/canvas.md)
   - [Análise de Mercado](produto/matrizValor.md)
   - [Backlog do Produto](produto/requisitos.md)
