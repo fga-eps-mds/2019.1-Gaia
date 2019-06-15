@@ -9,3 +9,4 @@
   ### 6. [Modalidadades](/produto/modalidades.md)
   ### 7. [Protótipos](/produto/prototipo.md)
   ### 8. [Termo de Abertura do Projeto](produto/TAP.md)
+  ### 9. [Política de Privacidade](produto/politicaPrivacidade.md)
