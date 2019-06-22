@@ -19,6 +19,7 @@
 |29/05/2019| 1.9 | Remoção versão da arquitetura da release 1| Amanda Muniz |
 |29/05/2019| 2.0 | Mudança da arquitetura | Amanda Muniz |
 |29/05/2019| 2.1 | Refatoração do diagrama de relações | Amanda Muniz |
+|20/06/2019| 2.2 | Refatoração dos diagramas de pacotes e classe | Amanda Muniz |
 
 ## Sumário
  [1. Introdução](#_1-introdução) <br>
@@ -52,10 +53,8 @@
 &emsp; [4.2. Pacotes de Design Significativos do Ponto de Vista da Arquitetura](#_42-pacotes-de-design-significativos-do-ponto-de-vista-da-arquitetura) <br>
 &emsp; &emsp; [4.2.1 Diagrama de Pacotes](#_421-diagrama-de-pacotes) <br>
 &emsp; &emsp; [4.2.2 Diagrama de Classes](#_422-diagrama-de-classes) <br>
-&emsp; &emsp; &emsp; [4.2.2.1 Diagrama de Classe do Gaia-Notifica](#_4221-diagrama-de-classe-do-gaia-notifica) <br>
-&emsp; &emsp; &emsp; [4.2.2.2 Diagrama de Classe do Gaia-Clima](#_4222-diagrama-de-classe-do-gaia-clima) <br>
-&emsp; &emsp; &emsp; [4.2.2.3 Diagrama de Classe do Gaia-Local](#_4223-diagrama-de-classe-do-gaia-local) <br>
-&emsp; &emsp; &emsp; [4.2.2.4 Diagrama de Classe do Gaia-Ciclone](#_4224-diagrama-de-classe-do-gaia-ciclone) <br>
+&emsp; &emsp; &emsp; [4.2.2.1 Diagrama de Classe do Gaia-Esporte](#_4221-diagrama-de-classe-do-gaia-esporte) <br>
+&emsp; &emsp; &emsp; [4.2.2.2 Diagrama de Classe do Gaia-Ciclone](#_4222-diagrama-de-classe-do-gaia-ciclone) <br>
 
 ## 1. Introdução
 ### 1.1 Finalidade
@@ -218,35 +217,31 @@ Imagem 03 - Fluxo básico da tecnologia NodeJS
 
 #### 4.2.1 Diagrama de pacotes
 
-![](../assets/imgs/architecture/diagramaDePacotesMicrosservicos.png)
+![](../assets/imgs/architecture/diagramaRasa.png)
 
-Imagem 04 - Diagrama de Pacotes dos Microsserviços
+Imagem 04 - Diagrama de Pacotes da Gaia
 
-![](../assets/imgs/architecture/diagramaDePacotesBot.png)
+![](../assets/imgs/architecture/diagramaPacotesGateway.png)
 
-Imagem 05 - Diagrama de Pacotes do Bot Gaia
+Imagem 05 - Diagrama de Pacotes do Gaia-Gateway
+
+![](../assets/imgs/architecture/diagramaPacotesEsporte.png)
+
+Imagem 06 - Diagrama de Pacotes do Gaia-Esporte
+
+![](../assets/imgs/architecture/diagramaPacotesCiclone.png)
+
+Imagem 07 - Diagrama de Pacotes do Gaia-Ciclone
 
 #### 4.2.2 Diagrama de classe
 
-##### 4.2.2.1 Diagrama de Classe do Gaia-Notifica
+##### 4.2.2.1 Diagrama de Classe do Gaia-Esporte
 
-![](../assets/imgs/architecture/diagramaClasseNotifica.png)
+![](../assets/imgs/architecture/diagramaClasseEsporte.png)
 
-Imagem 06 - Diagrama de Classe do Microsserviço Cronjob Notifica
+Imagem 08 - Diagrama de Classe do Microsserviço Gaia-Esporte
 
-##### 4.2.2.2 Diagrama de Classe do Gaia-Clima
-
-![](../assets/imgs/architecture/diagramaClasseClima.png)
-
-Imagem 07 - Diagrama de Classe do Microsserviço Gaia-Clima
-
-##### 4.2.2.3 Diagrama de Classe do Gaia-Local
-
-![](../assets/imgs/architecture/diagramaClasseLocal.png)
-
-Imagem 08 - Diagrama de Classe do Microsserviço Gaia-Local
-
-##### 4.2.2.4 Diagrama de Classe do Gaia-Ciclone
+##### 4.2.2.2 Diagrama de Classe do Gaia-Ciclone
 
 ![](../assets/imgs/architecture/diagramaClasseCiclone.png)
 
