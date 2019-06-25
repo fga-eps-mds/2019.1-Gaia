@@ -1,3 +1,12 @@
+---
+name: Project request
+about: Describe this issue template's purpose here.
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 ### Nome da *issue*
 
 O nome da *issue* deve conter uma breve descrição sobre o problema a ser resolvido e deve ser escrito no infinitivo.
