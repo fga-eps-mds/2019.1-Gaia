@@ -14,28 +14,39 @@
 |Por quem| Todos do time devem fazer parte da comunicação, porém cabe a Tech Lead guiar e incentivar a comunicação efetiva entre os membros da equipe. Quando se trata do produto, a comunicação é responsabilidade da Product Owner|
 
 
-
 <div class="comunications-imgs">
-    <div class="images-info">
+<div class="images-info">
         <h3>Telegram</h3>
-        <img src="../assets/imgs/comunication/telegram.png" alt="..." class="img-thumbnail image">
-    </div>
-    <div class="images-info">
-        <h3>GitHub</h3>
-        <img src="../assets/imgs/comunication/github.png" alt="..." class="img-thumbnail image">
-    </div>
-    <div class="images-info">
-        <h3>ZenHub</h3>
-        <img src="../assets/imgs/comunication/zenhub.png" alt="..." class="img-thumbnail image">
-    </div>
-    <div class="images-info">
-        <h3>Google Hangouts</h3>
-        <img src="../assets/imgs/comunication/hangouts.png" alt="..." class="img-thumbnail image">
-    </div>
-    <div class="images-info">
-        <h3>Google Drive</h3>
-        <img src="../assets/imgs/comunication/drive.png" alt="..." class="img-thumbnail image">
-    </div>
+
+![telegram](../assets/imgs/comunication/telegram.png)
+
+</div>
+<div class="images-info">
+        <h3>Github</h3>
+
+![github](../assets/imgs/comunication/github.png)
+
+</div>
+<div class="images-info">
+    <h3>Zengub</h3>
+
+![zenhub](../assets/imgs/comunication/zenhub.png)
+
+</div>
+
+<div class="images-info">
+    <h3>Hangouts</h3>
+
+![hangouts](../assets/imgs/comunication/hangouts.png)
+
+</div>
+
+<div class="images-info">
+    <h3>Google Drive</h3>
+
+![drive](../assets/imgs/comunication/drive.png)
+
+</div>
 </div>
 
 ### Telegram: 

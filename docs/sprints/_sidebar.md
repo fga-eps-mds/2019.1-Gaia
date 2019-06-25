@@ -1,6 +1,8 @@
 
 - [**HOME**](/)
 
+- [Post Mortem](projeto/postMortem.md) 
+
 - Avaliação da Release 1
   - [Burndown](sprints/release1/burndown.md)
   - [Velocity](sprints/release1/velocity.md)
@@ -56,3 +58,12 @@
 
 - Sprint 11
  - [Planejamento Sprint 11](sprints/sprint11/planning11.md)
+ - [Resultado Sprint 11](sprints/sprint11/results11.md)
+
+- Sprint 12
+ - [Planejamento Sprint 12](sprints/sprint12/planning12.md)
+ - [Resultado Sprint 12](sprints/sprint12/results12.md)
+
+- Sprint 13
+ - [Planejamento Sprint 13](sprints/sprint13/planning13.md)
+ - [Resultado Sprint 13](sprints/sprint13/results13.md) 

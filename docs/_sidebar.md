@@ -14,6 +14,7 @@
   - [Protótipos](/produto/prototipo.md)
 
 - [**Projeto**](/projeto/)
+  - [Post Mortem](projeto/postMortem.md) 
   - [Definição da Arquitetura](projeto/definicaoArquitetura.md)
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
   - [Plano de Comunicação](/projeto/planoComunicacao.md)
@@ -83,3 +84,12 @@
   
   - Sprint 11
    - [Planejamento Sprint 11](sprints/sprint11/planning11.md)
+   - [Resultado Sprint 11](sprints/sprint11/results11.md)
+
+  - Sprint 12
+   - [Planejamento Sprint 12](sprints/sprint12/planning12.md)
+   - [Resultado Sprint 12](sprints/sprint12/results12.md)
+
+  - Sprint 13
+   - [Planejamento Sprint 13](sprints/sprint13/planning13.md)
+   - [Resultado Sprint 13](sprints/sprint13/results13.md) 
