@@ -1,6 +1,8 @@
 
 - [**HOME**](/)
 
+- [Post Mortem](projeto/postMortem.md) 
+
 - Avaliação da Release 1
   - [Burndown](sprints/release1/burndown.md)
   - [Velocity](sprints/release1/velocity.md)

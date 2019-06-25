@@ -69,4 +69,10 @@
 
 ## Avaliação Tech Lead
 
-<p></p>   
+<p>
+    Pela segunda Sprint seguida o time de MDS não deixou dívidas. Isso representa um comprometimento e responsabilidade maior, além de um conhecimento satisfatório para entregar com mais facilidade. 
+    Na Sprint 12 MDS começou a fazer mais do que o esperado, puxando dailyes, marcando reuniões, criando issues e resolvendo bugs proativamente. O time está se tornando cada vez mais horizontal e autogerenciável. Nessa sprint o que brilhou foi o trabalho em equipe de todos os membros.  
+</p>   
+<p>
+    Boa parte dos riscos foram mitigados, o amadurecimento da equipe é nítido. 
+</p>

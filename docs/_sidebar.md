@@ -14,6 +14,7 @@
   - [Protótipos](/produto/prototipo.md)
 
 - [**Projeto**](/projeto/)
+  - [Post Mortem](projeto/postMortem.md) 
   - [Definição da Arquitetura](projeto/definicaoArquitetura.md)
   - [Documento de Arquitetura](projeto/DocArquitetura.md)
   - [Plano de Comunicação](/projeto/planoComunicacao.md)

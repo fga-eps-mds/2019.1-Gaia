@@ -1,5 +1,5 @@
 # PLANEJAMENTO - Sprint 13
-### Período: 15/06/19 a 25/06/19
+### Período: 15/06/19 a 24/06/19
 
 
 ### Planejamento: Planejamento da Sprint 13
