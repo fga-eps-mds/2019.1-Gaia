@@ -56,6 +56,12 @@
 ![Burndown Sprint 10](../../assets/imgs/burndown/Burndown-Sprint10.png)
 
 
+## Retrospectiva: Aprendizados obtidos na *Sprint 10* 
+
+![Retrospectiva Sprint 9](../../assets/imgs/retrospectiva/retrospectiva-S10.png)
+
+
+
 ## Quadro de Conhecimento 
 
 ![Quadro de Conhecimento Sprint 5](../../assets/imgs/conhecimento/conhecimento-s10.png)
