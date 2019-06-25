@@ -1,3 +1,12 @@
+---
+name: Release template
+about: Describe this issue template's purpose here.
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 # v0.X - Sprint x1 a Sprint x5
 
 ## Funcionalidades e Melhorias:
