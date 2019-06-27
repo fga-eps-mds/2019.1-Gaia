@@ -11,21 +11,22 @@ EP 02 - Sugestão de modalidades
 
 EP 03 - Gerenciamento de notificações
 
-EP 04 - Acompanhamento de furacões
+EP 04 - Acompanhamento de ciclones
 
 ## Features
 
 | ID | Descrição | Épico |
 | -- | --------- | ----- |
 | 01 | Exibir previsão do tempo de um local | 01 |  
-| 02 | Manter localidade | 01 | 
+| 02 | Manter localidade | 01 |
 | 03 | Exibir previsão tempo dos próximos 5 dias | 01 |
 | 04 | Salvar parâmetros de modalidade | 02 |
 | 05 | Relacionar previsão do tempo com modalidades | 02 |
 | 06 | Exibir modalidades favoráveis | 02 |
-| 07 | Enviar notificações | 03 | 
-| 08 | Personalizar envio de notificações | 03 | 
-| 09 | Cancelar envio de notificações | 03 | 
+| 07 | Enviar notificações | 03 |
+| 08 | Personalizar envio de notificações | 03 |
+| 09 | Cancelar envio de notificações | 03 |
+| 10 | Enviar alerta de ciclones | 04 |
 
 ## Histórias de Usuário
 | ID | Descrição | Feature | Épico | Pontos | Prioridade |
@@ -52,6 +53,13 @@ EP 04 - Acompanhamento de furacões
 | 20 | Eu, como usuário, desejo ver mais opções de local caso a minha não esteja não lista | 02 | 01, 02 | 05 | Baixa | 
 | 21 | Eu, como usuário, desejo que o sistema trate das opções de local repetidas | 01, 02 | 01, 02 | 03 | Baixa |
 | 22 | Eu, como usuário, desejo saber a previsão do tempo de um determinado horário ou local de no máximo 5 dias | 01, 03 | 01, 02 | 05 | Alta |
+| 23 | Eu, como usuário, desejo que o sistema me notifique quando eu desejar | 07, 08 | 03 | - | Alta |
+| 24 | Eu, como usuário, desejo que o Gateway trate minhas requisições | 01, 02, 04, 07 | 02, 04 | - | Baixa |
+| 25 | Eu, como usuário, desejo que o Gateway autentique minhas requisições | 01, 02, 04, 07 | 01, 02, 03, 04 | - | Baixa |
+| 26 | Eu, como usuário, desejo que o sistema faça uma nova requisição a cada 2 horas no Ciclone | 10 | 04 | - | Alta |
+| 27 | Eu, como usuário, desejo manter minhas notificações | 07, 08, 09 | 03 | - | Alta |
+| 28 | Eu, como usuário, desejo manter meus alertas de ciclone | 10 | 04 | - | Média |
+
 
 
 
