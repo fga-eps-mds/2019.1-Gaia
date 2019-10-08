@@ -14,24 +14,24 @@
 
 ### Docker Compose
 
-<p>O Docker Compose é uma ferramenta que utiliza o docker. O docker compose é o que chamamos de orquestrador de containers. Essa ferramenta é utilizada somente em ambiente de desenvolvimento, com ela é possível subir vários containers de um vez e criar regras de comunicação entre eles. Estamos utilizando o docker compose principalmente para subir serviços que possuem banco de dados.</p>
+<p>O Docker Compose é uma ferramenta que utiliza o docker. O Docker Compose é o que chamamos de orquestrador de containers. Essa ferramenta é utilizada somente em ambiente de desenvolvimento, com ela é possível subir vários containers de um vez e criar regras de comunicação entre eles. Estamos utilizando o Docker Compose principalmente para subir serviços que possuem banco de dados.</p>
 
 ### Mocha e Chai
 
-<p>São nossas ferramentas para testes unitários em javascript, já que todos os nossos microsserviços se encontram nessa linguagem. Os testes são de fundamental importância para garantir que ao incluir ou alterar um alguma funcionalidade, não acabe prejudicando outra.</p>
+<p>São nossas ferramentas para testes unitários em Javascript, já que todos os nossos microsserviços se encontram nessa linguagem. Os testes são de fundamental importância para garantir que ao incluir ou alterar um alguma funcionalidade, não acabe prejudicando outra.</p>
 
 ### Eslint
 
-<p>Já para a ferramenta de testes estático estamos utilizando o Eslint, com o padrão do <b>airbnb-base</b>. O eslint está sendo utilizado para garantir que o código esteja padronizado com o da comunidade javascript.</p>
+<p>Já para a ferramenta de testes estático estamos utilizando o Eslint, com o padrão do <b>airbnb-base</b>. O Eslint está sendo utilizado para garantir que o código esteja padronizado com o da comunidade Javascript.</p>
 
 ### Gitlab CI
 
-<p>Nossa ferramenta para integração contínua, Gitlab CI. Como estamos utilizando o github como forge principal, configuramos o gitlab ci para fazer o mirror e assim poder executar o gitlab ci. O nosso gitlab ci está rodando basicamente 4 stages, sendo eles: build, test, quality e deploy. Os 3 primeiros rodam a cada commit, e eles garantem a qualidade e a confiabilidade do código. Já o deploy ele roda somente na dev e na master, ele build o serviço e da um push para o docker hub.</p>
+<p>Nossa ferramenta para integração contínua, Gitlab CI. Como estamos utilizando o Github como forge principal, configuramos o Gitlab CI para fazer o mirror e assim poder executar o Gitlab CI. O nosso Gitlab CI está rodando basicamente 4 stages, sendo eles: build, test, quality e deploy. Os 3 primeiros rodam a cada commit, e eles garantem a qualidade e a confiabilidade do código. Já o deploy roda somente na dev e na master, ele build o serviço e dá um push para o Docker Hub.</p>
 
-### Docker hub
+### Docker Hub
 
 <p>Essa ferramenta é utilizada para disponibilizar as imagens dos containers, ele funciona como um git para imagens. Atualmente nossas imagens estão todas públicas através desse link: https://hub.docker.com/u/caleberios</p>
 
 ### Kubernets
 
-<p>O Kubernets é outro orquestrador de containers, mas diferente do docker compose que é muito utilizado para o ambiente de desenvolvimento, o kubernetes é utilizado para homologação e produção. Através dele que estamos disponibilizando nossos serviços para todos os usuários finais.</p>
+<p>O Kubernets é outro orquestrador de containers, mas diferente do Docker Compose que é muito utilizado para o ambiente de desenvolvimento, o Kubernetes é utilizado para homologação e produção. Através dele que estamos disponibilizando nossos serviços para todos os usuários finais.</p>
